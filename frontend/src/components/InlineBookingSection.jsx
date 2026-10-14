@@ -614,15 +614,6 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
                 </>
               )}
             </button>
-
-            {/* Lead Time Notice */}
-            <div className="mt-4 flex items-center justify-center gap-2 text-[11px] text-slate-500 text-center">
-              <span>🔒 256-bit E2E Shifrlash</span>
-              <span>·</span>
-              <span>⚡ MedInson Universal SDK</span>
-              <span>·</span>
-              <span>📍 Smile Dental Group</span>
-            </div>
           </form>
         )}
       </div>
