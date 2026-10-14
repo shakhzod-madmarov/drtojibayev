@@ -10,6 +10,7 @@ import { PAGE_SEO } from "../constants/seo";
 import {
   IconPhone,
   IconShieldCheck,
+  DentalDigitalScannerIcon,
 } from "../components/MedicalIcons";
 
 const Booking = () => {
@@ -74,7 +75,7 @@ const Booking = () => {
 
           <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-700 pt-1">
             <span className="flex items-center gap-1.5">
-              <span className="text-base">💻</span>
+              <DentalDigitalScannerIcon className="w-4 h-4 text-primary" />
               <span>Цифровой Стоматолог</span>
             </span>
             <span className="flex items-center gap-1.5">

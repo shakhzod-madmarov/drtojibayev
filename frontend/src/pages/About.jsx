@@ -7,7 +7,12 @@ import Seo from "../components/Seo";
 import { buildDoctorProfileSchema } from "../utils/structuredData";
 import ClinicLocationMap from "../components/ClinicLocationMap";
 import Doctor3DCard from "../components/Doctor3DCard";
-import { IconShieldCheck } from "../components/MedicalIcons";
+import {
+  IconShieldCheck,
+  IconGentleComfort,
+  DentalDigitalScannerIcon,
+  IconTrophyWarranty,
+} from "../components/MedicalIcons";
 import Interactive3DTilt from "../components/Interactive3DTilt";
 
 const About = ({ onOpenBooking }) => {
@@ -85,7 +90,7 @@ const About = ({ onOpenBooking }) => {
       },
     },
     {
-      icon: <span className="text-2xl">⚡</span>,
+      icon: <IconGentleComfort className="w-6 h-6 text-primary" />,
       title: {
         uz: "2 Bosqichli Og'riqsiz Anesteziya",
         ru: "Двухэтапная Анестезия Без Боли",
@@ -98,7 +103,7 @@ const About = ({ onOpenBooking }) => {
       },
     },
     {
-      icon: <span className="text-2xl">💻</span>,
+      icon: <DentalDigitalScannerIcon className="w-6 h-6 text-primary" />,
       title: {
         uz: "Raqamli Aniqlik (No Gips)",
         ru: "Цифровая Точность Без Слепков",
@@ -111,7 +116,7 @@ const About = ({ onOpenBooking }) => {
       },
     },
     {
-      icon: <span className="text-2xl">🏆</span>,
+      icon: <IconTrophyWarranty className="w-6 h-6 text-primary" />,
       title: {
         uz: "Rasmiy Kafolat va Qo'llab-quvvatlash",
         ru: "Официальная Гарантия",
@@ -228,9 +233,9 @@ const About = ({ onOpenBooking }) => {
               glare={true}
               className="h-full"
             >
-              <article className="h-full p-5 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 flex flex-col justify-between hover:border-brandAmethyst/40 hover:shadow-card transition-all duration-300">
+              <article className="h-full p-5 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 flex flex-col justify-between hover:border-brandAmethyst/40 hover:shadow-card transition-all duration-300 group">
                 <div>
-                  <div className="w-12 h-12 rounded-xl bg-white border border-brandLilac/30 flex items-center justify-center mb-4 shadow-xs">
+                  <div className="w-12 h-12 rounded-2xl bg-white border border-brandLilac/40 text-primary flex items-center justify-center mb-4 shadow-2xs group-hover:scale-105 transition-transform">
                     {val.icon}
                   </div>
                   <h3 className="font-bold text-sm sm:text-base text-slate-900 mb-2">

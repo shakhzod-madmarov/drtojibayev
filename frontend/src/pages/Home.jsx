@@ -15,6 +15,7 @@ import Interactive3DCostCalculator from "../components/Interactive3DCostCalculat
 import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
 import Interactive3DTilt from "../components/Interactive3DTilt";
+import { IconScannerOptical3D, IconAligners } from "../components/MedicalIcons";
 
 /* ═══════════════════════════════════════════════════════════════════
    HERO SECTION — DR. OLIMJON TOJIBAYEV
@@ -25,7 +26,7 @@ const HeroSection = ({ onOpenBooking }) => {
 
   const T = {
     uz: {
-      badge: "🔹️Цифровой Стоматолог · 7 Yillik Tajriba",
+      badge: "Цифровой Стоматолог · 7 Yillik Tajriba",
       doctorName: DOCTOR_INFO.name,
       specialtyTitle: "Raqamli Stomatolog · Implantolog · Ortodont",
       headline: "Raqamli Stomatologiya & Mukammal Tabassum Muhandisligi",
@@ -41,11 +42,11 @@ const HeroSection = ({ onOpenBooking }) => {
       stat3Label: "Suyak Integratsiyasi",
       stat4Num: "100%",
       stat4Label: "Og'riqsiz Muolaja",
-      floatBadge1: "🔬 3D Skaner (0.01mm)",
-      floatBadge2: "🦷 Shaffof Elayner & Implant",
+      floatBadge1: "3D Skaner (0.01mm)",
+      floatBadge2: "Shaffof Elayner & Implant",
     },
     ru: {
-      badge: "🔹️Цифровой Стоматолог · 7 Лет Опыта",
+      badge: "Цифровой Стоматолог · 7 Лет Опыта",
       doctorName: DOCTOR_INFO.name,
       specialtyTitle: "Цифровой Стоматолог · Имплантолог · Ортодонт",
       headline: "Цифровая Стоматология и Создание Вашей Идеальной Улыбки",
@@ -61,11 +62,11 @@ const HeroSection = ({ onOpenBooking }) => {
       stat3Label: "Приживаемость",
       stat4Num: "100%",
       stat4Label: "Без Боли и Страха",
-      floatBadge1: "🔬 3D Сканер (0.01мм)",
-      floatBadge2: "🦷 Элайнеры и Импланты",
+      floatBadge1: "3D Сканер (0.01мм)",
+      floatBadge2: "Элайнеры и Импланты",
     },
     en: {
-      badge: "🔹️Digital Dentist · 7+ Years Experience",
+      badge: "Digital Dentist · 7+ Years Experience",
       doctorName: DOCTOR_INFO.name,
       specialtyTitle: "Digital Dentist · Implantologist · Orthodontist",
       headline: "Precision Digital Dentistry & Flawless Aesthetic Smiles",
@@ -81,8 +82,8 @@ const HeroSection = ({ onOpenBooking }) => {
       stat3Label: "Bone Integration",
       stat4Num: "100%",
       stat4Label: "Painless & Gentle",
-      floatBadge1: "🔬 3D Scanner (0.01mm)",
-      floatBadge2: "🦷 Clear Aligners & Implants",
+      floatBadge1: "3D Scanner (0.01mm)",
+      floatBadge2: "Clear Aligners & Implants",
     },
   };
   const t = T[lang] || T.uz;
@@ -179,13 +180,17 @@ const HeroSection = ({ onOpenBooking }) => {
 
               {/* Floating 3D Badge Top-Left */}
               <div className="absolute -top-3.5 -left-2 sm:-left-4 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[11px] font-bold text-slate-800 flex items-center gap-2 animate-float-slow z-20 pointer-events-none">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-ping" />
+                <span className="w-5 h-5 rounded-lg bg-primary-light text-primary flex items-center justify-center shrink-0">
+                  <IconScannerOptical3D className="w-3.5 h-3.5" />
+                </span>
                 <span>{t.floatBadge1}</span>
               </div>
 
               {/* Floating 3D Badge Bottom-Right */}
-              <div className="absolute -bottom-3.5 -right-2 sm:-right-4 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[11px] font-bold text-primary flex items-center gap-1.5 animate-float-3d z-20 pointer-events-none">
-                <span className="w-2 h-2 rounded-full bg-primary" />
+              <div className="absolute -bottom-3.5 -right-2 sm:-right-4 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[11px] font-bold text-primary flex items-center gap-2 animate-float-3d z-20 pointer-events-none">
+                <span className="w-5 h-5 rounded-lg bg-primary text-white flex items-center justify-center shrink-0 shadow-2xs">
+                  <IconAligners className="w-3.5 h-3.5" />
+                </span>
                 <span>{t.floatBadge2}</span>
               </div>
 

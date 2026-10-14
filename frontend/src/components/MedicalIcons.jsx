@@ -235,3 +235,89 @@ export const IconBraces = DentalBracesIcon;
 export const IconAligners = DentalAlignersIcon;
 export const IconDentures = DentalDenturesIcon;
 export const IconDigitalScanner = DentalDigitalScannerIcon;
+
+export const IconPrecisionTarget = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="10" strokeOpacity="0.3" fill="currentColor" fillOpacity="0.08" />
+    <circle cx="12" cy="12" r="6" />
+    <circle cx="12" cy="12" r="2" fill="currentColor" />
+    <line x1="12" y1="2" x2="12" y2="5" />
+    <line x1="12" y1="19" x2="12" y2="22" />
+    <line x1="2" y1="12" x2="5" y2="12" />
+    <line x1="19" y1="12" x2="22" y2="12" />
+  </svg>
+);
+
+export const IconVirtualSmile = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="2" y="3" width="20" height="14" rx="2" stroke="currentColor" fill="currentColor" fillOpacity="0.08" />
+    <path d="M8 21h8M12 17v4" />
+    <path d="M7 9.5c1.5 2.5 8.5 2.5 10 0" strokeWidth="1.6" />
+    <circle cx="8" cy="8" r="0.75" fill="currentColor" />
+    <circle cx="16" cy="8" r="0.75" fill="currentColor" />
+  </svg>
+);
+
+export const IconScannerOptical3D = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M4 7V4h3M20 7V4h-3M4 17v3h3M20 17v3h-3" strokeWidth="2" />
+    <path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0Z" fill="currentColor" fillOpacity="0.12" />
+    <line x1="3" y1="12" x2="21" y2="12" strokeDasharray="2 2" strokeWidth="1.4" />
+    <circle cx="12" cy="12" r="1.5" fill="currentColor" />
+  </svg>
+);
+
+export const IconCadCamRobotics = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <rect x="4" y="4" width="16" height="16" rx="3" stroke="currentColor" fill="currentColor" fillOpacity="0.08" />
+    <circle cx="12" cy="12" r="3" />
+    <path d="M12 2v2M12 20v2M2 12h2M20 12h2" />
+    <path d="m17 7-1.5 1.5M8.5 15.5 7 17M17 17l-1.5-1.5M8.5 8.5 7 7" />
+  </svg>
+);
+
+export const IconDiamondGem = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M6 3h12l4 6-10 12L2 9l4-6z" fill="currentColor" fillOpacity="0.1" />
+    <path d="M12 21 7.5 9 12 3l4.5 6L12 21z" />
+    <path d="M2 9h20" />
+  </svg>
+);
+
+export const IconGentleComfort = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <circle cx="12" cy="12" r="9" stroke="currentColor" fill="currentColor" fillOpacity="0.08" />
+    <path d="M8 13.5c1.2 1.8 6.8 1.8 8 0" strokeLinecap="round" />
+    <path d="M9 9.5h.01M15 9.5h.01" strokeWidth="2.5" strokeLinecap="round" />
+  </svg>
+);
+
+export const IconEyeInvisible = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" fill="currentColor" fillOpacity="0.08" />
+    <circle cx="12" cy="12" r="3" />
+    <path d="M3 3l18 18" strokeWidth="1.8" />
+  </svg>
+);
+
+export const IconSpeedLightning = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" fill="currentColor" fillOpacity="0.12" />
+  </svg>
+);
+
+export const IconTrophyWarranty = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+    <path d="M6 4h12v7a6 6 0 0 1-12 0V4z" fill="currentColor" fillOpacity="0.1" />
+    <path d="M12 17v4M8 21h8" />
+  </svg>
+);
+
+export const IconRulerOrthodontic = ({ className = "w-5 h-5 text-primary" }) => (
+  <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+    <path d="M3 21 21 3M9 9l-2 2M13 5l-2 2M15 11l-2 2M19 7l-2 2" strokeWidth="1.8" />
+    <rect x="3" y="15" width="6" height="6" rx="1.5" stroke="currentColor" fill="currentColor" fillOpacity="0.15" />
+  </svg>
+);
+
