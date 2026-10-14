@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { useBooking } from "../context/BookingContext";
+import Interactive3DTilt from "./Interactive3DTilt";
 
 export const Interactive3DCostCalculator = () => {
   const { lang } = useLanguage();
@@ -151,101 +152,109 @@ export const Interactive3DCostCalculator = () => {
           </p>
         </div>
 
-        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
-          {/* Step 1: Service Pills */}
-          <div className="mb-6">
-            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
-              {labels.step1}
-            </label>
-            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
-              {Object.values(servicesData).map((svc) => (
-                <button
-                  key={svc.id}
-                  type="button"
-                  onClick={() => handleServiceChange(svc.id)}
-                  className={`px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all text-center ${
-                    selectedServiceId === svc.id
-                      ? "bg-primary text-white shadow-purple scale-102"
-                      : "bg-[#FAF7FD] text-slate-700 hover:bg-brandLilac-light border border-brandLilac/30"
-                  }`}
-                >
-                  {svc.title[lang]}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* Step 2: Quantity Slider / Buttons */}
-          <div className="mb-8 p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30">
-            <div className="flex items-center justify-between mb-2">
-              <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
-                {labels.step2}
+        <Interactive3DTilt
+          maxTilt={4}
+          perspective={1400}
+          scale={1.01}
+          glare={false}
+          className="w-full"
+        >
+          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+            {/* Step 1: Service Pills */}
+            <div className="mb-6">
+              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
+                {labels.step1}
               </label>
-              <span className="text-sm font-bold text-primary">
-                {quantity} {current.unitLabel[lang]}
-              </span>
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+                {Object.values(servicesData).map((svc) => (
+                  <button
+                    key={svc.id}
+                    type="button"
+                    onClick={() => handleServiceChange(svc.id)}
+                    className={`px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all text-center ${
+                      selectedServiceId === svc.id
+                        ? "bg-primary text-white shadow-purple scale-102"
+                        : "bg-[#FAF7FD] text-slate-700 hover:bg-brandLilac-light border border-brandLilac/30"
+                    }`}
+                  >
+                    {svc.title[lang]}
+                  </button>
+                ))}
+              </div>
             </div>
 
-            <div className="flex items-center gap-4">
+            {/* Step 2: Quantity Slider / Buttons */}
+            <div className="mb-8 p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30">
+              <div className="flex items-center justify-between mb-2">
+                <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                  {labels.step2}
+                </label>
+                <span className="text-sm font-bold text-primary">
+                  {quantity} {current.unitLabel[lang]}
+                </span>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <button
+                  type="button"
+                  onClick={() => setQuantity(Math.max(current.min, quantity - 1))}
+                  className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+                >
+                  -
+                </button>
+                <input
+                  type="range"
+                  min={current.min}
+                  max={current.max}
+                  value={quantity}
+                  onChange={(e) => setQuantity(Number(e.target.value))}
+                  className="w-full accent-primary h-2 bg-purple-200 rounded-lg cursor-pointer"
+                />
+                <button
+                  type="button"
+                  onClick={() => setQuantity(Math.min(current.max, quantity + 1))}
+                  className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+
+            {/* Summary Details Grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-2xl bg-purple-50/60 border border-brandLilac/30 text-xs mb-6">
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
+                <span className="text-slate-400 block text-[11px]">{labels.visits}</span>
+                <span className="font-bold text-slate-900 mt-0.5 block">{current.visits[lang]}</span>
+              </div>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
+                <span className="text-slate-400 block text-[11px]">{labels.duration}</span>
+                <span className="font-bold text-slate-900 mt-0.5 block">{current.durationPerUnit[lang]}</span>
+              </div>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
+                <span className="text-slate-400 block text-[11px]">{labels.warranty}</span>
+                <span className="font-bold text-emerald-700 mt-0.5 block">{current.warranty[lang]}</span>
+              </div>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
+                <span className="text-slate-400 block text-[11px]">{labels.tech}</span>
+                <span className="font-bold text-primary mt-0.5 block">{current.tech[lang]}</span>
+              </div>
+            </div>
+
+            {/* Action CTA */}
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p className="text-[11px] text-slate-500 text-center sm:text-left">
+                ℹ {labels.individualNote}
+              </p>
               <button
                 type="button"
-                onClick={() => setQuantity(Math.max(current.min, quantity - 1))}
-                className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+                onClick={() => openBooking({ service: current.id, note: `${quantity} ${current.unitLabel.uz}` })}
+                className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-brandPurple to-brandAmethyst hover:scale-102 active:scale-98 shadow-purple transition-all"
               >
-                -
-              </button>
-              <input
-                type="range"
-                min={current.min}
-                max={current.max}
-                value={quantity}
-                onChange={(e) => setQuantity(Number(e.target.value))}
-                className="w-full accent-primary h-2 bg-purple-200 rounded-lg cursor-pointer"
-              />
-              <button
-                type="button"
-                onClick={() => setQuantity(Math.min(current.max, quantity + 1))}
-                className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
-              >
-                +
+                {labels.bookBtn}
               </button>
             </div>
           </div>
-
-          {/* Summary Details Grid */}
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-2xl bg-purple-50/60 border border-brandLilac/30 text-xs mb-6">
-            <div>
-              <span className="text-slate-400 block text-[11px]">{labels.visits}</span>
-              <span className="font-bold text-slate-900 mt-0.5 block">{current.visits[lang]}</span>
-            </div>
-            <div>
-              <span className="text-slate-400 block text-[11px]">{labels.duration}</span>
-              <span className="font-bold text-slate-900 mt-0.5 block">{current.durationPerUnit[lang]}</span>
-            </div>
-            <div>
-              <span className="text-slate-400 block text-[11px]">{labels.warranty}</span>
-              <span className="font-bold text-emerald-700 mt-0.5 block">{current.warranty[lang]}</span>
-            </div>
-            <div>
-              <span className="text-slate-400 block text-[11px]">{labels.tech}</span>
-              <span className="font-bold text-primary mt-0.5 block">{current.tech[lang]}</span>
-            </div>
-          </div>
-
-          {/* Action CTA */}
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            <p className="text-[11px] text-slate-500 text-center sm:text-left">
-              ℹ {labels.individualNote}
-            </p>
-            <button
-              type="button"
-              onClick={() => openBooking({ service: current.id, note: `${quantity} ${current.unitLabel.uz}` })}
-              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-brandPurple to-brandAmethyst hover:scale-102 active:scale-98 shadow-purple transition-all"
-            >
-              {labels.bookBtn}
-            </button>
-          </div>
-        </div>
+        </Interactive3DTilt>
       </div>
     </section>
   );

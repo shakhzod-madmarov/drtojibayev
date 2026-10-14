@@ -1,5 +1,6 @@
 import React from "react";
 import { useLanguage } from "../context/LanguageContext";
+import Interactive3DTilt from "./Interactive3DTilt";
 
 export const DigitalDentistryFeatures = () => {
   const { lang } = useLanguage();
@@ -10,6 +11,36 @@ export const DigitalDentistryFeatures = () => {
       title: "Nega aynan Raqamli Stomatologiya?",
       subtitle:
         "Eski uslubdagi noqulay gips qoliplar va noaniqliklar o'rniga, Dr. Olimjon Tojibayev zamonaviy kompyuter texnologiyalari orqali 100% aniq va og'riqsiz natijaga erishadi.",
+      workflowBadge: "RAQAMLI PROTOKOL",
+      workflowTitle: "Dr. Olimjon Tojibayevning 4 Bosqichli Raqamli Protokoli",
+      workflowSubtitle:
+        "Diagnostikadan to yakuniy natijagacha to'liq kompyuter nazorati ostida amalga oshiriladi.",
+      steps: [
+        {
+          step: "01",
+          icon: "🔬",
+          title: "3D Skanerlash",
+          desc: "60 soniyada butun jag'ning mikron aniqlikdagi raqamli 3D modeli olinadi.",
+        },
+        {
+          step: "02",
+          icon: "💻",
+          title: "AI Tabassum Dizayni",
+          desc: "Yuz anatomiyasiga mos kelajakdagi tabassum 3D ekranda modellashtiriladi.",
+        },
+        {
+          step: "03",
+          icon: "🤖",
+          title: "CAD/CAM Ishlab Chiqarish",
+          desc: "Robotik frezerlash va 3D printer yordamida o'ta aniq shablon va konstruktsiyalar yaratiladi.",
+        },
+        {
+          step: "04",
+          icon: "✨",
+          title: "Og'riqsiz O'rnatish",
+          desc: "Navigatsion shablon bo'yicha 100% og'riqsiz va ideal burchakda o'rnatiladi.",
+        },
+      ],
       features: [
         {
           icon: "🔬",
@@ -42,6 +73,36 @@ export const DigitalDentistryFeatures = () => {
       title: "Почему именно Цифровая Стоматология?",
       subtitle:
         "Вместо неприятных слепков и долгого ожидания, Д-р Олимжон Тожибаев применяет передовые компьютерные технологии для абсолютно точного и безболезненного лечения.",
+      workflowBadge: "ЦИФРОВОЙ ПРОТОКОЛ",
+      workflowTitle: "4-Шаговый Цифровой Протокол Д-ра Тожибаева",
+      workflowSubtitle:
+        "Полный компьютерный контроль от первого скана челюсти до вашей финальной идеальной улыбки.",
+      steps: [
+        {
+          step: "01",
+          icon: "🔬",
+          title: "3D Сканирование",
+          desc: "Оптический 3D снимок всей челюсти за 60 секунд без рвотного рефлекса и слепков.",
+        },
+        {
+          step: "02",
+          icon: "💻",
+          title: "Виртуальный Дизайн",
+          desc: "3D моделирование формы и оттенка зубов с учетом индивидуальных черт лица.",
+        },
+        {
+          step: "03",
+          icon: "🤖",
+          title: "CAD/CAM Фрезеровка",
+          desc: "Роботизированное изготовление коронок и 3D хирургических шаблонов с точностью до микрона.",
+        },
+        {
+          step: "04",
+          icon: "✨",
+          title: "Безболезненная Установка",
+          desc: "100% безопасная и безболезненная фиксация с идеальным прилеганием.",
+        },
+      ],
       features: [
         {
           icon: "🔬",
@@ -74,6 +135,36 @@ export const DigitalDentistryFeatures = () => {
       title: "Why Choose Digital Dentistry?",
       subtitle:
         "Say goodbye to messy putty impressions. Dr. Olimjon Tojibayev uses cutting-edge 3D computer technology for painless precision and predictable results.",
+      workflowBadge: "DIGITAL PROTOCOL",
+      workflowTitle: "Dr. Tojibayev's 4-Step Digital Workflow",
+      workflowSubtitle:
+        "End-to-end computer-guided precision from initial digital scan to your confident smile.",
+      steps: [
+        {
+          step: "01",
+          icon: "🔬",
+          title: "3D Intraoral Scan",
+          desc: "High-precision 3D scan of your dental arches captured in 60 seconds with micron precision.",
+        },
+        {
+          step: "02",
+          icon: "💻",
+          title: "AI Smile Simulation",
+          desc: "Digital smile design tailored to your unique facial proportions on screen before treatment.",
+        },
+        {
+          step: "03",
+          icon: "🤖",
+          title: "CAD/CAM Robotic Milling",
+          desc: "Surgical templates and ceramic crowns crafted with automated micron tolerances.",
+        },
+        {
+          step: "04",
+          icon: "✨",
+          title: "Painless Delivery",
+          desc: "Smooth, comfortable guided placement with guaranteed long-lasting fit and aesthetics.",
+        },
+      ],
       features: [
         {
           icon: "🔬",
@@ -104,8 +195,12 @@ export const DigitalDentistryFeatures = () => {
   }[lang] || content.uz;
 
   return (
-    <section className="w-full py-14 sm:py-20 relative">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full py-14 sm:py-20 relative overflow-hidden">
+      {/* Background glow and subtle cyber grid */}
+      <div className="absolute inset-0 digital-grid-pattern opacity-30 pointer-events-none" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        {/* Section Heading */}
         <div className="text-center max-w-2xl mx-auto mb-14">
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-3 uppercase">
             {content.badge}
@@ -118,32 +213,80 @@ export const DigitalDentistryFeatures = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {content.features.map((feat, idx) => (
-            <div
-              key={idx}
-              className="group p-6 sm:p-7 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between"
-            >
-              <div>
-                <div className="w-12 h-12 rounded-2xl bg-primary-light border border-brandLilac/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
-                  {feat.icon}
+        {/* 4-Step Interactive Digital Workflow Strip */}
+        <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-white/95 backdrop-blur-md border border-brandLilac/40 shadow-luxury">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 pb-4 border-b border-brandLilac/20 gap-2">
+            <div>
+              <span className="text-[11px] font-bold text-brandAmethyst tracking-wider uppercase block">
+                {content.workflowBadge}
+              </span>
+              <h3 className="text-lg sm:text-xl font-serif font-bold text-slate-900">
+                {content.workflowTitle}
+              </h3>
+            </div>
+            <span className="px-3 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-brandLilac/40">
+              Smile Dental Group · Andijon
+            </span>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 relative">
+            {content.steps.map((st, i) => (
+              <div
+                key={i}
+                className="relative p-5 rounded-2xl bg-purple-50/50 hover:bg-white border border-brandLilac/30 hover:border-brandAmethyst/40 hover:shadow-card transition-all duration-300 group"
+              >
+                <div className="flex items-center justify-between mb-3">
+                  <span className="w-8 h-8 rounded-xl bg-primary text-white font-mono text-xs font-bold flex items-center justify-center shadow-xs">
+                    {st.step}
+                  </span>
+                  <span className="text-2xl group-hover:scale-110 transition-transform">
+                    {st.icon}
+                  </span>
                 </div>
-                <span className="inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider text-primary bg-primary-light mb-2">
-                  {feat.tag}
-                </span>
-                <h3 className="text-base sm:text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">
-                  {feat.title}
-                </h3>
-                <p className="text-xs sm:text-sm text-slate-600 mt-2.5 leading-relaxed">
-                  {feat.desc}
+                <h4 className="text-sm font-bold text-slate-900 group-hover:text-primary transition-colors mb-1">
+                  {st.title}
+                </h4>
+                <p className="text-xs text-slate-600 leading-relaxed">
+                  {st.desc}
                 </p>
               </div>
+            ))}
+          </div>
+        </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-primary font-bold">
-                <span>Smile Dental Group</span>
-                <span className="text-brandAmethyst">✓</span>
+        {/* 4 Interactive 3D Tilt Feature Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {content.features.map((feat, idx) => (
+            <Interactive3DTilt
+              key={idx}
+              maxTilt={8}
+              perspective={900}
+              scale={1.03}
+              glare={true}
+              className="h-full"
+            >
+              <div className="h-full p-6 sm:p-7 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between relative overflow-hidden">
+                <div>
+                  <div className="w-12 h-12 rounded-2xl bg-primary-light border border-brandLilac/30 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform">
+                    {feat.icon}
+                  </div>
+                  <span className="inline-block px-2.5 py-0.5 rounded-md text-[10px] font-bold uppercase tracking-wider text-primary bg-primary-light mb-2">
+                    {feat.tag}
+                  </span>
+                  <h3 className="text-base sm:text-lg font-bold text-slate-900 hover:text-primary transition-colors">
+                    {feat.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-slate-600 mt-2.5 leading-relaxed">
+                    {feat.desc}
+                  </p>
+                </div>
+
+                <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-primary font-bold">
+                  <span>Smile Dental Group</span>
+                  <span className="text-brandAmethyst">✓</span>
+                </div>
               </div>
-            </div>
+            </Interactive3DTilt>
           ))}
         </div>
       </div>

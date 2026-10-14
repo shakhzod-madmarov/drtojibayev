@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { useBooking } from "../context/BookingContext";
+import Interactive3DTilt from "./Interactive3DTilt";
 
 export const SmileAssessmentWizard = () => {
   const { lang } = useLanguage();
@@ -116,7 +117,14 @@ export const SmileAssessmentWizard = () => {
           </p>
         </div>
 
-        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+        <Interactive3DTilt
+          maxTilt={4}
+          perspective={1400}
+          scale={1.01}
+          glare={false}
+          className="w-full"
+        >
+          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
           {/* Step Indicators */}
           <div className="flex items-center justify-center gap-2 mb-8">
             {[1, 2, 3].map((s) => (
@@ -217,7 +225,8 @@ export const SmileAssessmentWizard = () => {
               </div>
             </div>
           )}
-        </div>
+          </div>
+        </Interactive3DTilt>
       </div>
     </section>
   );

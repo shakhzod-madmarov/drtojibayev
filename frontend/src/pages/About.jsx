@@ -8,6 +8,7 @@ import { buildDoctorProfileSchema } from "../utils/structuredData";
 import ClinicLocationMap from "../components/ClinicLocationMap";
 import Doctor3DCard from "../components/Doctor3DCard";
 import { IconShieldCheck } from "../components/MedicalIcons";
+import Interactive3DTilt from "../components/Interactive3DTilt";
 
 const About = ({ onOpenBooking }) => {
   const { lang } = useLanguage();
@@ -198,19 +199,28 @@ const About = ({ onOpenBooking }) => {
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((val, idx) => (
-            <div key={idx} className="p-5 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 flex flex-col justify-between">
-              <div>
-                <div className="w-12 h-12 rounded-xl bg-white border border-brandLilac/30 flex items-center justify-center mb-4 shadow-xs">
-                  {val.icon}
+            <Interactive3DTilt
+              key={idx}
+              maxTilt={8}
+              perspective={900}
+              scale={1.03}
+              glare={true}
+              className="h-full"
+            >
+              <div className="h-full p-5 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 flex flex-col justify-between hover:border-brandAmethyst/40 hover:shadow-card transition-all duration-300">
+                <div>
+                  <div className="w-12 h-12 rounded-xl bg-white border border-brandLilac/30 flex items-center justify-center mb-4 shadow-xs">
+                    {val.icon}
+                  </div>
+                  <h3 className="font-bold text-sm sm:text-base text-slate-900 mb-2">
+                    {val.title[lang]}
+                  </h3>
+                  <p className="text-xs text-slate-600 leading-relaxed">
+                    {val.desc[lang]}
+                  </p>
                 </div>
-                <h3 className="font-bold text-sm sm:text-base text-slate-900 mb-2">
-                  {val.title[lang]}
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  {val.desc[lang]}
-                </p>
               </div>
-            </div>
+            </Interactive3DTilt>
           ))}
         </div>
       </div>

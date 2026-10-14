@@ -3,6 +3,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { DOCTOR_INFO } from "../constants/doctor";
 import { assets } from "../assets/assets";
 import { IconTelegram, IconInstagram, IconShieldCheck } from "./MedicalIcons";
+import Interactive3DTilt from "./Interactive3DTilt";
 
 export const Doctor3DCard = () => {
   const { lang } = useLanguage();
@@ -11,6 +12,7 @@ export const Doctor3DCard = () => {
   const labels = {
     uz: {
       badge: "SHIFOKOR PROFILI",
+      interactiveBadge: "3D Taktil Vizitka",
       heading: "Dr. Olimjon Tojibayev",
       subheading: "Цифровой Стоматолог · Smile Dental Group",
       experience: "7+ Yillik Klinik Tajriba",
@@ -25,6 +27,7 @@ export const Doctor3DCard = () => {
     },
     ru: {
       badge: "ПРОФИЛЬ ВРАЧА",
+      interactiveBadge: "3D Тактильная Визитка",
       heading: "Д-р Олимжон Тожибаев",
       subheading: "Цифровой Стоматолог · Smile Dental Group",
       experience: "7+ Лет Клинической Практики",
@@ -39,6 +42,7 @@ export const Doctor3DCard = () => {
     },
     en: {
       badge: "DOCTOR PROFILE",
+      interactiveBadge: "3D Tactile Card",
       heading: "Dr. Olimjon Tojibayev",
       subheading: "Digital Dentist · Smile Dental Group",
       experience: "7+ Years Clinical Excellence",
@@ -54,47 +58,69 @@ export const Doctor3DCard = () => {
   }[lang] || labels.uz;
 
   return (
-    <div className="w-full p-6 sm:p-8 lg:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-        {/* Left: 3D Flippable Business Card */}
+    <div className="w-full p-6 sm:p-8 lg:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury relative overflow-hidden">
+      {/* Subtle digital background grid */}
+      <div className="absolute inset-0 digital-grid-pattern opacity-40 pointer-events-none" />
+
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+        {/* Left: 3D Flippable Business Card with Interactive Tilt */}
         <div className="lg:col-span-6 flex flex-col items-center">
-          <div
-            className="w-full max-w-sm sm:max-w-md aspect-[16/10] relative cursor-pointer select-none perspective-1000 group"
-            onClick={() => setIsFlipped(!isFlipped)}
-            title="Click to flip business card"
+          <Interactive3DTilt
+            maxTilt={14}
+            perspective={1100}
+            scale={1.03}
+            glare={true}
+            className="w-full max-w-sm sm:max-w-md aspect-[16/10] cursor-pointer select-none"
           >
             <div
-              className={`w-full h-full relative transition-transform duration-700 preserve-3d rounded-2xl shadow-luxury-lg border border-brandLilac/40 overflow-hidden ${
-                isFlipped ? "[transform:rotateY(180deg)]" : ""
-              }`}
+              className="w-full h-full relative"
+              onClick={() => setIsFlipped(!isFlipped)}
+              title="Click to flip business card"
             >
-              {/* Card Front */}
-              <div className="absolute inset-0 backface-hidden bg-white flex items-center justify-center">
-                <img
-                  src={assets.businessCardFront}
-                  alt="Dr. Olimjon Tojibayev Vizitka - Oldi"
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <div
+                className={`w-full h-full relative transition-transform duration-700 preserve-3d rounded-2xl shadow-luxury-lg border-2 border-brandLilac/50 overflow-hidden ${
+                  isFlipped ? "[transform:rotateY(180deg)]" : ""
+                }`}
+              >
+                {/* Laser Scanning Beam Effect */}
+                <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-brandLilac to-transparent shadow-[0_0_14px_#7F5D99] animate-laser-scan pointer-events-none z-20 opacity-80" />
 
-              {/* Card Back */}
-              <div className="absolute inset-0 backface-hidden [transform:rotateY(180deg)] bg-white flex items-center justify-center">
-                <img
-                  src={assets.businessCardBack}
-                  alt="Dr. Olimjon Tojibayev Vizitka - Xizmatlar"
-                  className="w-full h-full object-cover"
-                />
+                {/* Card Front */}
+                <div className="absolute inset-0 backface-hidden bg-white flex items-center justify-center">
+                  <img
+                    src={assets.businessCardFront}
+                    alt="Dr. Olimjon Tojibayev Vizitka - Oldi"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1 shadow-xs">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>{labels.interactiveBadge}</span>
+                  </div>
+                </div>
+
+                {/* Card Back */}
+                <div className="absolute inset-0 backface-hidden [transform:rotateY(180deg)] bg-white flex items-center justify-center">
+                  <img
+                    src={assets.businessCardBack}
+                    alt="Dr. Olimjon Tojibayev Vizitka - Xizmatlar"
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1 shadow-xs">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                    <span>Smile Dental Group</span>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </Interactive3DTilt>
 
           {/* Flip Button Control */}
           <button
             type="button"
             onClick={() => setIsFlipped(!isFlipped)}
-            className="mt-3.5 inline-flex items-center gap-2 text-xs font-bold text-primary bg-primary-light hover:bg-brandAmethyst-light px-4 py-1.5 rounded-full border border-brandLilac/40 transition-colors"
+            className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-primary bg-primary-light hover:bg-brandAmethyst-light px-4 py-2 rounded-full border border-brandLilac/40 shadow-xs transition-all hover:scale-102 active:scale-98"
           >
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-primary animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
             <span>{labels.flipPrompt}</span>

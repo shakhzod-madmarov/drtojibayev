@@ -9,6 +9,7 @@ import { buildServicesCatalogSchema } from "../utils/structuredData";
 import Interactive3DCostCalculator from "../components/Interactive3DCostCalculator";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
 import { IconShieldCheck } from "../components/MedicalIcons";
+import Interactive3DTilt from "../components/Interactive3DTilt";
 
 const Services = ({ onOpenBooking }) => {
   const { lang } = useLanguage();
@@ -103,61 +104,67 @@ const Services = ({ onOpenBooking }) => {
       {/* Services Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {filteredServices.map((service) => (
-          <div
+          <Interactive3DTilt
             key={service.id}
-            className="group p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between"
+            maxTilt={6}
+            perspective={950}
+            scale={1.02}
+            glare={true}
+            className="h-full"
           >
-            <div>
-              <div className="rounded-2xl overflow-hidden aspect-[16/10] mb-5 relative">
-                <img
-                  src={service.image}
-                  alt={service.title[lang]}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                />
-                <div className="absolute top-3 left-3">
-                  <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-white/95 text-primary backdrop-blur-xs shadow-xs">
-                    {service.featurePill[lang]}
-                  </span>
+            <div className="h-full p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between">
+              <div>
+                <div className="rounded-2xl overflow-hidden aspect-[16/10] mb-5 relative">
+                  <img
+                    src={service.image}
+                    alt={service.title[lang]}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute top-3 left-3">
+                    <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-white/95 text-primary backdrop-blur-xs shadow-xs">
+                      {service.featurePill[lang]}
+                    </span>
+                  </div>
                 </div>
+
+                <span className="text-[11px] font-bold text-brandAmethyst uppercase tracking-wider block mb-1">
+                  {service.category[lang]}
+                </span>
+                <h2 className="text-lg font-bold text-slate-900 hover:text-primary transition-colors">
+                  {service.title[lang]}
+                </h2>
+                <p className="text-xs sm:text-sm text-slate-600 mt-2 line-clamp-3 leading-relaxed">
+                  {service.shortDesc[lang]}
+                </p>
+
+                {/* Highlights */}
+                <ul className="mt-4 space-y-1.5 text-xs text-slate-600">
+                  {service.highlights[lang]?.slice(0, 2).map((hl, i) => (
+                    <li key={i} className="flex items-start gap-2">
+                      <span className="text-primary font-bold">✓</span>
+                      <span>{hl}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <span className="text-[11px] font-bold text-brandAmethyst uppercase tracking-wider block mb-1">
-                {service.category[lang]}
-              </span>
-              <h2 className="text-lg font-bold text-slate-900 group-hover:text-primary transition-colors">
-                {service.title[lang]}
-              </h2>
-              <p className="text-xs sm:text-sm text-slate-600 mt-2 line-clamp-3 leading-relaxed">
-                {service.shortDesc[lang]}
-              </p>
-
-              {/* Highlights */}
-              <ul className="mt-4 space-y-1.5 text-xs text-slate-600">
-                {service.highlights[lang]?.slice(0, 2).map((hl, i) => (
-                  <li key={i} className="flex items-start gap-2">
-                    <span className="text-primary font-bold">✓</span>
-                    <span>{hl}</span>
-                  </li>
-                ))}
-              </ul>
+              <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
+                <Link
+                  to={to(`/services/${service.id}`)}
+                  className="text-xs font-bold text-slate-600 hover:text-primary transition-colors"
+                >
+                  {lang === "ru" ? "Подробнее →" : lang === "en" ? "Learn more →" : "Batafsil →"}
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => onOpenBooking(service.id)}
+                  className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-brandPurple to-brandAmethyst hover:scale-102 active:scale-98 transition-all shadow-xs"
+                >
+                  {lang === "ru" ? "Записаться" : lang === "en" ? "Book Visit" : "Qabulga yozilish"}
+                </button>
+              </div>
             </div>
-
-            <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-              <Link
-                to={to(`/services/${service.id}`)}
-                className="text-xs font-bold text-slate-600 hover:text-primary transition-colors"
-              >
-                {lang === "ru" ? "Подробнее →" : lang === "en" ? "Learn more →" : "Batafsil →"}
-              </Link>
-              <button
-                type="button"
-                onClick={() => onOpenBooking(service.id)}
-                className="px-4 py-2 rounded-xl text-xs font-bold text-white bg-gradient-to-r from-brandPurple to-brandAmethyst hover:opacity-95 transition-opacity shadow-xs"
-              >
-                {lang === "ru" ? "Записаться" : lang === "en" ? "Book Visit" : "Qabulga yozilish"}
-              </button>
-            </div>
-          </div>
+          </Interactive3DTilt>
         ))}
       </div>
 
