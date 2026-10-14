@@ -1,0 +1,254 @@
+import React, { useState } from "react";
+import { useLanguage } from "../context/LanguageContext";
+import { useBooking } from "../context/BookingContext";
+
+export const Interactive3DCostCalculator = () => {
+  const { lang } = useLanguage();
+  const { openBooking } = useBooking();
+
+  const [selectedServiceId, setSelectedServiceId] = useState("implant");
+  const [quantity, setQuantity] = useState(1);
+
+  const servicesData = {
+    implant: {
+      id: "implant",
+      title: { uz: "Dental Implantatsiya", ru: "Имплантация Зубов", en: "Dental Implants" },
+      unitLabel: { uz: "ta tish", ru: "зуб(а)", en: "tooth/teeth" },
+      min: 1,
+      max: 12,
+      defaultQty: 1,
+      durationPerUnit: { uz: "20 daqiqa", ru: "20 минут", en: "20 mins" },
+      visits: { uz: "2-3 qabul", ru: "2-3 визита", en: "2-3 visits" },
+      warranty: { uz: "Umrbod kafolat", ru: "Пожизненная гарантия", en: "Lifetime warranty" },
+      tech: { uz: "Premium Biotitan", ru: "Премиум Биотитан", en: "Premium Biotinium" },
+    },
+    aligners: {
+      id: "aligners",
+      title: { uz: "Shaffof Elaynerlar", ru: "Прозрачные Элайнеры", en: "Clear Aligners" },
+      unitLabel: { uz: "jag'", ru: "челюсть", en: "arch(es)" },
+      min: 1,
+      max: 2,
+      defaultQty: 2,
+      durationPerUnit: { uz: "Har 2 haftada kapa", ru: "Смена кап каждые 2 недели", en: "Tray change every 2 wks" },
+      visits: { uz: "1 oyda 1 marta nazorat", ru: "1 раз в месяц контроль", en: "1 monthly checkup" },
+      warranty: { uz: "3D kafolatlangan prikus", ru: "3D гарантия прикуса", en: "3D bite warranty" },
+      tech: { uz: "Ko'rinmas polimer", ru: "Невидимый полимер", en: "Invisible polymer" },
+    },
+    braces: {
+      id: "braces",
+      title: { uz: "Breket Tizimlari", ru: "Брекет-Системы", en: "Braces Systems" },
+      unitLabel: { uz: "jag'", ru: "челюсть", en: "arch(es)" },
+      min: 1,
+      max: 2,
+      defaultQty: 2,
+      durationPerUnit: { uz: "O'rtacha 12-18 oy", ru: "В среднем 12-18 мес", en: "Avg 12-18 months" },
+      visits: { uz: "Har 4-5 haftada aktivatsiya", ru: "Активация каждые 4-5 недель", en: "Activation every 4-5 wks" },
+      warranty: { uz: "To'liq prikus kafolati", ru: "Гарантия ровного ряда", en: "Occlusion warranty" },
+      tech: { uz: "Metall / Keramika / Sapfir", ru: "Металл / Керамика", en: "Metal / Ceramic" },
+    },
+    crowns: {
+      id: "crowns",
+      title: { uz: "Tsirkon Koronkalar", ru: "Циркониевые Коронки", en: "Zirconia Crowns" },
+      unitLabel: { uz: "ta tish", ru: "зуб(а)", en: "tooth/teeth" },
+      min: 1,
+      max: 16,
+      defaultQty: 2,
+      durationPerUnit: { uz: "3-5 kun", ru: "3-5 дней", en: "3-5 days" },
+      visits: { uz: "2 qabul", ru: "2 визита", en: "2 visits" },
+      warranty: { uz: "15+ yillik chidamlilik", ru: "Служба 15+ лет", en: "15+ years durability" },
+      tech: { uz: "CAD/CAM Robotik frezerlash", ru: "CAD/CAM фрезеровка", en: "CAD/CAM milling" },
+    },
+    veneers: {
+      id: "veneers",
+      title: { uz: "Keramik Vinirlar", ru: "Керамические Виниры", en: "Ceramic Veneers" },
+      unitLabel: { uz: "ta tish", ru: "зуб(а)", en: "tooth/teeth" },
+      min: 2,
+      max: 20,
+      defaultQty: 6,
+      durationPerUnit: { uz: "5-7 kun", ru: "5-7 дней", en: "5-7 days" },
+      visits: { uz: "2 qabul", ru: "2 визита", en: "2 visits" },
+      warranty: { uz: "10-15 yil porlash", ru: "10-15 лет белизны", en: "10-15 years shine" },
+      tech: { uz: "E-max Press Keramika", ru: "E-max Пресс-керамика", en: "E-max Press Ceramic" },
+    },
+    whitening: {
+      id: "whitening",
+      title: { uz: "Tish Oqartirish", ru: "Отбеливание Зубов", en: "Teeth Whitening" },
+      unitLabel: { uz: "seans", ru: "сеанс", en: "session" },
+      min: 1,
+      max: 2,
+      defaultQty: 1,
+      durationPerUnit: { uz: "45 daqiqa", ru: "45 минут", en: "45 mins" },
+      visits: { uz: "1 qabul", ru: "1 визит", en: "1 visit" },
+      warranty: { uz: "6-8 ton oqlik", ru: "На 6-8 тонов светлее", en: "6-8 shades lighter" },
+      tech: { uz: "AirFlow & Professional Gel", ru: "AirFlow и Проф. Гель", en: "AirFlow & Pro Gel" },
+    },
+  };
+
+  const current = servicesData[selectedServiceId] || servicesData.implant;
+
+  const handleServiceChange = (id) => {
+    setSelectedServiceId(id);
+    setQuantity(servicesData[id].defaultQty);
+  };
+
+  const labels = {
+    uz: {
+      badge: "INTERAKTIV KALKULYATOR",
+      title: "Muolaja Parametrlari va Muddatini Hisoblash",
+      subtitle: "Qiziqtirgan xizmatni tanlang, tishlar sonini belgilang va davolash muddatini oldindan bilib oling.",
+      step1: "1. Xizmat turini tanlang:",
+      step2: "2. Miqdorini belgilang:",
+      resultTitle: "Davolash rejasi ma'lumotlari:",
+      visits: "Klinikaga tashrif:",
+      duration: "Muolaja vaqti:",
+      warranty: "Kafolat:",
+      tech: "Qo'llaniladigan texnologiya:",
+      bookBtn: "Ushbu muolajaga qabulga yozilish →",
+      individualNote: "Har bir bemorning holati individual 3D diagnostika orqali aniqlanadi.",
+    },
+    ru: {
+      badge: "ИНТЕРАКТИВНЫЙ КАЛЬКУЛЯТОР",
+      title: "Расчёт параметров и сроков лечения",
+      subtitle: "Выберите интересующую процедуру, укажите количество и узнайте подробные параметры лечения.",
+      step1: "1. Выберите услугу:",
+      step2: "2. Укажите количество:",
+      resultTitle: "Параметры плана лечения:",
+      visits: "Визиты в клинику:",
+      duration: "Время процедуры:",
+      warranty: "Гарантия:",
+      tech: "Используемая технология:",
+      bookBtn: "Записаться на эту процедуру →",
+      individualNote: "Точный план и стоимость определяются на персональной 3D диагностике.",
+    },
+    en: {
+      badge: "INTERACTIVE CALCULATOR",
+      title: "Treatment Timeline & Specifications",
+      subtitle: "Select a procedure, adjust the quantity, and explore the estimated treatment scope.",
+      step1: "1. Choose service:",
+      step2: "2. Set quantity:",
+      resultTitle: "Treatment Plan Overview:",
+      visits: "Clinic visits:",
+      duration: "Procedure time:",
+      warranty: "Warranty:",
+      tech: "Technology used:",
+      bookBtn: "Book Appointment for this Treatment →",
+      individualNote: "Exact timeline and customized plan are established during your 3D digital consultation.",
+    },
+  }[lang] || labels.uz;
+
+  return (
+    <section className="w-full py-12 sm:py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6">
+        <div className="text-center max-w-xl mx-auto mb-10">
+          <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-2 uppercase">
+            {labels.badge}
+          </span>
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
+            {labels.title}
+          </h2>
+          <p className="text-xs sm:text-sm text-slate-600 mt-2">
+            {labels.subtitle}
+          </p>
+        </div>
+
+        <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+          {/* Step 1: Service Pills */}
+          <div className="mb-6">
+            <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
+              {labels.step1}
+            </label>
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              {Object.values(servicesData).map((svc) => (
+                <button
+                  key={svc.id}
+                  type="button"
+                  onClick={() => handleServiceChange(svc.id)}
+                  className={`px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all text-center ${
+                    selectedServiceId === svc.id
+                      ? "bg-primary text-white shadow-purple scale-102"
+                      : "bg-[#FAF7FD] text-slate-700 hover:bg-brandLilac-light border border-brandLilac/30"
+                  }`}
+                >
+                  {svc.title[lang]}
+                </button>
+              ))}
+            </div>
+          </div>
+
+          {/* Step 2: Quantity Slider / Buttons */}
+          <div className="mb-8 p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30">
+            <div className="flex items-center justify-between mb-2">
+              <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                {labels.step2}
+              </label>
+              <span className="text-sm font-bold text-primary">
+                {quantity} {current.unitLabel[lang]}
+              </span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <button
+                type="button"
+                onClick={() => setQuantity(Math.max(current.min, quantity - 1))}
+                className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+              >
+                -
+              </button>
+              <input
+                type="range"
+                min={current.min}
+                max={current.max}
+                value={quantity}
+                onChange={(e) => setQuantity(Number(e.target.value))}
+                className="w-full accent-primary h-2 bg-purple-200 rounded-lg cursor-pointer"
+              />
+              <button
+                type="button"
+                onClick={() => setQuantity(Math.min(current.max, quantity + 1))}
+                className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+              >
+                +
+              </button>
+            </div>
+          </div>
+
+          {/* Summary Details Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-2xl bg-purple-50/60 border border-brandLilac/30 text-xs mb-6">
+            <div>
+              <span className="text-slate-400 block text-[11px]">{labels.visits}</span>
+              <span className="font-bold text-slate-900 mt-0.5 block">{current.visits[lang]}</span>
+            </div>
+            <div>
+              <span className="text-slate-400 block text-[11px]">{labels.duration}</span>
+              <span className="font-bold text-slate-900 mt-0.5 block">{current.durationPerUnit[lang]}</span>
+            </div>
+            <div>
+              <span className="text-slate-400 block text-[11px]">{labels.warranty}</span>
+              <span className="font-bold text-emerald-700 mt-0.5 block">{current.warranty[lang]}</span>
+            </div>
+            <div>
+              <span className="text-slate-400 block text-[11px]">{labels.tech}</span>
+              <span className="font-bold text-primary mt-0.5 block">{current.tech[lang]}</span>
+            </div>
+          </div>
+
+          {/* Action CTA */}
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p className="text-[11px] text-slate-500 text-center sm:text-left">
+              ℹ {labels.individualNote}
+            </p>
+            <button
+              type="button"
+              onClick={() => openBooking({ service: current.id, note: `${quantity} ${current.unitLabel.uz}` })}
+              className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-brandPurple to-brandAmethyst hover:scale-102 active:scale-98 shadow-purple transition-all"
+            >
+              {labels.bookBtn}
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Interactive3DCostCalculator;
