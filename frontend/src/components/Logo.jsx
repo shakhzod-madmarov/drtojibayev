@@ -9,16 +9,23 @@ const Logo = ({ className = "h-11 sm:h-12 w-auto", showText = true, isWhite = fa
   return (
     <Link
       to={to("/")}
-      className="group flex items-center gap-3 select-none outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl transition-transform active:scale-95"
+      className={`group flex items-center gap-3 select-none outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-xl transition-transform active:scale-95 ${className}`}
       aria-label="Dr. Olimjon Tojibayev — Vrach Stomatolog"
     >
-      <div className="relative flex items-center justify-center p-1 rounded-2xl bg-white shadow-sm border border-brandLilac/30 group-hover:border-brandAmethyst/50 transition-all duration-300">
+      <div
+        className={`relative flex items-center justify-center p-1.5 rounded-2xl transition-all duration-300 shrink-0 ${
+          isWhite
+            ? "bg-white/10 backdrop-blur-xs border border-white/20 shadow-xs"
+            : "bg-white shadow-xs border border-brandLilac/40 group-hover:border-primary group-hover:shadow-purple/20 group-hover:shadow-md"
+        } w-11 h-11 sm:w-12 sm:h-12`}
+      >
         <img
-          src={assets.logo}
-          alt="Dr. Olimjon Tojibayev Logo"
-          className={`${className} object-contain`}
+          src={assets.logoIcon}
+          alt="Dr. Olimjon Tojibayev"
+          className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
           width="48"
           height="48"
+          loading="eager"
         />
       </div>
 

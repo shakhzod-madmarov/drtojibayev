@@ -1,4 +1,5 @@
 import logo from "./logo.png";
+import logoIcon from "./logo_icon.png";
 import businessCardFront from "./business_card_front.jpg";
 import businessCardBack from "./business_card_back.jpg";
 import treatmentImplant from "./treatment_implant.webp";
@@ -16,6 +17,7 @@ import heroSmile from "./hero_smile.webp";
 
 export const assets = {
   logo,
+  logoIcon,
   businessCardFront,
   businessCardBack,
   treatment_implant: treatmentImplant,

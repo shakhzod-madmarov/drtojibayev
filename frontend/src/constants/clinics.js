@@ -57,14 +57,15 @@ export const CLINICS = [
     instagram: "https://www.instagram.com/dr_tojibayev/",
     instagramHandle: "@dr_tojibayev",
     coordinates: {
-      lat: 40.744372,
-      lng: 72.335613,
+      lat: 40.744156,
+      lng: 72.334718,
     },
     maps: {
       google: "https://maps.app.goo.gl/aT6fWiGdjZ8rYuBF9",
       googleFull: "https://www.google.com/maps/place/Smiles+dental+group/@40.7443725,72.3357288,16z/data=!4m7!3m6!1s0x38bced03e092471f:0xfeee78a797a177d2!8m2!3d40.7443721!4d72.3356134",
-      yandex: "https://yandex.uz/maps/org/smiles_dental_group/10769129756/",
+      yandex: "https://yandex.uz/maps/-/CXu-iKzx",
       yandexShort: "https://yandex.uz/maps/-/CXu-iKzx",
+      yandexFull: "https://yandex.uz/maps/org/smiles_dental_group/10769129756/?ll=72.334718%2C40.744156&z=16",
       yandexOrgId: "10769129756",
       googlePlaceId: "ChIJH0eS4APtvDgR0nehl6d47v4",
       googleCid: "18369680373809674194",
