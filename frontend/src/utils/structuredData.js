@@ -246,7 +246,7 @@ export const buildHomePageSchema = (lang = "uz") => ({
     {
       "@type": "Dentist",
       "@id": `${SITE_ORIGIN}/#dentist`,
-      "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name.uz}`,
+      "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
       "alternateName": "Dr. Olimjon Tojibayev",
       "url": `${SITE_ORIGIN}/`,
       "telephone": DOCTOR_INFO.phoneRaw,
@@ -254,8 +254,8 @@ export const buildHomePageSchema = (lang = "uz") => ({
       "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": PRIMARY_CLINIC.address.uz,
-        "addressLocality": PRIMARY_CLINIC.city.uz,
+        "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
+        "addressLocality": PRIMARY_CLINIC.city[lang] || PRIMARY_CLINIC.city.uz,
         "addressCountry": "UZ",
       },
       "geo": {

@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
 import { DOCTOR_INFO } from "../constants/doctor";
-import { PRIMARY_CLINIC } from "../constants/clinics";
 import { useClinicHours } from "../lib/medinsonBooking";
 import { PAGE_SEO } from "../constants/seo";
 import Seo from "../components/Seo";
@@ -12,7 +11,6 @@ import {
   IconPhone,
   IconTelegram,
   IconInstagram,
-  IconLocationPin,
 } from "../components/MedicalIcons";
 
 const Contact = () => {

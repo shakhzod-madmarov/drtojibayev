@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-export const useModalA11y = (isOpen, onClose, containerRef) => {
+export const useModalA11y = (isOpen, onClose, _containerRef) => {
   useEffect(() => {
     if (!isOpen) return;
 

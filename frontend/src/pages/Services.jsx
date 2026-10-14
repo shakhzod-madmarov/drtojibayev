@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
-import { DOCTOR_INFO, getServicesTag } from "../constants/doctor";
+import { getServicesTag } from "../constants/doctor";
 import { PAGE_SEO } from "../constants/seo";
 import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 import Seo from "../components/Seo";
 import { buildServicesCatalogSchema } from "../utils/structuredData";
 import Interactive3DCostCalculator from "../components/Interactive3DCostCalculator";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
-import { IconShieldCheck, IconClock } from "../components/MedicalIcons";
+import { IconShieldCheck } from "../components/MedicalIcons";
 
 const Services = ({ onOpenBooking }) => {
   const { lang } = useLanguage();

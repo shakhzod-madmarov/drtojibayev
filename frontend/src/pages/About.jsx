@@ -1,18 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
-import { DOCTOR_INFO, getYearsOfExperience, getExperienceBadge } from "../constants/doctor";
+import { DOCTOR_INFO, getYearsOfExperience } from "../constants/doctor";
 import { PAGE_SEO } from "../constants/seo";
 import Seo from "../components/Seo";
 import { buildDoctorProfileSchema } from "../utils/structuredData";
 import ClinicLocationMap from "../components/ClinicLocationMap";
 import Doctor3DCard from "../components/Doctor3DCard";
-import {
-  IconShieldCheck,
-  IconPhone,
-  IconTelegram,
-  IconInstagram,
-} from "../components/MedicalIcons";
+import { IconShieldCheck } from "../components/MedicalIcons";
 
 const About = ({ onOpenBooking }) => {
   const { lang } = useLanguage();

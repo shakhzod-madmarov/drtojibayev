@@ -11,7 +11,6 @@ import {
   submitDentistBooking,
   buildWorkingHoursSchedule,
   filterAvailabilitySchedule,
-  getClinicTodayStr,
   useClinicHours,
 } from "../lib/medinsonBooking";
 import { formatUzPhone, isUzPhoneComplete } from "../utils/phone";
@@ -184,20 +183,26 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
   const t = TEXT[lang] || TEXT.uz;
   const clinicHours = useClinicHours(lang);
 
-  const [days, setDays] = useState([]);
-  const [selectedDate, setSelectedDate] = useState("");
+  const [days, setDays] = useState(() => buildWorkingHoursSchedule(14, 2));
+  const [selectedDate, setSelectedDate] = useState(() => {
+    const initialFallback = buildWorkingHoursSchedule(14, 2);
+    const firstActive = initialFallback.find((d) => !d.isClosed && d.times.length > 0);
+    return firstActive ? firstActive.date : "";
+  });
   const [selectedTime, setSelectedTime] = useState("");
-  const [selectedService, setSelectedService] = useState(() => initialServiceId || "consultation");
+  const [selectedService, setSelectedService] = useState(() => {
+    const q = searchParams.get("service") || bookingRequest?.service;
+    if (q && BOOKING_SERVICES.some((s) => s.id === q)) return q;
+    return initialServiceId || "consultation";
+  });
 
-  const [fullName, setFullName] = useState("");
-  const [phone, setPhone] = useState("+998 ");
-  const [dob, setDob] = useState("");
-  const [note, setNote] = useState("");
+  const [fullName, setFullName] = useState(() => bookingRequest?.name || "");
+  const [phone, setPhone] = useState(() => bookingRequest?.phone || "+998 ");
+  const [note, setNote] = useState(() => bookingRequest?.note || "");
   const [honeypot, setHoneypot] = useState("");
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookedResult, setBookedResult] = useState(null);
-  const [isPaused, setIsPaused] = useState(false);
 
   // Load availability
   const loadSchedule = useCallback(async () => {
@@ -206,21 +211,13 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
       if (data?.days && Array.isArray(data.days) && data.days.length > 0) {
         const clean = filterAvailabilitySchedule(data.days, 2);
         setDays(clean);
-        setIsPaused(false);
         const firstActive = clean.find((d) => !d.isClosed && d.times.length > 0);
         if (firstActive) {
           setSelectedDate((prev) => prev || firstActive.date);
         }
-        return;
       }
     } catch {
       // Graceful fallback to working hours schedule
-    }
-    const fallback = buildWorkingHoursSchedule(14, 2);
-    setDays(fallback);
-    const firstActive = fallback.find((d) => !d.isClosed && d.times.length > 0);
-    if (firstActive) {
-      setSelectedDate((prev) => prev || firstActive.date);
     }
   }, []);
 
@@ -228,16 +225,17 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
     loadSchedule();
   }, [loadSchedule]);
 
-  // Sync service from query or context
+  // Update when user navigates with new search params or booking context
   useEffect(() => {
-    const qService = searchParams.get("service") || bookingRequest?.service;
-    if (qService && BOOKING_SERVICES.some((s) => s.id === qService)) {
-      setSelectedService(qService);
+    if (bookingRequest) {
+      if (bookingRequest.service && BOOKING_SERVICES.some((s) => s.id === bookingRequest.service)) {
+        setSelectedService(bookingRequest.service);
+      }
+      if (bookingRequest.name) setFullName(bookingRequest.name);
+      if (bookingRequest.phone) setPhone(bookingRequest.phone);
+      if (bookingRequest.note) setNote(bookingRequest.note);
     }
-    if (bookingRequest?.name) setFullName(bookingRequest.name);
-    if (bookingRequest?.phone) setPhone(bookingRequest.phone);
-    if (bookingRequest?.note) setNote(bookingRequest.note);
-  }, [searchParams, bookingRequest]);
+  }, [bookingRequest]);
 
   const activeDay = useMemo(() => {
     return days.find((d) => d.date === selectedDate);
@@ -290,7 +288,6 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
         time: selectedTime,
         name: cleanName,
         phone,
-        dob,
         note: cleanNoteText,
         reason: serviceName,
       });

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
-import { NavLink, useNavigate, useLocation } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import Logo from "./Logo";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
-import { stripLangPrefix, LANGS } from "../utils/language";
+import { LANGS } from "../utils/language";
 import { IconPhone } from "./MedicalIcons";
 import { useModalA11y } from "../hooks/useModalA11y";
 import { getA11yLabels } from "../constants/a11yLabels";
@@ -10,7 +10,6 @@ import { DOCTOR_INFO } from "../constants/doctor";
 
 const Nav = ({ onOpenBooking, topOffset = 0 }) => {
   const navigate = useNavigate();
-  const location = useLocation();
   const [showMenu, setShowMenu] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const { lang, changeLanguage } = useLanguage();

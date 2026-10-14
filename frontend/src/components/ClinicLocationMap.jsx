@@ -2,7 +2,7 @@ import React from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { PRIMARY_CLINIC } from "../constants/clinics";
 import { DOCTOR_INFO, OPENING_HOURS } from "../constants/doctor";
-import { IconLocationPin, IconClock, IconPhone, IconTelegram } from "./MedicalIcons";
+import { IconLocationPin, IconClock, IconPhone } from "./MedicalIcons";
 
 export const ClinicLocationMap = () => {
   const { lang } = useLanguage();

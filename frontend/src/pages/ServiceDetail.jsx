@@ -3,16 +3,9 @@ import { useParams, Link } from "react-router-dom";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
 import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 import { DOCTOR_INFO, getExperienceBadge } from "../constants/doctor";
-import { SITE_ORIGIN } from "../constants/seo";
 import Seo from "../components/Seo";
 import { buildMedicalProcedureSchema } from "../utils/structuredData";
-import {
-  IconCheckCircle,
-  IconClock,
-  IconShieldCheck,
-  IconPhone,
-  IconTelegram,
-} from "../components/MedicalIcons";
+import { IconPhone } from "../components/MedicalIcons";
 import { useBooking } from "../context/BookingContext";
 import InlineBookingSection from "../components/InlineBookingSection";
 

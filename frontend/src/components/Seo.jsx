@@ -128,6 +128,8 @@ const Seo = ({
     resolvedCanonical,
     ogImage,
     schemaKey,
+    schemaJson,
+    alternates,
     noindex,
   ]);
 

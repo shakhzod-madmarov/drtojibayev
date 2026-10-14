@@ -119,16 +119,15 @@ export const BeforeAfterSlider = ({
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        {/* Before Image (Clipped overlay) */}
+        {/* Before Image (Clipped overlay via modern CSS clip-path) */}
         <div
-          className="absolute inset-0 overflow-hidden"
-          style={{ width: `${sliderPos}%` }}
+          className="absolute inset-0 overflow-hidden pointer-events-none"
+          style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
         >
           <img
             src={beforeImg}
             alt={defaultBefore}
-            className="absolute inset-0 w-full h-full object-cover max-w-none"
-            style={{ width: containerRef.current ? `${containerRef.current.clientWidth}px` : "100%" }}
+            className="absolute inset-0 w-full h-full object-cover"
           />
         </div>
 

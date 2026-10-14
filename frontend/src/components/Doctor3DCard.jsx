@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { DOCTOR_INFO } from "../constants/doctor";
-import { PRIMARY_CLINIC } from "../constants/clinics";
 import { assets } from "../assets/assets";
-import { IconPhone, IconTelegram, IconInstagram, IconShieldCheck, IconAward } from "./MedicalIcons";
+import { IconTelegram, IconInstagram, IconShieldCheck } from "./MedicalIcons";
 
 export const Doctor3DCard = () => {
   const { lang } = useLanguage();

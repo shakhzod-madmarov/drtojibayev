@@ -297,13 +297,11 @@ export function getClinicOpeningHours(lang = "uz") {
  * React hook that dynamically returns the dentist's active booking hours.
  */
 export function useClinicHours(lang = "uz") {
-  const [hours, setHours] = useState(() => getClinicOpeningHours(lang));
+  const [, setTick] = useState(0);
 
   useEffect(() => {
-    setHours(getClinicOpeningHours(lang));
-
     const handler = () => {
-      setHours(getClinicOpeningHours(lang));
+      setTick((t) => t + 1);
     };
 
     if (typeof window !== "undefined") {
@@ -313,9 +311,9 @@ export function useClinicHours(lang = "uz") {
       }
       return () => window.removeEventListener("dentist_availability_updated", handler);
     }
-  }, [lang]);
+  }, []);
 
-  return hours;
+  return getClinicOpeningHours(lang);
 }
 
 /**

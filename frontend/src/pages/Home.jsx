@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
-import { DOCTOR_INFO, getYearsOfExperience } from "../constants/doctor";
+import { DOCTOR_INFO } from "../constants/doctor";
 import Seo from "../components/Seo";
 import InlineBookingSection from "../components/InlineBookingSection";
 import ClinicLocationMap from "../components/ClinicLocationMap";
@@ -14,7 +14,6 @@ import Doctor3DCard from "../components/Doctor3DCard";
 import Interactive3DCostCalculator from "../components/Interactive3DCostCalculator";
 import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
-import { IconShieldCheck, IconPhone, IconTelegram } from "../components/MedicalIcons";
 
 /* ═══════════════════════════════════════════════════════════════════
    HERO SECTION — DR. OLIMJON TOJIBAYEV
