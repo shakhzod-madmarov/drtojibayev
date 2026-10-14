@@ -25,14 +25,14 @@ const CASES = {
     id: "implant",
     label: { uz: "Dental Implantatsiya", ru: "Имплантация", en: "Dental Implants" },
     tag: { uz: "Biotitan & Koronka", ru: "Биотитан и Коронка", en: "Titanium & Crown" },
-    beforeImg: assets.hero_3d_tooth,
+    beforeImg: assets.treatment_surgery,
     afterImg: assets.treatment_implant,
   },
   whitening: {
     id: "whitening",
     label: { uz: "Tish Oqartirish", ru: "Отбеливание", en: "Teeth Whitening" },
     tag: { uz: "AirFlow & Lazer", ru: "AirFlow и Лазер", en: "AirFlow & Laser" },
-    beforeImg: assets.treatment_dentures,
+    beforeImg: assets.treatment_therapy,
     afterImg: assets.treatment_whitening,
   },
 };
@@ -208,9 +208,11 @@ export const BeforeAfterSlider = ({
             className="absolute top-0 bottom-0 w-1 bg-white/90 shadow-[0_0_12px_rgba(76,35,101,0.5)] pointer-events-none"
             style={{ left: `${sliderPos}%`, transform: "translateX(-50%)" }}
           >
-            {/* Central Pulsing Handle */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white text-primary shadow-purple border-2 border-primary flex items-center justify-center font-bold text-xs sm:text-sm animate-subtle-pulse">
-              <span>⇄</span>
+            {/* Central Handle */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white text-primary shadow-purple border-2 border-primary flex items-center justify-center font-bold text-xs sm:text-sm">
+              <svg className="w-4 h-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M8 7l-4 4 4 4m8-8l4 4-4 4M4 11h16" />
+              </svg>
             </div>
           </div>
 

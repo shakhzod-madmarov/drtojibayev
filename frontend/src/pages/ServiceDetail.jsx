@@ -5,7 +5,7 @@ import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 import { DOCTOR_INFO, getExperienceBadge } from "../constants/doctor";
 import Seo from "../components/Seo";
 import { buildMedicalProcedureSchema } from "../utils/structuredData";
-import { IconPhone } from "../components/MedicalIcons";
+import { IconPhone, IconLocationPin, IconShieldCheck } from "../components/MedicalIcons";
 import { useBooking } from "../context/BookingContext";
 import InlineBookingSection from "../components/InlineBookingSection";
 
@@ -137,7 +137,8 @@ const ServiceDetail = () => {
             <span className="px-3 py-1 rounded-full text-xs font-bold bg-purple-50 text-brandAmethyst border border-brandLilac/30">
               {service.techTag[lang]}
             </span>
-            <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+            <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#FAF7FD] text-brandAmethyst border border-brandLilac/40 flex items-center gap-1.5">
+              <IconShieldCheck className="w-3.5 h-3.5 text-primary" />
               {getExperienceBadge(lang)}
             </span>
           </div>
@@ -170,8 +171,11 @@ const ServiceDetail = () => {
               <span className="font-bold text-primary mt-0.5 block whitespace-nowrap">Dr. Olimjon Tojibayev</span>
             </div>
           </div>
-          <p className="text-[11px] text-slate-500 font-medium pt-1">
-            📍 {lang === "ru" ? "Приём в г. Андижан, на базе Smile Dental Group" : lang === "en" ? "Practice location: Andijan, hosted at Smile Dental Group" : "Qabul manzili: Andijon sh., Smile Dental Group bazasida"}
+          <p className="text-[11px] text-slate-500 font-medium pt-1 flex items-center gap-1.5">
+            <IconLocationPin className="w-3.5 h-3.5 text-primary shrink-0" />
+            <span>
+              {lang === "ru" ? "Приём в г. Андижан, на базе Smile Dental Group" : lang === "en" ? "Practice location: Andijan, hosted at Smile Dental Group" : "Qabul manzili: Andijon sh., Smile Dental Group bazasida"}
+            </span>
           </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">

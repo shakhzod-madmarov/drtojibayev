@@ -337,7 +337,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold tracking-wide text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-3">
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-primary"></span>
             {t.kicker}
           </span>
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 tracking-tight">

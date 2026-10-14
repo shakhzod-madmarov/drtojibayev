@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { useBooking } from "../context/BookingContext";
 import Interactive3DTilt from "./Interactive3DTilt";
+import { IconInfoCircle } from "./MedicalIcons";
 
 export const Interactive3DCostCalculator = () => {
   const { lang } = useLanguage();
@@ -255,8 +256,9 @@ export const Interactive3DCostCalculator = () => {
 
             {/* Action CTA */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-              <p className="text-[11px] text-slate-500 text-center sm:text-left">
-                ℹ {labels.individualNote}
+              <p className="text-[11px] text-slate-500 text-center sm:text-left inline-flex items-center gap-1.5 justify-center sm:justify-start">
+                <IconInfoCircle className="w-3.5 h-3.5 text-primary shrink-0" />
+                <span>{labels.individualNote}</span>
               </p>
               <button
                 type="button"

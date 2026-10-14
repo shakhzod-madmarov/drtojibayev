@@ -52,8 +52,9 @@ const Booking = () => {
             <span className="px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-black uppercase border border-brandLilac/40">
               {DOCTOR_INFO.name}
             </span>
-            <span className="px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold border border-emerald-200">
-              {years} {lang === "uz" ? "Yillik Tajriba" : lang === "ru" ? "Лет Опыта" : "Years Experience"}
+            <span className="px-3 py-1 rounded-full bg-[#FAF7FD] text-brandAmethyst text-xs font-bold border border-brandLilac/40 flex items-center gap-1.5">
+              <IconShieldCheck className="w-3.5 h-3.5 text-primary" />
+              <span>{years} {lang === "uz" ? "Yillik Tajriba" : lang === "ru" ? "Лет Опыта" : "Years Experience"}</span>
             </span>
           </div>
 

@@ -92,9 +92,6 @@ export const Doctor3DCard = () => {
                   isFlipped ? "[transform:rotateY(180deg)]" : ""
                 }`}
               >
-                {/* Laser Scanning Beam Effect */}
-                <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-brandLilac to-transparent shadow-[0_0_14px_#7F5D99] animate-laser-scan pointer-events-none z-20 opacity-80" />
-
                 {/* Card Front */}
                 <div className="absolute inset-0 backface-hidden bg-white flex items-center justify-center">
                   <img
@@ -106,8 +103,8 @@ export const Doctor3DCard = () => {
                     decoding="async"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1 shadow-xs">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <div className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1.5 shadow-xs">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brandLilac" />
                     <span>{labels.interactiveBadge}</span>
                   </div>
                 </div>
@@ -123,8 +120,8 @@ export const Doctor3DCard = () => {
                     decoding="async"
                     className="w-full h-full object-cover"
                   />
-                  <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1 shadow-xs">
-                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                  <div className="absolute top-2.5 right-2.5 px-2.5 py-1 rounded-full bg-slate-900/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1.5 shadow-xs">
+                    <span className="w-1.5 h-1.5 rounded-full bg-brandLilac" />
                     <span>Dr. Olimjon Tojibayev</span>
                   </div>
                 </div>
@@ -138,9 +135,9 @@ export const Doctor3DCard = () => {
             onClick={() => setIsFlipped(!isFlipped)}
             aria-pressed={isFlipped}
             aria-label={labels.flipPrompt}
-            className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-primary bg-primary-light hover:bg-brandAmethyst-light px-4 py-2 rounded-full border border-brandLilac/40 shadow-xs transition-all hover:scale-102 active:scale-98"
+            className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-primary bg-primary-light hover:bg-brandAmethyst-light px-4 py-2 rounded-full border border-brandLilac/40 shadow-xs transition-all hover:scale-102 active:scale-98 group"
           >
-            <svg className="w-4 h-4 text-primary animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-4 h-4 text-primary transition-transform duration-300 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
             <span>{labels.flipPrompt}</span>
@@ -154,8 +151,8 @@ export const Doctor3DCard = () => {
               <span className="px-3 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-brandLilac/40">
                 {labels.badge}
               </span>
-              <span className="px-3 py-1 rounded-full text-xs font-bold bg-emerald-50 text-emerald-700 border border-emerald-200 flex items-center gap-1">
-                <IconShieldCheck className="w-3.5 h-3.5 text-emerald-600" />
+              <span className="px-3 py-1 rounded-full text-xs font-bold bg-[#FAF7FD] text-brandAmethyst border border-brandLilac/40 flex items-center gap-1.5">
+                <IconShieldCheck className="w-3.5 h-3.5 text-primary" />
                 {labels.experience}
               </span>
             </div>

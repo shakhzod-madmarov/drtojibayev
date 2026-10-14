@@ -15,7 +15,7 @@ import Interactive3DCostCalculator from "../components/Interactive3DCostCalculat
 import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
 import Interactive3DTilt from "../components/Interactive3DTilt";
-import { IconScannerOptical3D, IconAligners } from "../components/MedicalIcons";
+import { IconScannerOptical3D, IconAligners, IconClock } from "../components/MedicalIcons";
 
 /* ═══════════════════════════════════════════════════════════════════
    HERO SECTION — DR. OLIMJON TOJIBAYEV
@@ -99,7 +99,7 @@ const HeroSection = ({ onOpenBooking }) => {
           <div className="lg:col-span-7 flex flex-col items-start text-left">
             {/* Top Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-light border border-brandLilac/40 shadow-xs mb-4">
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-primary"></span>
               <span className="text-xs font-bold text-primary tracking-wide">
                 {t.badge}
               </span>
@@ -222,15 +222,12 @@ const HeroSection = ({ onOpenBooking }) => {
                         </p>
                       </div>
                     </div>
-                    <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-emerald-50 text-emerald-700 border border-emerald-200">
+                    <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-primary-light text-primary border border-brandLilac/40">
                       7 Yillik Tajriba
                     </span>
                   </div>
 
                   <div className="rounded-2xl overflow-hidden aspect-[16/10] border border-brandLilac/30 shadow-xs relative group">
-                    {/* Laser Scanner Beam */}
-                    <div className="absolute inset-x-0 h-1 bg-gradient-to-r from-transparent via-brandLilac to-transparent shadow-[0_0_12px_#7F5D99] animate-laser-scan pointer-events-none z-10 opacity-75" />
-
                     <img
                       src={assets.businessCardFront}
                       alt="Dr. Olimjon Tojibayev Vizitka"
@@ -384,8 +381,9 @@ const Home = ({ onOpenBooking }) => {
                   </div>
 
                   <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-500">
-                      ⏱ {service.duration[lang]}
+                    <span className="text-xs font-semibold text-slate-500 inline-flex items-center gap-1.5">
+                      <IconClock className="w-3.5 h-3.5 text-primary" />
+                      <span>{service.duration[lang]}</span>
                     </span>
                     <button
                       type="button"
