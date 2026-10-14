@@ -1,12 +1,30 @@
 # ----------------------------------------------------------------------
 # Dr. Olimjon Tojibayev (drtojibayev.uz) - Apache / LiteSpeed Configuration
+# Production Hardened Security & Performance
 # ----------------------------------------------------------------------
 
+# 1. Disable directory listing / index browsing
+Options -Indexes
+
+# 2. Block access to hidden, sensitive, environment, and backup files
+<FilesMatch "(^\.|\.env|package\.json|package-lock\.json|\.git|\.yml|\.yaml|\.log|\.md|\.sql|\.bak|\.swp)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Deny from all
+  </IfModule>
+</FilesMatch>
+
+# ----------------------------------------------------------------------
+# URL Rewriting & SPA Routing
+# ----------------------------------------------------------------------
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
 
-  # Force HTTPS (optional, recommended for production)
+  # Force HTTPS
   RewriteCond %{HTTPS} off
   RewriteCond %{HTTP_HOST} ^(www\.)?drtojibayev\.uz$ [NC]
   RewriteRule ^(.*)$ https://drtojibayev.uz/$1 [L,R=301]
@@ -76,11 +94,30 @@ ErrorDocument 404 /404.html
 </IfModule>
 
 # ----------------------------------------------------------------------
-# Security Headers
+# Hardened Security Headers (OWASP Top 10 Defenses)
 # ----------------------------------------------------------------------
 <IfModule mod_headers.c>
+  # Prevent MIME-sniffing
   Header always set X-Content-Type-Options "nosniff"
+
+  # Prevent Clickjacking (iframe embedding from third-party domains)
   Header always set X-Frame-Options "SAMEORIGIN"
+
+  # Legacy XSS Filter for older browsers
   Header always set X-XSS-Protection "1; mode=block"
+
+  # Referrer policy: send origin only on cross-origin requests
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+  # Enforce strict HTTPS (HSTS) for 1 year
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload" env=HTTPS
+
+  # Disable risky hardware capabilities for third-party contexts
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=(), usb=()"
+
+  # Block Adobe Flash / PDF cross-domain access
+  Header always set X-Permitted-Cross-Domain-Policies "none"
+
+  # Content Security Policy (CSP)
+  Header always set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://dentist-medinson-license.uz https://*.medinson-license.uz https://fonts.googleapis.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com data:; img-src 'self' data: blob: https:; connect-src 'self' https://dentist-medinson-license.uz https://*.medinson-license.uz; frame-src 'self' https://yandex.uz https://*.yandex.uz https://yandex.ru https://*.yandex.ru https://www.google.com https://*.google.com; base-uri 'self'; form-action 'self';"
 </IfModule>

@@ -34,6 +34,9 @@
     "vite": "npm:rolldown-vite@7.2.5"
   },
   "overrides": {
-    "vite": "npm:rolldown-vite@7.2.5"
+    "vite": "npm:rolldown-vite@7.2.5",
+    "braces": "^3.0.3",
+    "micromatch": "^4.0.8",
+    "postcss-selector-parser": "^7.1.6"
   }
 }

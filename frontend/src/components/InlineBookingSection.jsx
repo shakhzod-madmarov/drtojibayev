@@ -200,6 +200,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
   const [phone, setPhone] = useState(() => bookingRequest?.phone || "+998 ");
   const [note, setNote] = useState(() => bookingRequest?.note || "");
   const [honeypot, setHoneypot] = useState("");
+  const [formMountTime] = useState(() => Date.now());
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [bookedResult, setBookedResult] = useState(null);
@@ -253,7 +254,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
   const handleFormSubmit = async (e) => {
     e.preventDefault();
 
-    if (isBotSubmission(honeypot)) return;
+    if (isBotSubmission(honeypot, formMountTime)) return;
 
     const rateCheck = checkRateLimit("booking_submit", 10);
     if (!rateCheck.allowed) {
@@ -433,7 +434,8 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
               onChange={(e) => setHoneypot(e.target.value)}
               tabIndex={-1}
               autoComplete="off"
-              className="hidden"
+              className="sr-only"
+              style={{ position: "absolute", left: "-9999px", opacity: 0, pointerEvents: "none", height: 0, width: 0 }}
               aria-hidden="true"
             />
 
