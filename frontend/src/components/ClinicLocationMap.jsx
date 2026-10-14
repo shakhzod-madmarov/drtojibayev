@@ -9,9 +9,9 @@ export const ClinicLocationMap = () => {
 
   const labels = {
     uz: {
-      badge: "KLINIKA MANZILI",
-      title: "Smile Dental Group — Andijon",
-      subtitle: "Dr. Olimjon Tojibayev qabuli zamonaviy uskunalar bilan jihozlangan Smile Dental Group klinikasida olib boriladi.",
+      badge: "AMALIYOT VA QABUL MANZILI",
+      title: "Dr. Olimjon Tojibayev Shaxsiy Qabuli",
+      subtitle: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, zamonaviy uskunalar bilan jihozlangan Smile Dental Group klinikasida shaxsan qabul qiladi.",
       addressTitle: "Manzil:",
       landmarkTitle: "Mo'ljal:",
       hoursTitle: "Qabul vaqti:",
@@ -21,9 +21,9 @@ export const ClinicLocationMap = () => {
       telegram: "Telegram orqali yozish",
     },
     ru: {
-      badge: "АДРЕС КЛИНИКИ",
-      title: "Smile Dental Group — Андижан",
-      subtitle: "Приём Д-ра Олимжона Тожибаева проходит в современной клинике Smile Dental Group со всем необходимым цифровым оснащением.",
+      badge: "ЛОКАЦИЯ И ПРИЁМ",
+      title: "Личный Приём Д-ра Олимжона Тожибаева",
+      subtitle: "Приём проходит в г. Андижан на базе клиники Smile Dental Group, оснащенной передовыми цифровыми 3D технологиями.",
       addressTitle: "Адрес:",
       landmarkTitle: "Ориентир:",
       hoursTitle: "Часы приёма:",
@@ -33,9 +33,9 @@ export const ClinicLocationMap = () => {
       telegram: "Написать в Telegram",
     },
     en: {
-      badge: "CLINIC LOCATION",
-      title: "Smile Dental Group — Andijan",
-      subtitle: "Dr. Olimjon Tojibayev welcomes patients at Smile Dental Group equipped with state-of-the-art digital dental facilities.",
+      badge: "PRACTICE LOCATION",
+      title: "Dr. Olimjon Tojibayev's Practice",
+      subtitle: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at Smile Dental Group with state-of-the-art digital dentistry systems.",
       addressTitle: "Address:",
       landmarkTitle: "Landmark:",
       hoursTitle: "Working Hours:",

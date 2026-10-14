@@ -14,7 +14,7 @@ export const Doctor3DCard = () => {
       badge: "SHIFOKOR PROFILI",
       interactiveBadge: "3D Taktil Vizitka",
       heading: "Dr. Olimjon Tojibayev",
-      subheading: "Цифровой Стоматолог · Smile Dental Group",
+      subheading: "Raqamli Stomatolog · Shaxsiy Qabul (Smile Dental Group bazasida)",
       experience: "7+ Yillik Klinik Tajriba",
       flipPrompt: isFlipped ? "Old tomonini ko'rish (Front)" : "Tashrif qog'ozi orqa tomoni (Xizmatlar)",
       highlights: [
@@ -29,7 +29,7 @@ export const Doctor3DCard = () => {
       badge: "ПРОФИЛЬ ВРАЧА",
       interactiveBadge: "3D Тактильная Визитка",
       heading: "Д-р Олимжон Тожибаев",
-      subheading: "Цифровой Стоматолог · Smile Dental Group",
+      subheading: "Цифровой Стоматолог · Личный Приём (на базе Smile Dental Group)",
       experience: "7+ Лет Клинической Практики",
       flipPrompt: isFlipped ? "Показать лицевую сторону" : "Оборотная сторона визитки (Услуги)",
       highlights: [
@@ -44,7 +44,7 @@ export const Doctor3DCard = () => {
       badge: "DOCTOR PROFILE",
       interactiveBadge: "3D Tactile Card",
       heading: "Dr. Olimjon Tojibayev",
-      subheading: "Digital Dentist · Smile Dental Group",
+      subheading: "Digital Dentist · Private Practice (hosted at Smile Dental Group)",
       experience: "7+ Years Clinical Excellence",
       flipPrompt: isFlipped ? "View Front Side" : "View Back Side (Services List)",
       highlights: [

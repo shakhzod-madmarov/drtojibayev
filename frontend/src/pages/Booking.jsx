@@ -67,20 +67,20 @@ const Booking = () => {
 
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
             {lang === "uz"
-              ? "Smile Dental Group (Andijon). 3D intraoral skanerlash, implantlar, elaynerlar, breketlar va 100% og'riqsiz davolash. Bo'sh soatni tanlang va navbatsiz qabulga yoziling."
+              ? "Dr. Olimjon Tojibayevning shaxsiy qabuliga navbatsiz yozilish (Smile Dental Group bazasida, Andijon). 3D intraoral skanerlash, biotitan implantlar, shaffof elaynerlar va 100% og'riqsiz davolash."
               : lang === "ru"
-              ? "Smile Dental Group (Андижан). 3D сканирование, имплантация, прозрачные элайнеры, брекеты и лечение без боли. Выберите удобный день и время."
-              : "Smile Dental Group (Andijan). 3D intraoral scans, implants, aligners, braces, and gentle care with zero waiting."}
+              ? "Персональная запись на приём к Д-ру Олимжону Тожибаеву без очереди (на базе Smile Dental Group, Андижан). 3D сканирование, имплантация, элайнеры и лечение без боли."
+              : "Direct online booking for Dr. Olimjon Tojibayev's personal practice (hosted at Smile Dental Group, Andijan). 3D scans, implants, aligners, and gentle care."}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-700 pt-1">
             <span className="flex items-center gap-1.5">
               <DentalDigitalScannerIcon className="w-4 h-4 text-primary" />
-              <span>Цифровой Стоматолог</span>
+              <span>{lang === "uz" ? "Raqamli Stomatolog" : lang === "ru" ? "Цифровой Стоматолог" : "Digital Dentist"}</span>
             </span>
             <span className="flex items-center gap-1.5">
               <IconShieldCheck className="w-4 h-4 text-emerald-600" />
-              <span>Smile Dental Group</span>
+              <span>{lang === "uz" ? "100% Shaxsiy Qabul & Kafolat" : lang === "ru" ? "100% Личный Приём и Гарантия" : "100% Personal Care & Warranty"}</span>
             </span>
           </div>
         </div>

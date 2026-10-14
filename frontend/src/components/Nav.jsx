@@ -71,12 +71,12 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between gap-3">
           {/* Brand Logo */}
-          <Logo className="h-9 sm:h-10" />
+          <Logo className="h-9 sm:h-10 shrink-0" />
 
-          {/* Desktop Navigation Links */}
+          {/* Desktop Navigation Links — Airy, typographic luxury design */}
           <nav
             aria-label={a11y.mainNavigation}
-            className="hidden lg:flex items-center gap-1.5"
+            className="hidden lg:flex items-center gap-1 xl:gap-2"
           >
             {navLinks.map((link) => (
               <NavLink
@@ -84,10 +84,10 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
                 to={to(link.path)}
                 end={link.path === "/"}
                 className={({ isActive }) =>
-                  `px-3.5 py-1.5 rounded-xl text-[13.5px] font-medium transition-all duration-150 ${
+                  `relative px-3 py-1.5 text-[13.5px] xl:text-[14px] transition-colors duration-150 ${
                     isActive
-                      ? "text-primary font-bold bg-primary-light shadow-xs"
-                      : "text-slate-700 hover:text-primary hover:bg-brandLilac-light"
+                      ? "text-primary font-bold after:absolute after:bottom-0 after:left-3 after:right-3 after:h-0.5 after:bg-primary after:rounded-full"
+                      : "text-slate-600 font-medium hover:text-primary"
                   }`
                 }
               >
@@ -96,30 +96,31 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
             ))}
           </nav>
 
-          {/* Action Hub (Phone + Language + Booking Button) */}
-          <div className="flex items-center gap-2.5 sm:gap-3">
-            {/* Direct Phone Call */}
+          {/* Action Hub (Compact Phone + Language + Booking Button) */}
+          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
+            {/* Direct Phone Call: Compact 1-tap button on laptop/tablet viewports, expands on 2xl */}
             <a
               href={DOCTOR_INFO.phoneHref}
-              className="hidden sm:inline-flex items-center gap-2 px-3 py-1.5 rounded-xl text-xs font-semibold text-primary bg-primary-light border border-brandLilac/40 hover:bg-brandAmethyst-light transition-colors"
+              className="inline-flex items-center justify-center gap-2 h-9 px-2.5 2xl:px-3 rounded-xl text-xs font-semibold text-primary bg-[#FAF7FD] border border-brandLilac/40 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 group shadow-2xs"
               aria-label={a11y.callClinic}
+              title={`${DOCTOR_INFO.phoneDisplay} (Dr. Olimjon Tojibayev)`}
             >
-              <span className="w-6 h-6 rounded-lg bg-primary flex items-center justify-center text-white shrink-0">
-                <IconPhone className="w-3.5 h-3.5" />
+              <IconPhone className="w-3.5 h-3.5 shrink-0 group-hover:scale-110 transition-transform" />
+              <span className="hidden 2xl:inline font-mono tracking-tight font-medium">
+                {DOCTOR_INFO.phoneDisplay}
               </span>
-              <span className="font-mono tracking-tight">{DOCTOR_INFO.phoneDisplay}</span>
             </a>
 
             {/* Language Switcher */}
-            <div className="flex items-center p-0.5 rounded-xl bg-white border border-brandLilac/40 shadow-xs">
+            <div className="flex items-center p-0.5 rounded-xl bg-white border border-brandLilac/30 shadow-2xs">
               {LANGS.map((code) => (
                 <button
                   key={code}
                   type="button"
                   onClick={() => changeLanguage(code)}
-                  className={`px-2 py-1 text-xs font-bold rounded-lg transition-all ${
+                  className={`px-2 py-1 text-[11px] font-bold rounded-lg transition-all ${
                     lang === code
-                      ? "bg-primary text-white shadow-xs"
+                      ? "bg-primary text-white shadow-2xs"
                       : "text-slate-500 hover:text-primary"
                   }`}
                   aria-label={`${a11y.languageSwitcher}: ${code.toUpperCase()}`}
@@ -133,7 +134,7 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
             <button
               type="button"
               onClick={handleBookingClick}
-              className="hidden sm:inline-flex items-center justify-center px-4 py-2 rounded-xl text-xs sm:text-[13px] font-bold text-white bg-gradient-to-r from-brandPurple via-brandAmethyst to-brandLavender hover:from-[#3A1A4F] hover:to-brandAmethyst shadow-purple transition-all duration-200 active:scale-95"
+              className="hidden sm:inline-flex items-center justify-center px-3.5 sm:px-4 h-9 rounded-xl text-xs sm:text-[13px] font-bold text-white bg-gradient-to-r from-brandPurple via-brandAmethyst to-brandLavender hover:from-[#3A1A4F] hover:to-brandAmethyst shadow-purple transition-all duration-200 active:scale-95 shrink-0"
             >
               {bookingBtnLabel}
             </button>
@@ -226,7 +227,11 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
           </button>
 
           <p className="text-[11px] text-center text-slate-400">
-            Smile Dental Group · Andijon
+            {lang === "ru"
+              ? "Д-р Олимжон Тожибаев · На базе Smile Dental Group"
+              : lang === "en"
+              ? "Dr. Olimjon Tojibayev · At Smile Dental Group"
+              : "Dr. Olimjon Tojibayev · Smile Dental Group bazasida"}
           </p>
         </div>
       </div>

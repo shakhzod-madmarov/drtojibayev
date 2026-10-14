@@ -31,7 +31,7 @@ const HeroSection = ({ onOpenBooking }) => {
       specialtyTitle: "Raqamli Stomatolog · Implantolog · Ortodont",
       headline: "Raqamli Stomatologiya & Mukammal Tabassum Muhandisligi",
       subtitle:
-        "7 yillik klinik tajriba. 3D intraoral skanerlash, premium biotitan implantlar, shaffof elaynerlar, zamonaviy breketlar, tsirkon koronkalar va Smile Dental Group klinikasida 100% og'riqsiz davolash.",
+        "7 yillik klinik tajriba. Dr. Olimjon Tojibayev tomonidan 3D intraoral skanerlash, premium biotitan implantlar, shaffof elaynerlar, zamonaviy breketlar, tsirkon koronkalar va 100% og'riqsiz shaxsiy davolash (Smile Dental Group bazasida, Andijon).",
       ctaBook: "Qabulga Yozilish",
       ctaServices: "Xizmatlarni Ko'rish",
       stat1Num: "7+ Yil",
@@ -51,7 +51,7 @@ const HeroSection = ({ onOpenBooking }) => {
       specialtyTitle: "Цифровой Стоматолог · Имплантолог · Ортодонт",
       headline: "Цифровая Стоматология и Создание Вашей Идеальной Улыбки",
       subtitle:
-        "7 лет клинической практики. 3D интраоральное сканирование, дентальная имплантация, прозрачные элайнеры, брекеты, циркониевые коронки и бережное лечение зубов в Smile Dental Group.",
+        "7 лет клинической практики. Персональное лечение у Д-ра Олимжона Тожибаева: 3D интраоральное сканирование, дентальная имплантация, прозрачные элайнеры, брекеты, циркониевые коронки и бережная терапия без боли (на базе Smile Dental Group, Андижан).",
       ctaBook: "Записаться на Приём",
       ctaServices: "Все Услуги",
       stat1Num: "7+ Лет",
@@ -71,7 +71,7 @@ const HeroSection = ({ onOpenBooking }) => {
       specialtyTitle: "Digital Dentist · Implantologist · Orthodontist",
       headline: "Precision Digital Dentistry & Flawless Aesthetic Smiles",
       subtitle:
-        "7+ years of clinical excellence. 3D intraoral scanning, titanium dental implants, clear aligners, orthodontic braces, zirconia crowns, and gentle care at Smile Dental Group.",
+        "7+ years of clinical excellence. Personalized care by Dr. Olimjon Tojibayev: 3D intraoral scanning, titanium dental implants, clear aligners, orthodontic braces, zirconia crowns, and gentle therapy (hosted at Smile Dental Group, Andijan).",
       ctaBook: "Book Appointment",
       ctaServices: "Explore Services",
       stat1Num: "7+ Yrs",
@@ -111,12 +111,12 @@ const HeroSection = ({ onOpenBooking }) => {
             </h1>
 
             {/* Doctor Credentials Subhead */}
-            <div className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-brandAmethyst mb-3">
+            <div className="flex items-center gap-2.5 text-xs sm:text-sm font-semibold text-brandAmethyst mb-3 flex-wrap">
               <span className="font-bold text-slate-900">{t.doctorName}</span>
               <span>·</span>
               <span>{t.specialtyTitle}</span>
               <span>·</span>
-              <span>Smile Dental Group</span>
+              <span>{lang === "ru" ? "Андижан (Smile Dental Group)" : lang === "en" ? "Andijan (Smile Dental Group)" : "Andijon (Smile Dental Group)"}</span>
             </div>
 
             {/* Paragraph Description */}
@@ -211,7 +211,7 @@ const HeroSection = ({ onOpenBooking }) => {
                       />
                       <div>
                         <h3 className="font-serif font-bold text-base text-slate-900 leading-tight">
-                          Olimjon Tojibayev
+                          Dr. Olimjon Tojibayev
                         </h3>
                         <p className="text-[11px] font-bold text-brandAmethyst tracking-wider uppercase">
                           Цифровой Стоматолог
@@ -233,7 +233,7 @@ const HeroSection = ({ onOpenBooking }) => {
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-xs text-[10px] text-white font-mono z-10">
-                      Smile Dental Group
+                      Dr. Olimjon Tojibayev · Andijon
                     </div>
                   </div>
 

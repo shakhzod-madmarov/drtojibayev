@@ -58,9 +58,9 @@ const About = ({ onOpenBooking }) => {
     },
     {
       year: {
-        uz: "Klinik Amaliyot",
-        ru: "Клиническая Практика",
-        en: "Clinical Practice",
+        uz: "Klinik Amaliyot Bazasi",
+        ru: "База Клинической Практики",
+        en: "Clinical Practice Base",
       },
       title: {
         uz: "Smile Dental Group — Andijon",
@@ -68,9 +68,9 @@ const About = ({ onOpenBooking }) => {
         en: "Smile Dental Group — Andijan",
       },
       desc: {
-        uz: "Zamonaviy innovatsion uskunalar, eng yangi avlod sterilizatsiya protokollari va qulay muhitda bemorlarni qabul qilish.",
-        ru: "Приём пациентов на передовом цифровом оборудовании в атмосфере максимального комфорта и заботы.",
-        en: "Welcoming patients in a high-tech modern clinic with strict hospital-grade sterilization protocols.",
+        uz: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, eng ilg'or raqamli uskunalar bilan jihozlangan Smile Dental Group klinikasida shaxsan qabul qiladi.",
+        ru: "Д-р Олимжон Тожибаев ведёт личный приём пациентов в Андижане на базе передовой клиники Smile Dental Group с новейшим 3D оснащением.",
+        en: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at the high-tech Smile Dental Group clinical facility.",
       },
     },
   ];
@@ -118,14 +118,14 @@ const About = ({ onOpenBooking }) => {
     {
       icon: <IconTrophyWarranty className="w-6 h-6 text-primary" />,
       title: {
-        uz: "Rasmiy Kafolat va Qo'llab-quvvatlash",
-        ru: "Официальная Гарантия",
-        en: "Official Clinical Warranty",
+        uz: "Shaxsiy Kafolat va Nazorat",
+        ru: "Личная Гарантия и Контроль",
+        en: "Personal Warranty & Follow-up",
       },
       desc: {
-        uz: "Barcha implantlar, koronkalar va rejalashtirilgan ortodontik davolashga rasmiy kafolat beriladi.",
-        ru: "Официальная гарантия клиники на все имплантаты, ортопедические коронки и брекеты.",
-        en: "Formal warranties covering implant fixtures, prosthodontic crowns, and alignment stability.",
+        uz: "Har bir muolaja bevosita Dr. Olimjon Tojibayev tomonidan shaxsan bajariladi va shaxsiy sifat kafolati beriladi.",
+        ru: "Каждая процедура выполняется лично доктором Тожибаевым с персональной гарантией качества.",
+        en: "Every procedure is performed directly by Dr. Tojibayev with personal clinical accountability.",
       },
     },
   ];
@@ -169,10 +169,10 @@ const About = ({ onOpenBooking }) => {
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Smile Dental Group (Andijon). 3D intraoral skanerlash, biotitan implantlar, shaffof elaynerlar, zamonaviy breketlar va 100% og'riqsiz davolash."
+            ? "Dr. Olimjon Tojibayevning shaxsiy qabuli (Smile Dental Group bazasida, Andijon). 3D intraoral skanerlash, biotitan implantlar, shaffof elaynerlar va 100% og'riqsiz davolash."
             : lang === "ru"
-            ? "Smile Dental Group (Андижан). 3D сканирование, имплантация, прозрачные элайнеры, брекеты и лечение без боли."
-            : "Smile Dental Group (Andijan). Precision 3D scanning, guided implants, clear aligners, and gentle patient care."}
+            ? "Персональный приём Д-ра Олимжона Тожибаева (на базе Smile Dental Group, Андижан). 3D сканирование, имплантация, элайнеры и лечение без боли."
+            : "Dr. Olimjon Tojibayev's personal practice (hosted at Smile Dental Group, Andijan). Precision 3D scanning, guided implants, clear aligners, and gentle care."}
         </p>
       </header>
 
@@ -221,7 +221,7 @@ const About = ({ onOpenBooking }) => {
       {/* Clinical Values & Standards */}
       <section aria-labelledby="standards-heading" className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
         <h2 id="standards-heading" className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
-          {lang === "ru" ? "Принципы и стандарты работы" : lang === "en" ? "Core Principles & Patient Care" : "Ish Faoliyatimizdagi Asosiy Standartlar"}
+          {lang === "ru" ? "Личные стандарты лечения Д-ра Олимжона Тожибаева" : lang === "en" ? "Dr. Olimjon Tojibayev's Personal Clinical Standards" : "Dr. Olimjon Tojibayevning Shaxsiy Davolash Standartlari"}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {values.map((val, idx) => (

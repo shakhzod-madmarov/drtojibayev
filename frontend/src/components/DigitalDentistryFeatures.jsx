@@ -97,6 +97,9 @@ export const DigitalDentistryFeatures = () => {
           desc: "Har bir bosqichdagi tish harakati sun'iy intellekt va 3D dastur orqali oldindan hisoblab chiqilgan shaffof kapalar bilan to'g'irlanadi.",
         },
       ],
+      workflowLocation: "Andijon · Shaxsiy Amaliyot",
+      cardAuthor: "Dr. Olimjon Tojibayev",
+      cardBadge: "Shaxsiy Qabul ✓",
     },
     ru: {
       badge: "ИННОВАЦИОННЫЕ ТЕХНОЛОГИИ",
@@ -151,6 +154,9 @@ export const DigitalDentistryFeatures = () => {
           desc: "Компьютерный расчёт движения каждого зуба: лечение проходит незаметно для окружающих и без боли.",
         },
       ],
+      workflowLocation: "Андижан · Личная практика",
+      cardAuthor: "Д-р Олимжон Тожибаев",
+      cardBadge: "Личный Приём ✓",
     },
     en: {
       badge: "INNOVATIVE TECHNOLOGIES",
@@ -205,6 +211,9 @@ export const DigitalDentistryFeatures = () => {
           desc: "Every tooth movement is digitally simulated and manufactured with medical-grade transparent aligners.",
         },
       ],
+      workflowLocation: "Andijan · Private Practice",
+      cardAuthor: "Dr. Olimjon Tojibayev",
+      cardBadge: "Personal Care ✓",
     },
   }[lang] || content.uz;
 
@@ -239,7 +248,7 @@ export const DigitalDentistryFeatures = () => {
               </h3>
             </div>
             <span className="px-3 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-brandLilac/40">
-              Smile Dental Group · Andijon
+              {content.workflowLocation}
             </span>
           </div>
 
@@ -296,8 +305,8 @@ export const DigitalDentistryFeatures = () => {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-slate-100 flex items-center justify-between text-xs text-primary font-bold">
-                  <span>Smile Dental Group</span>
-                  <span className="text-brandAmethyst">✓</span>
+                  <span>{content.cardAuthor}</span>
+                  <span className="text-brandAmethyst text-[11px] font-semibold">{content.cardBadge}</span>
                 </div>
               </div>
             </Interactive3DTilt>

@@ -86,9 +86,9 @@ export const getExperienceBadge = (lang = "uz") => {
 
 export const getHeroTag = (lang = "uz") => {
   const years = getYearsOfExperience();
-  if (lang === "ru") return `Цифровой Стоматолог · ${years} лет опыта · Smile Dental Group`;
-  if (lang === "en") return `Digital Dentist · ${years} Years Experience · Smile Dental Group`;
-  return `Raqamli Stomatolog · ${years} Yillik Tajriba · Smile Dental Group`;
+  if (lang === "ru") return `Цифровой Стоматолог · ${years} лет опыта · Личный Приём`;
+  if (lang === "en") return `Digital Dentist · ${years} Years Experience · Private Practice`;
+  return `Raqamli Stomatolog · ${years} Yillik Tajriba · Shaxsiy Qabul`;
 };
 
 export const getServicesTag = (lang = "uz") => {

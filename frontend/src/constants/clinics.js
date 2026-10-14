@@ -7,14 +7,14 @@ export const CLINICS = [
       en: "Smile Dental Group",
     },
     dentistOffice: {
-      uz: "Dr. Olimjon Tojibayev xonasi — Smile Dental Group",
-      ru: "Кабинет Д-ра Олимжона Тожибаева — Smile Dental Group",
-      en: "Dr. Olimjon Tojibayev Practice — Smile Dental Group",
+      uz: "Dr. Olimjon Tojibayev Shaxsiy Qabuli — Smile Dental Group bazasida",
+      ru: "Личный Кабинет Д-ра Олимжона Тожибаева — на базе Smile Dental Group",
+      en: "Dr. Olimjon Tojibayev Practice — hosted at Smile Dental Group",
     },
     badge: {
-      uz: "Smile Dental Group · Andijon",
-      ru: "Smile Dental Group · Андижан",
-      en: "Smile Dental Group · Andijan",
+      uz: "Dr. Olimjon Tojibayev Qabuli · Andijon",
+      ru: "Приём Д-ра Олимжона Тожибаева · Андижан",
+      en: "Dr. Olimjon Tojibayev Practice · Andijan",
     },
     city: {
       uz: "Andijon",

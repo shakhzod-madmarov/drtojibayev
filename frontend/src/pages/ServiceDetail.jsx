@@ -39,7 +39,7 @@ const ServiceDetail = () => {
       {
         num: "04",
         title: "Mukammal Estetika va Rasmiy Kafolat",
-        desc: "Chaynash balansi tekshiriladi, sayqallanadi va Smile Dental Group klinikasining kafolati taqdim etiladi.",
+        desc: "Chaynash balansi tekshiriladi, sayqallanadi va Dr. Olimjon Tojibayev tomonidan shaxsiy rasmiy kafolat taqdim etiladi.",
       },
     ],
     ru: [
@@ -61,7 +61,7 @@ const ServiceDetail = () => {
       {
         num: "04",
         title: "Контроль Прикуса и Официальная Гарантия",
-        desc: "Финальная полировка, проверка окклюзии и выдача гарантии клиники Smile Dental Group.",
+        desc: "Финальная полировка, проверка окклюзии и выдача личной официальной гарантии Д-ра Олимжона Тожибаева.",
       },
     ],
     en: [
@@ -83,7 +83,7 @@ const ServiceDetail = () => {
       {
         num: "04",
         title: "Bite Calibration & Clinical Warranty",
-        desc: "Final occlusion verification, high-gloss polish, and official Smile Dental Group warranty.",
+        desc: "Final occlusion verification, high-gloss polish, and official personal warranty issued by Dr. Olimjon Tojibayev.",
       },
     ],
   }[lang] || steps.uz;
@@ -152,18 +152,27 @@ const ServiceDetail = () => {
 
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 pt-2">
             <div className="p-3 rounded-2xl bg-purple-50/60 border border-brandLilac/20 text-xs">
-              <span className="text-slate-400 block text-[11px]">Vaqt / Muddat</span>
+              <span className="text-slate-400 block text-[11px]">
+                {lang === "ru" ? "Длительность" : lang === "en" ? "Duration" : "Vaqt / Muddat"}
+              </span>
               <span className="font-bold text-slate-900 mt-0.5 block">{service.duration[lang]}</span>
             </div>
             <div className="p-3 rounded-2xl bg-emerald-50/60 border border-emerald-100 text-xs">
-              <span className="text-slate-400 block text-[11px]">Kafolat</span>
+              <span className="text-slate-400 block text-[11px]">
+                {lang === "ru" ? "Гарантия" : lang === "en" ? "Warranty" : "Kafolat"}
+              </span>
               <span className="font-bold text-emerald-700 mt-0.5 block">{service.warranty[lang]}</span>
             </div>
             <div className="p-3 rounded-2xl bg-purple-50/60 border border-brandLilac/20 text-xs col-span-2 sm:col-span-1">
-              <span className="text-slate-400 block text-[11px]">Klinika</span>
-              <span className="font-bold text-primary mt-0.5 block">Smile Dental Group</span>
+              <span className="text-slate-400 block text-[11px]">
+                {lang === "ru" ? "Лечащий врач" : lang === "en" ? "Attending Doctor" : "Davolovchi Shifokor"}
+              </span>
+              <span className="font-bold text-primary mt-0.5 block whitespace-nowrap">Dr. Olimjon Tojibayev</span>
             </div>
           </div>
+          <p className="text-[11px] text-slate-500 font-medium pt-1">
+            📍 {lang === "ru" ? "Приём в г. Андижан, на базе Smile Dental Group" : lang === "en" ? "Practice location: Andijan, hosted at Smile Dental Group" : "Qabul manzili: Andijon sh., Smile Dental Group bazasida"}
+          </p>
 
           <div className="pt-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
             <button
