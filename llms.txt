@@ -9,7 +9,8 @@
 - **Klinika nomi**: Smile Dental Group
 - **Manzil**: O'zbekiston, Andijon shahri, 1-kichik daha (Kanechka), 8-A bino
 - **Mo'ljal**: 1-kichik daha, Kanechka bekati va bozori yaqinida
-- **Geografik koordinatalar**: 40.744372, 72.335613
+- **Geografik koordinatalar**: 40.744156, 72.334718
+- **Yandex Xarita manzili**: https://yandex.uz/maps/-/CXu-iKzx
 - **Telefonlar**: +998 90 541 97 57 / +998 93 418 97 57
 - **Telegram**: https://t.me/Dr_Tadjibayev (@Dr_Tadjibayev / @DR_TOJIBAYEV)
 - **Instagram**: https://www.instagram.com/dr_tojibayev/ (@dr_tojibayev)

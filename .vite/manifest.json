@@ -34,7 +34,7 @@
     ]
   },
   "index.html": {
-    "file": "assets/index-BELzeK_y.js",
+    "file": "assets/index-BWHovyOo.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -45,10 +45,11 @@
       "_rolldown-runtime-y2wrX6ue.js"
     ],
     "css": [
-      "assets/index-B9E07uRN.css"
+      "assets/index-DYqxhVGO.css"
     ],
     "assets": [
       "assets/logo-DWGmiXhz.png",
+      "assets/logo_icon-BbtlKsJm.png",
       "assets/business_card_front-RwlLUue3.jpg",
       "assets/business_card_back-7F00BA6c.jpg",
       "assets/treatment_implant-EUoIaf_F.webp",
@@ -88,6 +89,10 @@
   "src/assets/logo.png": {
     "file": "assets/logo-DWGmiXhz.png",
     "src": "src/assets/logo.png"
+  },
+  "src/assets/logo_icon.png": {
+    "file": "assets/logo_icon-BbtlKsJm.png",
+    "src": "src/assets/logo_icon.png"
   },
   "src/assets/treatment_aligners.webp": {
     "file": "assets/treatment_aligners-D393Kjtt.webp",
