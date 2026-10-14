@@ -237,7 +237,7 @@ export const DigitalDentistryFeatures = () => {
         </div>
 
         {/* 4-Step Interactive Digital Workflow Strip */}
-        <div className="mb-14 p-6 sm:p-8 rounded-3xl bg-white/95 backdrop-blur-md border border-brandLilac/40 shadow-luxury">
+        <div className="mb-14 p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-md border border-brandLilac/40 shadow-luxury">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between mb-8 pb-4 border-b border-brandLilac/20 gap-2">
             <div>
               <span className="text-[11px] font-bold text-brandAmethyst tracking-wider uppercase block">

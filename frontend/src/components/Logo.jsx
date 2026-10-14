@@ -24,7 +24,7 @@ const Logo = ({ className = "h-10 sm:h-11 w-auto", showText = true, isWhite = fa
           isWhite
             ? "bg-white/10 backdrop-blur-xs border border-white/20 shadow-xs"
             : "bg-white shadow-xs border border-brandLilac/40 group-hover:border-primary group-hover:shadow-purple/20 group-hover:shadow-md"
-        } w-10 h-10 sm:w-11 sm:h-11`}
+        } w-9 h-9 sm:w-11 sm:h-11`}
       >
         <img
           src={assets.logoIcon}
@@ -40,14 +40,14 @@ const Logo = ({ className = "h-10 sm:h-11 w-auto", showText = true, isWhite = fa
       {showText && (
         <div className="flex flex-col leading-tight">
           <span
-            className={`font-serif text-[15px] sm:text-[17px] font-bold tracking-tight transition-colors whitespace-nowrap ${
+            className={`font-serif text-[13.5px] sm:text-[17px] font-bold tracking-tight transition-colors whitespace-nowrap ${
               isWhite ? "text-white" : "text-[#170E1E] group-hover:text-primary"
             }`}
           >
             Dr. Olimjon Tojibayev
           </span>
           <span
-            className={`text-[9.5px] sm:text-[10px] font-semibold tracking-wider uppercase whitespace-nowrap ${
+            className={`text-[8.5px] sm:text-[10px] font-semibold tracking-wider uppercase whitespace-nowrap ${
               isWhite ? "text-brandLilac" : "text-brandAmethyst"
             }`}
           >

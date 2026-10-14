@@ -165,19 +165,19 @@ export const Interactive3DCostCalculator = () => {
           glare={false}
           className="w-full"
         >
-          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+          <div className="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
             {/* Step 1: Service Pills */}
             <div className="mb-6">
               <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
                 {labels.step1}
               </label>
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+              <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 sm:gap-2.5">
                 {Object.values(servicesData).map((svc) => (
                   <button
                     key={svc.id}
                     type="button"
                     onClick={() => handleServiceChange(svc.id)}
-                    className={`px-3.5 py-2.5 rounded-xl text-xs font-bold transition-all text-center ${
+                    className={`px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-xl text-[11px] sm:text-xs font-bold transition-all text-center leading-snug break-words ${
                       selectedServiceId === svc.id
                         ? "bg-primary text-white shadow-purple scale-102"
                         : "bg-[#FAF7FD] text-slate-700 hover:bg-brandLilac-light border border-brandLilac/30"
@@ -190,22 +190,22 @@ export const Interactive3DCostCalculator = () => {
             </div>
 
             {/* Step 2: Quantity Slider / Buttons */}
-            <div className="mb-8 p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30">
+            <div className="mb-6 sm:mb-8 p-3.5 sm:p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30">
               <div className="flex items-center justify-between mb-2">
                 <label htmlFor="calculator-quantity-slider" className="text-xs font-bold text-slate-700 uppercase tracking-wider">
                   {labels.step2}
                 </label>
-                <span className="text-sm font-bold text-primary">
+                <span className="text-xs sm:text-sm font-bold text-primary">
                   {quantity} {current.unitLabel[lang]}
                 </span>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3 sm:gap-4">
                 <button
                   type="button"
                   aria-label={labels.decrease}
                   onClick={() => setQuantity(Math.max(current.min, quantity - 1))}
-                  className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors shrink-0"
                 >
                   -
                 </button>
@@ -226,7 +226,7 @@ export const Interactive3DCostCalculator = () => {
                   type="button"
                   aria-label={labels.increase}
                   onClick={() => setQuantity(Math.min(current.max, quantity + 1))}
-                  className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
+                  className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors shrink-0"
                 >
                   +
                 </button>
@@ -234,7 +234,7 @@ export const Interactive3DCostCalculator = () => {
             </div>
 
             {/* Summary Details Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 p-4 rounded-2xl bg-purple-50/60 border border-brandLilac/30 text-xs mb-6">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-purple-50/60 border border-brandLilac/30 text-xs mb-6">
               <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
                 <span className="text-slate-400 block text-[11px]">{labels.visits}</span>
                 <span className="font-bold text-slate-900 mt-0.5 block">{current.visits[lang]}</span>

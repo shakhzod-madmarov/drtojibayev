@@ -106,7 +106,7 @@ const HeroSection = ({ onOpenBooking }) => {
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif font-bold text-slate-900 leading-[1.12] tracking-tight mb-5">
+            <h1 className="text-2xl min-[360px]:text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-serif font-bold text-slate-900 leading-[1.15] sm:leading-[1.12] tracking-tight mb-5">
               {t.headline}
             </h1>
 
@@ -179,7 +179,7 @@ const HeroSection = ({ onOpenBooking }) => {
               <div className="absolute -inset-3 bg-gradient-to-r from-brandPurple via-brandAmethyst to-brandLilac rounded-3xl opacity-30 blur-2xl -z-10 animate-pulse-subtle" />
 
               {/* Floating 3D Badge Top-Left */}
-              <div className="absolute -top-3.5 -left-2 sm:-left-4 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[11px] font-bold text-slate-800 flex items-center gap-2 animate-float-slow z-20 pointer-events-none">
+              <div className="absolute -top-3.5 left-1 sm:-left-4 px-3 sm:px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[10.5px] sm:text-[11px] font-bold text-slate-800 flex items-center gap-1.5 sm:gap-2 animate-float-slow z-20 pointer-events-none">
                 <span className="w-5 h-5 rounded-lg bg-primary-light text-primary flex items-center justify-center shrink-0">
                   <IconScannerOptical3D className="w-3.5 h-3.5" />
                 </span>
@@ -187,7 +187,7 @@ const HeroSection = ({ onOpenBooking }) => {
               </div>
 
               {/* Floating 3D Badge Bottom-Right */}
-              <div className="absolute -bottom-3.5 -right-2 sm:-right-4 px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[11px] font-bold text-primary flex items-center gap-2 animate-float-3d z-20 pointer-events-none">
+              <div className="absolute -bottom-3.5 right-1 sm:-right-4 px-3 sm:px-3.5 py-1.5 rounded-2xl bg-white/95 backdrop-blur-md border border-brandLilac/50 shadow-luxury text-[10.5px] sm:text-[11px] font-bold text-primary flex items-center gap-1.5 sm:gap-2 animate-float-3d z-20 pointer-events-none">
                 <span className="w-5 h-5 rounded-lg bg-primary text-white flex items-center justify-center shrink-0 shadow-2xs">
                   <IconAligners className="w-3.5 h-3.5" />
                 </span>

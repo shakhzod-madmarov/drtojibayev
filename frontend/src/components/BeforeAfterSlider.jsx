@@ -174,7 +174,7 @@ export const BeforeAfterSlider = ({
           aria-valuenow={Math.round(sliderPos)}
           aria-valuemin={0}
           aria-valuemax={100}
-          className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-3xl overflow-hidden shadow-luxury border-2 border-brandLilac/40 cursor-ew-resize select-none touch-none focus:outline-none focus:ring-2 focus:ring-primary group"
+          className="relative w-full aspect-[16/10] sm:aspect-[16/9] rounded-2xl sm:rounded-3xl overflow-hidden shadow-luxury border-2 border-brandLilac/40 cursor-ew-resize select-none touch-pan-y focus:outline-none focus:ring-2 focus:ring-primary group"
         >
           {/* After Image (Background) */}
           <img
@@ -209,26 +209,26 @@ export const BeforeAfterSlider = ({
             style={{ left: `${sliderPos}%`, transform: "translateX(-50%)" }}
           >
             {/* Central Pulsing Handle */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-11 h-11 rounded-full bg-white text-primary shadow-purple border-2 border-primary flex items-center justify-center font-bold text-sm animate-subtle-pulse">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-9 h-9 sm:w-11 sm:h-11 rounded-full bg-white text-primary shadow-purple border-2 border-primary flex items-center justify-center font-bold text-xs sm:text-sm animate-subtle-pulse">
               <span>⇄</span>
             </div>
           </div>
 
           {/* Category Tag Top Center */}
-          <div className="absolute top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
-            <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-white/90 text-primary backdrop-blur-md border border-brandLilac/40 shadow-xs">
+          <div className="absolute top-3 sm:top-4 left-1/2 -translate-x-1/2 pointer-events-none z-10">
+            <span className="px-3 sm:px-3.5 py-0.5 sm:py-1 rounded-full text-[10.5px] sm:text-xs font-bold bg-white/90 text-primary backdrop-blur-md border border-brandLilac/40 shadow-xs whitespace-nowrap">
               {activeCase.tag[lang]}
             </span>
           </div>
 
           {/* Labels */}
-          <div className="absolute bottom-4 left-4 pointer-events-none z-10">
-            <span className="px-3 py-1 rounded-xl text-xs font-bold bg-black/65 text-white backdrop-blur-md shadow-xs">
+          <div className="absolute bottom-3 sm:bottom-4 left-3 sm:left-4 pointer-events-none z-10">
+            <span className="px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-lg sm:rounded-xl text-[10.5px] sm:text-xs font-bold bg-black/65 text-white backdrop-blur-md shadow-xs">
               {defaultBefore}
             </span>
           </div>
-          <div className="absolute bottom-4 right-4 pointer-events-none z-10">
-            <span className="px-3 py-1 rounded-xl text-xs font-bold bg-primary/90 text-white backdrop-blur-md shadow-purple">
+          <div className="absolute bottom-3 sm:bottom-4 right-3 sm:right-4 pointer-events-none z-10">
+            <span className="px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-lg sm:rounded-xl text-[10.5px] sm:text-xs font-bold bg-primary/90 text-white backdrop-blur-md shadow-purple">
               {defaultAfter}
             </span>
           </div>

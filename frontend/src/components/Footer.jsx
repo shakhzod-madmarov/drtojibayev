@@ -37,7 +37,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full bg-[#170E1E] text-slate-300 border-t border-purple-900/40 pt-16 pb-12 mt-20">
+    <footer className="w-full bg-[#170E1E] text-slate-300 border-t border-purple-900/40 pt-14 sm:pt-16 pb-[calc(3rem+env(safe-area-inset-bottom,0px))] mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12 border-b border-purple-900/40">
           {/* Col 1: Brand & Doctor Profile */}

@@ -180,7 +180,7 @@ const About = ({ onOpenBooking }) => {
       <Doctor3DCard />
 
       {/* Professional Philosophy & Bio */}
-      <section aria-labelledby="philosophy-heading" className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <section aria-labelledby="philosophy-heading" className="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-12 space-y-4">
           <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-brandLilac/40 uppercase tracking-wider inline-block">
             {lang === "ru" ? "ФИЛОСОФИЯ ЛЕЧЕНИЯ" : lang === "en" ? "CLINICAL PHILOSOPHY" : "DAVOLASH FALSAFASI"}
@@ -219,7 +219,7 @@ const About = ({ onOpenBooking }) => {
       </section>
 
       {/* Clinical Values & Standards */}
-      <section aria-labelledby="standards-heading" className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+      <section aria-labelledby="standards-heading" className="p-5 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
         <h2 id="standards-heading" className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
           {lang === "ru" ? "Личные стандарты лечения Д-ра Олимжона Тожибаева" : lang === "en" ? "Dr. Olimjon Tojibayev's Personal Clinical Standards" : "Dr. Olimjon Tojibayevning Shaxsiy Davolash Standartlari"}
         </h2>

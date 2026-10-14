@@ -46,7 +46,7 @@ const Booking = () => {
       </nav>
 
       {/* Doctor Summary Banner */}
-      <header className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury flex flex-col md:flex-row items-center justify-between gap-6">
+      <header className="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="space-y-3">
           <div className="flex flex-wrap items-center gap-2">
             <span className="px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-black uppercase border border-brandLilac/40">

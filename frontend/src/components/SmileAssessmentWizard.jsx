@@ -176,7 +176,7 @@ export const SmileAssessmentWizard = () => {
           glare={false}
           className="w-full"
         >
-          <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+          <div className="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
           {/* Step Indicators */}
           <div className="flex items-center justify-center gap-2 mb-8" role="progressbar" aria-valuenow={step} aria-valuemin={1} aria-valuemax={3} aria-label="Assessment Progress">
             {[1, 2, 3].map((s) => (
@@ -199,16 +199,16 @@ export const SmileAssessmentWizard = () => {
               <legend className="text-base sm:text-lg font-bold text-slate-900 mb-4 text-center block w-full">
                 {stepsData.step1Title}
               </legend>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" role="group" aria-label={stepsData.step1Title}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3" role="group" aria-label={stepsData.step1Title}>
                 {stepsData.complaints.map((item) => (
                   <button
                     key={item.id}
                     type="button"
                     onClick={() => handleSelectComplaint(item)}
-                    className="p-3.5 sm:p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 hover:border-brandAmethyst hover:bg-brandLilac-light transition-all flex items-center gap-3.5 text-left text-xs sm:text-sm font-semibold text-slate-800 group"
+                    className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 hover:border-brandAmethyst hover:bg-brandLilac-light transition-all flex items-center gap-3 sm:gap-3.5 text-left text-xs sm:text-sm font-semibold text-slate-800 group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-white border border-brandLilac/40 text-primary flex items-center justify-center shrink-0 shadow-2xs group-hover:bg-primary group-hover:text-white transition-colors">
-                      {renderComplaintIcon(item.id, "w-5 h-5")}
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white border border-brandLilac/40 text-primary flex items-center justify-center shrink-0 shadow-2xs group-hover:bg-primary group-hover:text-white transition-colors">
+                      {renderComplaintIcon(item.id, "w-4 h-4 sm:w-5 sm:h-5")}
                     </div>
                     <span>{item.label}</span>
                   </button>
@@ -223,16 +223,16 @@ export const SmileAssessmentWizard = () => {
               <legend className="text-base sm:text-lg font-bold text-slate-900 mb-4 text-center block w-full">
                 {stepsData.step2Title}
               </legend>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" role="group" aria-label={stepsData.step2Title}>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 sm:gap-3" role="group" aria-label={stepsData.step2Title}>
                 {stepsData.priorities.map((item) => (
                   <button
                     key={item.id}
                     type="button"
                     onClick={() => handleSelectPriority(item)}
-                    className="p-3.5 sm:p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 hover:border-brandAmethyst hover:bg-brandLilac-light transition-all flex items-center gap-3.5 text-left text-xs sm:text-sm font-semibold text-slate-800 group"
+                    className="p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 hover:border-brandAmethyst hover:bg-brandLilac-light transition-all flex items-center gap-3 sm:gap-3.5 text-left text-xs sm:text-sm font-semibold text-slate-800 group"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-white border border-brandLilac/40 text-primary flex items-center justify-center shrink-0 shadow-2xs group-hover:bg-primary group-hover:text-white transition-colors">
-                      {renderPriorityIcon(item.id, "w-5 h-5")}
+                    <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-white border border-brandLilac/40 text-primary flex items-center justify-center shrink-0 shadow-2xs group-hover:bg-primary group-hover:text-white transition-colors">
+                      {renderPriorityIcon(item.id, "w-4 h-4 sm:w-5 sm:h-5")}
                     </div>
                     <span>{item.label}</span>
                   </button>

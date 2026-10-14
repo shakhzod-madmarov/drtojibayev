@@ -128,7 +128,7 @@ const ServiceDetail = () => {
       </nav>
 
       {/* Main Hero Header */}
-      <div className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <div className="p-4 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-7 space-y-4">
           <div className="flex items-center gap-2 flex-wrap">
             <span className="px-3 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-brandLilac/40">
@@ -209,7 +209,7 @@ const ServiceDetail = () => {
       </div>
 
       {/* Highlights & Features */}
-      <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+      <div className="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
         <h2 className="text-xl sm:text-2xl font-serif font-bold text-slate-900 mb-6">
           {lang === "ru" ? "Ключевые преимущества и особенности" : lang === "en" ? "Key Treatment Highlights" : "Muolajaning Asosiy Afzalliklari"}
         </h2>
@@ -228,7 +228,7 @@ const ServiceDetail = () => {
       </div>
 
       {/* 4-Step Treatment Pathway */}
-      <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+      <div className="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
         <h2 className="text-xl sm:text-2xl font-serif font-bold text-slate-900 mb-8 text-center">
           {lang === "ru" ? "Этапы проведения процедуры" : lang === "en" ? "Procedure Pathway" : "Muolaja Bosqichlari"}
         </h2>

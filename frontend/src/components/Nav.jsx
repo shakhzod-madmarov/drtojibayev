@@ -97,11 +97,11 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
           </nav>
 
           {/* Action Hub (Compact Phone + Language + Booking Button) */}
-          <div className="flex items-center gap-2 sm:gap-2.5 shrink-0">
-            {/* Direct Phone Call: Compact 1-tap button on laptop/tablet viewports, expands on 2xl */}
+          <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+            {/* Direct Phone Call: Visible on screens >= 400px, expands on 2xl */}
             <a
               href={DOCTOR_INFO.phoneHref}
-              className="inline-flex items-center justify-center gap-2 h-9 px-2.5 2xl:px-3 rounded-xl text-xs font-semibold text-primary bg-[#FAF7FD] border border-brandLilac/40 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 group shadow-2xs"
+              className="hidden min-[400px]:inline-flex items-center justify-center gap-2 h-9 px-2.5 2xl:px-3 rounded-xl text-xs font-semibold text-primary bg-[#FAF7FD] border border-brandLilac/40 hover:bg-primary hover:text-white hover:border-primary transition-all duration-200 group shadow-2xs"
               aria-label={a11y.callClinic}
               title={`${DOCTOR_INFO.phoneDisplay} (Dr. Olimjon Tojibayev)`}
             >
@@ -118,7 +118,7 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
                   key={code}
                   type="button"
                   onClick={() => changeLanguage(code)}
-                  className={`px-2 py-1 text-[11px] font-bold rounded-lg transition-all ${
+                  className={`px-1.5 min-[380px]:px-2 py-1 text-[10.5px] min-[380px]:text-[11px] font-bold rounded-lg transition-all ${
                     lang === code
                       ? "bg-primary text-white shadow-2xs"
                       : "text-slate-500 hover:text-primary"
@@ -169,7 +169,7 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
 
       {/* Mobile Drawer Content */}
       <div
-        className={`fixed top-0 right-0 bottom-0 z-50 w-72 max-w-[85vw] bg-white shadow-2xl p-6 flex flex-col justify-between transform transition-transform duration-300 lg:hidden ${
+        className={`fixed top-0 right-0 bottom-0 z-50 w-72 max-w-[85vw] bg-white shadow-2xl p-6 pt-[calc(1.5rem+env(safe-area-inset-top,0px))] pb-[calc(1.5rem+env(safe-area-inset-bottom,0px))] flex flex-col justify-between overflow-y-auto overscroll-contain transform transition-transform duration-300 lg:hidden ${
           showMenu ? "translate-x-0" : "translate-x-full"
         }`}
       >

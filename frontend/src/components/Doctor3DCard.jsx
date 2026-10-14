@@ -58,7 +58,7 @@ export const Doctor3DCard = () => {
   }[lang] || labels.uz;
 
   return (
-    <div className="w-full p-6 sm:p-8 lg:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury relative overflow-hidden">
+    <div className="w-full p-4 sm:p-8 lg:p-10 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury relative overflow-hidden">
       {/* Subtle digital background grid */}
       <div className="absolute inset-0 digital-grid-pattern opacity-40 pointer-events-none" />
 
@@ -183,17 +183,17 @@ export const Doctor3DCard = () => {
               <span className="text-[11px] font-bold text-slate-400 block uppercase tracking-wider">
                 {labels.callDirect}
               </span>
-              <div className="flex items-center gap-3 mt-1">
+              <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-1">
                 <a
                   href={DOCTOR_INFO.phoneHref}
-                  className="font-mono text-sm font-bold text-primary hover:underline"
+                  className="font-mono text-xs sm:text-sm font-bold text-primary hover:underline whitespace-nowrap"
                 >
                   {DOCTOR_INFO.phoneDisplay}
                 </a>
-                <span className="text-slate-300">|</span>
+                <span className="hidden sm:inline text-slate-300">|</span>
                 <a
                   href={DOCTOR_INFO.secondaryPhoneHref}
-                  className="font-mono text-sm font-bold text-primary hover:underline"
+                  className="font-mono text-xs sm:text-sm font-bold text-primary hover:underline whitespace-nowrap"
                 >
                   {DOCTOR_INFO.secondaryPhoneDisplay}
                 </a>

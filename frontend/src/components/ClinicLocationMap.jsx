@@ -63,7 +63,7 @@ export const ClinicLocationMap = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
           {/* Left Info Card */}
-          <div className="lg:col-span-5 p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury flex flex-col justify-between">
+          <div className="lg:col-span-5 p-5 sm:p-8 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-luxury flex flex-col justify-between">
             <div className="space-y-6">
               <div>
                 <span className="text-[11px] font-bold text-brandAmethyst tracking-wider uppercase block mb-1">
@@ -120,7 +120,7 @@ export const ClinicLocationMap = () => {
             </div>
 
             {/* Navigation Buttons */}
-            <div className="mt-8 pt-4 border-t border-slate-100 grid grid-cols-2 gap-2.5">
+            <div className="mt-8 pt-4 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-2.5">
               <a
                 href={PRIMARY_CLINIC.maps.googleFull}
                 target="_blank"
@@ -141,11 +141,11 @@ export const ClinicLocationMap = () => {
           </div>
 
           {/* Right Map View */}
-          <div className="lg:col-span-7 rounded-3xl overflow-hidden shadow-luxury border border-brandLilac/30 min-h-[380px] sm:min-h-[440px] relative bg-slate-100">
+          <div className="lg:col-span-7 rounded-2xl sm:rounded-3xl overflow-hidden shadow-luxury border border-brandLilac/30 min-h-[300px] sm:min-h-[440px] relative bg-slate-100">
             <iframe
               title="Smile Dental Group Andijon Map"
               src="https://yandex.uz/map-widget/v1/org/smiles_dental_group/10769129756/?ll=72.334718%2C40.744156&z=16"
-              className="w-full h-full min-h-[380px] sm:min-h-[440px] border-0"
+              className="w-full h-full min-h-[300px] sm:min-h-[440px] border-0"
               loading="lazy"
               allowFullScreen
             />

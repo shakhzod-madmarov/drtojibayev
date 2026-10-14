@@ -26,7 +26,7 @@ const FloatingActionHub = () => {
   return (
     <aside
       aria-label={a11y.quickActions}
-      className="fixed bottom-5 right-5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 print:hidden select-none"
+      className="fixed bottom-[calc(1.25rem+env(safe-area-inset-bottom,0px))] right-3.5 sm:bottom-6 sm:right-6 z-40 flex flex-col items-end gap-2.5 print:hidden select-none"
     >
       {/* Expanded Action Items */}
       {isOpen && (
@@ -38,12 +38,12 @@ const FloatingActionHub = () => {
               setIsOpen(false);
               openBooking();
             }}
-            className="group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-brandLilac-light transition-all active:scale-95 text-xs font-bold"
+            className="group flex items-center gap-2.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-brandLilac-light transition-all active:scale-95 text-xs font-bold"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
             <span>{bookLabel}</span>
-            <span className="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center shrink-0">
-              <svg className="w-4 h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-primary text-white flex items-center justify-center shrink-0">
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
                 <line x1="16" y1="2" x2="16" y2="6"/>
                 <line x1="8" y1="2" x2="8" y2="6"/>
@@ -58,11 +58,11 @@ const FloatingActionHub = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={a11y.telegramChat}
-            className="group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-sky-50 transition-all active:scale-95 text-xs font-bold"
+            className="group flex items-center gap-2.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-sky-50 transition-all active:scale-95 text-xs font-bold"
           >
             <span>Telegram</span>
-            <span className="w-8 h-8 rounded-full bg-sky-500 text-white flex items-center justify-center shrink-0 shadow-xs">
-              <IconTelegram className="w-4 h-4 text-white" />
+            <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-sky-500 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <IconTelegram className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
             </span>
           </a>
 
@@ -72,11 +72,11 @@ const FloatingActionHub = () => {
             target="_blank"
             rel="noopener noreferrer"
             aria-label={a11y.instagramPage}
-            className="group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-pink-50 transition-all active:scale-95 text-xs font-bold"
+            className="group flex items-center gap-2.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-pink-50 transition-all active:scale-95 text-xs font-bold"
           >
             <span>Instagram</span>
-            <span className="w-8 h-8 rounded-full bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white flex items-center justify-center shrink-0 shadow-xs">
-              <IconInstagram className="w-4 h-4 text-white" />
+            <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-gradient-to-tr from-amber-500 via-pink-500 to-purple-600 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <IconInstagram className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" />
             </span>
           </a>
 
@@ -84,11 +84,11 @@ const FloatingActionHub = () => {
           <a
             href={DOCTOR_INFO.phoneHref}
             aria-label={a11y.callClinic}
-            className="group flex items-center gap-2.5 px-4 py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-emerald-50 transition-all active:scale-95 text-xs font-bold"
+            className="group flex items-center gap-2.5 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-full bg-white text-slate-800 shadow-luxury border border-brandLilac/40 hover:bg-emerald-50 transition-all active:scale-95 text-xs font-bold"
           >
             <span className="font-mono">{DOCTOR_INFO.phoneDisplay}</span>
-            <span className="w-8 h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-xs">
-              <IconPhone className="w-4 h-4" />
+            <span className="w-7 h-7 sm:w-8 sm:h-8 rounded-full bg-emerald-500 text-white flex items-center justify-center shrink-0 shadow-xs">
+              <IconPhone className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
             </span>
           </a>
         </div>
@@ -100,18 +100,18 @@ const FloatingActionHub = () => {
         onClick={() => setIsOpen(!isOpen)}
         aria-expanded={isOpen}
         aria-label={toggleLabel}
-        className={`relative w-14 h-14 rounded-full flex items-center justify-center text-white shadow-purple transition-all duration-300 active:scale-95 ${
+        className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-full flex items-center justify-center text-white shadow-purple transition-all duration-300 active:scale-95 ${
           isOpen
             ? "bg-slate-800 rotate-90"
             : "bg-gradient-to-r from-brandPurple via-brandAmethyst to-brandLavender hover:scale-105"
         }`}
       >
         {isOpen ? (
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" />
           </svg>
         ) : (
-          <svg className="w-6 h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6 animate-pulse" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path
               strokeLinecap="round"
               strokeLinejoin="round"

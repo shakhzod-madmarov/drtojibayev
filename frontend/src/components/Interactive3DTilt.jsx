@@ -26,6 +26,10 @@ export const Interactive3DTilt = ({
   const handleMouseMove = useCallback(
     (e) => {
       if (!cardRef.current) return;
+      // On devices without fine pointer/hover (e.g. phones/tablets), avoid sticky tilt
+      if (typeof window !== "undefined" && window.matchMedia && !window.matchMedia("(hover: hover)").matches) {
+        return;
+      }
       const rect = cardRef.current.getBoundingClientRect();
       const x = e.clientX - rect.left;
       const y = e.clientY - rect.top;
@@ -74,6 +78,8 @@ export const Interactive3DTilt = ({
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      onTouchEnd={handleMouseLeave}
+      onTouchCancel={handleMouseLeave}
       className={`relative preserve-3d will-change-transform ${className}`}
       style={style}
     >

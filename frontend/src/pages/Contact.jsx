@@ -73,7 +73,7 @@ const Contact = () => {
       {/* 4 Contact Cards */}
       <section aria-label={lang === "uz" ? "Aloqa vositalari" : lang === "ru" ? "Способы связи" : "Contact Methods"} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {/* Phone 1 */}
-        <div className="p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
+        <div className="p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
           <div className="space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-primary-light text-primary flex items-center justify-center">
               <IconPhone className="w-6 h-6 text-primary" />
@@ -96,7 +96,7 @@ const Contact = () => {
         </div>
 
         {/* Phone 2 */}
-        <div className="p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
+        <div className="p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
           <div className="space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-primary-light text-primary flex items-center justify-center">
               <IconPhone className="w-6 h-6 text-primary" />
@@ -119,7 +119,7 @@ const Contact = () => {
         </div>
 
         {/* Telegram */}
-        <div className="p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
+        <div className="p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
           <div className="space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-sky-50 text-sky-500 flex items-center justify-center">
               <IconTelegram className="w-6 h-6 text-sky-500" />
@@ -144,7 +144,7 @@ const Contact = () => {
         </div>
 
         {/* Instagram */}
-        <div className="p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
+        <div className="p-5 sm:p-6 rounded-2xl sm:rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
           <div className="space-y-4">
             <div className="w-12 h-12 rounded-2xl bg-pink-50 text-pink-500 flex items-center justify-center">
               <IconInstagram className="w-6 h-6 text-pink-500" />

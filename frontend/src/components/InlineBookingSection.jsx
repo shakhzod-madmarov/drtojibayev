@@ -424,7 +424,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
           /* Booking Form */
           <form
             onSubmit={handleFormSubmit}
-            className="p-6 sm:p-8 rounded-3xl bg-white shadow-luxury border border-brandLilac/30"
+            className="p-4 sm:p-6 md:p-8 rounded-2xl sm:rounded-3xl bg-white shadow-luxury border border-brandLilac/30"
           >
             {/* Honeypot field for anti-bot protection */}
             <input
@@ -440,7 +440,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
             />
 
             {/* Service Selection */}
-            <div className="mb-8">
+            <div className="mb-6 sm:mb-8">
               <label htmlFor="booking-service-select" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                 {t.serviceLabel}
               </label>
@@ -460,7 +460,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
             </div>
 
             {/* Step 1: Date Chips */}
-            <fieldset className="mb-8 border-none p-0 m-0">
+            <fieldset className="mb-6 sm:mb-8 border-none p-0 m-0">
               <div className="flex items-center justify-between mb-3">
                 <legend className="text-xs font-bold text-slate-700 uppercase tracking-wider">
                   {t.dayGroupLabel}
@@ -486,7 +486,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
                         setSelectedDate(day.date);
                         setSelectedTime("");
                       }}
-                      className={`shrink-0 px-4 py-2.5 rounded-2xl text-xs font-bold border transition-all ${
+                      className={`shrink-0 px-3.5 sm:px-4 py-2 sm:py-2.5 rounded-xl sm:rounded-2xl text-xs font-bold border transition-all ${
                         isSelected
                           ? "bg-gradient-to-r from-brandPurple to-brandAmethyst text-white border-transparent shadow-purple scale-102"
                           : isClosed
@@ -502,7 +502,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
             </fieldset>
 
             {/* Step 2: Time Slots */}
-            <fieldset className="mb-8 border-none p-0 m-0">
+            <fieldset className="mb-6 sm:mb-8 border-none p-0 m-0">
               <legend className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
                 {t.timeGroupLabel} {selectedDate && `(${formatDmy(selectedDate)})`}
               </legend>
@@ -518,7 +518,7 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
                         role="radio"
                         aria-checked={isSelected}
                         onClick={() => setSelectedTime(timeStr)}
-                        className={`py-2 px-3 rounded-xl text-xs font-mono font-bold border transition-all ${
+                        className={`py-2 px-1.5 sm:px-3 rounded-xl text-xs font-mono font-bold border transition-all text-center ${
                           isSelected
                             ? "bg-primary text-white border-primary shadow-xs"
                             : "bg-[#FAF7FD] text-slate-700 border-brandLilac/30 hover:border-brandAmethyst hover:bg-white"
