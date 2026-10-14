@@ -54,26 +54,26 @@ export const BeforeAfterSlider = ({
 
   const defaultBefore =
     beforeLabel ||
-    (lang === "uz" ? "Oldin (Before)" : lang === "ru" ? "До лечения" : "Before");
+    (lang === "uz" ? "Muolajadan oldin" : lang === "ru" ? "До лечения" : "Before treatment");
   const defaultAfter =
     afterLabel ||
-    (lang === "uz" ? "Keyin (Natija)" : lang === "ru" ? "После лечения" : "After Result");
+    (lang === "uz" ? "Muolajadan so'ng" : lang === "ru" ? "После лечения" : "After treatment");
 
   const defaultTitle =
     title ||
     (lang === "uz"
-      ? "Raqamli Tabassum Natijalari"
+      ? "Haqiqiy Klinik Natijalar va O'zgarishlar"
       : lang === "ru"
-      ? "Результаты Цифровой Трансформации Улыбки"
-      : "Digital Smile Transformation Results");
+      ? "Реальные результаты преображения улыбок"
+      : "Real Clinical Smile Transformations");
 
   const defaultSub =
     subtitle ||
     (lang === "uz"
-      ? "Slayderni suring va Dr. Olimjon Tojibayev tomonidan amalga oshirilgan natijalarni ko'ring."
+      ? "Chiziqchani surib, Dr. Olimjon Tojibayev tomonidan amalga oshirilgan tabiiy o'zgarishlarni bevosita solishtiring."
       : lang === "ru"
-      ? "Передвигайте ползунок, чтобы оценить ювелирную точность и эстетику работы Д-ра Олимжона Тожибаева."
-      : "Drag the slider to compare clinical results delivered by Dr. Olimjon Tojibayev.");
+      ? "Передвигайте бегунок влево и вправо, чтобы сравнить состояние до и после лечения у Д-ра Олимжона Тожибаева."
+      : "Slide back and forth to compare clinical before-and-after results achieved by Dr. Olimjon Tojibayev.");
 
   const updatePosition = useCallback((clientX) => {
     if (!containerRef.current) return;
@@ -124,7 +124,7 @@ export const BeforeAfterSlider = ({
     <div className="w-full max-w-4xl mx-auto my-12 px-4 sm:px-6">
       <div className="text-center mb-8">
         <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-2 uppercase">
-          {lang === "uz" ? "KLINIK NATIJALAR" : lang === "ru" ? "КЛИНИЧЕСКИЕ РЕЗУЛЬТАТЫ" : "CLINICAL RESULTS"}
+          {lang === "uz" ? "KLINIK TAJRIBA VA NATIJALAR" : lang === "ru" ? "КЛИНИЧЕСКИЕ РЕЗУЛЬТАТЫ" : "CLINICAL TRANSFORMATIONS"}
         </span>
         <h3 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
           {defaultTitle}

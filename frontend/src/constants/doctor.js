@@ -5,17 +5,21 @@ export const DOCTOR_INFO = {
   name: "Dr. Olimjon Tojibayev",
   shortName: "Dr. Tojibayev",
   fullName: "Tojibayev Olimjon",
-  title: "Цифровой Стоматолог",
   titleLang: {
-    uz: "Raqamli Stomatolog · Vrach Stomatolog",
-    ru: "Цифровой Стоматолог · Врач-Стоматолог",
-    en: "Digital Dentist · Dental Specialist",
+    uz: "Shifokor-Stomatolog · Implantolog va Ortodont",
+    ru: "Врач-Стоматолог · Эксперт по имплантации и ортодонтии",
+    en: "Dental Surgeon · Implantologist & Orthodontist",
+  },
+  titles: {
+    uz: "Shifokor-Stomatolog · Implantolog va Ortodont",
+    ru: "Врач-Стоматолог · Эксперт по имплантации и ортодонтии",
+    en: "Dental Surgeon · Implantologist & Orthodontist",
   },
   specialtiesText: "Dental Implant · Shaffof Elayner · Breket · Tsirkon & Keramika · Vinirlar · Og'riqsiz Davolash",
   specialtiesTextLang: {
-    uz: "Raqamli stomatologiya · Implantlar · Shaffof elaynerlar · Breketlar · Tsirkon & Keramika · Vinirlar · Og'riqsiz terapiya",
-    ru: "Цифровая стоматология · Импланты · Элайнеры · Брекеты · Цирконий & Керамика · Виниры · Безболезненная терапия",
-    en: "Digital Dentistry · Dental Implants · Clear Aligners · Braces · Zirconia & Ceramics · Veneers · Painless Therapy",
+    uz: "3D diagnostika · Biotitan implantlar · Shaffof elaynerlar · Breketlar · Tsirkon koronkalar · Estetik vinirlar · Og'riqsiz davolash",
+    ru: "3D диагностика · Дентальная имплантация · Элайнеры · Брекеты · Циркониевые коронки · Виниры · Бережная терапия",
+    en: "3D Diagnostics · Dental Implants · Clear Aligners · Braces · Zirconia Crowns · Aesthetic Veneers · Gentle Therapy",
   },
   careerStartYear: 2019, // 7+ years of clinical experience in 2026
   experienceYears: 7,
@@ -86,14 +90,14 @@ export const getExperienceBadge = (lang = "uz") => {
 
 export const getHeroTag = (lang = "uz") => {
   const years = getYearsOfExperience();
-  if (lang === "ru") return `Цифровой Стоматолог · ${years} лет опыта · Личный Приём`;
-  if (lang === "en") return `Digital Dentist · ${years} Years Experience · Private Practice`;
-  return `Raqamli Stomatolog · ${years} Yillik Tajriba · Shaxsiy Qabul`;
+  if (lang === "ru") return `${years} Лет Опыта · Личный Приём · Андижан`;
+  if (lang === "en") return `${years} Years Clinical Practice · Dedicated Care · Andijan`;
+  return `${years} Yillik Tajriba · Shaxsiy Qabul · Andijon`;
 };
 
 export const getServicesTag = (lang = "uz") => {
   const years = getYearsOfExperience();
-  if (lang === "ru") return `${years} ЛЕТ КЛИНИЧЕСКОГО ОПЫТА · ЦИФРОВАЯ СТОМАТОЛОГИЯ И ИМПЛАНТАЦИЯ`;
-  if (lang === "en") return `${years} YEARS CLINICAL MASTERY · DIGITAL DENTISTRY & IMPLANTOLOGY`;
-  return `${years} YILLIK KLINIK TAJRIBA · RAQAMLI STOMATOLOGIYA VA IMPLANTATSIYA`;
+  if (lang === "ru") return `${years} ЛЕТ ПРАКТИКИ · ДЕНТАЛЬНАЯ ИМПЛАНТАЦИЯ И ЭСТЕТИКА УЛЫБКИ`;
+  if (lang === "en") return `${years} YEARS EXPERIENCE · GUIDED IMPLANTS & AESTHETIC SMILES`;
+  return `${years} YILLIK TAJRIBA · DENTAL IMPLANTATSIYA VA ESTETIK TABASSUM`;
 };

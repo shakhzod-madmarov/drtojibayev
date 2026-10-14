@@ -29,9 +29,9 @@ const About = ({ onOpenBooking }) => {
         en: "2019 – Present",
       },
       title: {
-        uz: `Цифровой Стоматолог, Implantolog va Ortodont (${years} Yillik Tajriba)`,
-        ru: `Цифровой Стоматолог, Имплантолог и Ортодонт (${years} Лет Практики)`,
-        en: `Digital Dentist & Implant Specialist (${years} Years Experience)`,
+        uz: `Shifokor-Stomatolog, Implantolog va Ortodont (${years} Yillik Tajriba)`,
+        ru: `Врач-Стоматолог, Имплантолог и Ортодонт (${years} Лет Практики)`,
+        en: `Dental Surgeon, Implantologist & Orthodontist (${years} Years Experience)`,
       },
       desc: {
         uz: "5,000+ dan ortiq bemorlarning tishlarini og'riqsiz davolash, biotitan implantlar, shaffof elaynerlar, breketlar va tsirkon qoplamalar bilan estetik tiklash. Smile Dental Group, Andijon.",
@@ -46,9 +46,9 @@ const About = ({ onOpenBooking }) => {
         en: "Digital Dentistry Fellowship",
       },
       title: {
-        uz: "3D Intraoral Skanerlash va CAD/CAM Muhandisligi",
-        ru: "3D Интраоральное Сканирование и CAD/CAM Инженерия",
-        en: "3D Intraoral Scanning & CAD/CAM Systems",
+        uz: "3D Intraoral Diagnostika va Raqamli Ortodontiya",
+        ru: "3D Интраоральная Диагностика и Цифровая Ортодонтия",
+        en: "3D Intraoral Diagnostics & Digital Orthodontics",
       },
       desc: {
         uz: "Og'iz bo'shlig'i o'lchamlarini raqamli skanerlash, virtual tabassum dizayni (DSD) va navigatsion jarrohlik shablonlarini loyihalash bo'yicha maxsus tayyorgarlik.",
@@ -162,17 +162,17 @@ const About = ({ onOpenBooking }) => {
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
           {lang === "uz"
-            ? `Dr. Olimjon Tojibayev — ${years} Yillik Tajribaga Ega Raqamli Stomatolog`
+            ? `Dr. Olimjon Tojibayev — Shaxsiy Qabul va Yuksak Aniq Stomatologiya`
             : lang === "ru"
-            ? `Д-р Олимжон Тожибаев — Цифровой Стоматолог (${years} Лет Опыта)`
-            : `Dr. Olimjon Tojibayev — Digital Dentist (${years} Years Experience)`}
+            ? `Д-р Олимжон Тожибаев — Личная практика и бережная стоматология`
+            : `Dr. Olimjon Tojibayev — Dedicated Personal Dental Practice`}
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Dr. Olimjon Tojibayevning shaxsiy qabuli (Smile Dental Group bazasida, Andijon). 3D intraoral skanerlash, biotitan implantlar, shaffof elaynerlar va 100% og'riqsiz davolash."
+            ? "Har bir bemorga o'z yaqinimdek munosabatda bo'lish, qo'rquvsiz muhit va tishlarning tabiiy go'zalligini umrbod saqlab qolish — mening shaxsiy burchimdir."
             : lang === "ru"
-            ? "Персональный приём Д-ра Олимжона Тожибаева (на базе Smile Dental Group, Андижан). 3D сканирование, имплантация, элайнеры и лечение без боли."
-            : "Dr. Olimjon Tojibayev's personal practice (hosted at Smile Dental Group, Andijan). Precision 3D scanning, guided implants, clear aligners, and gentle care."}
+            ? "Относиться к каждому пациенту как к близкому человеку, лечить без боли и сохранять природную красоту зубов — моё главное призвание."
+            : "Treating every patient like family, eliminating fear, and preserving the natural beauty of your teeth is my personal clinical commitment."}
         </p>
       </header>
 
@@ -187,17 +187,17 @@ const About = ({ onOpenBooking }) => {
           </span>
           <h2 id="philosophy-heading" className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
             {lang === "uz"
-              ? "Zamonaviy raqamli texnologiyalar inson salomatligi va go'zalligi xizmatida"
+              ? "Mening Shifokorlik Qoidam: Avval Inson, Keyin Muolaja"
               : lang === "ru"
-              ? "Передовые цифровые технологии на страже вашего здоровья и красоты"
-              : "Modern Digital Technologies in Service of Your Health & Beauty"}
+              ? "Моё врачебное правило: сначала человек, затем лечение"
+              : "My Clinical Philosophy: The Patient Always Comes First"}
           </h2>
           <p className="text-sm sm:text-base text-slate-600 leading-relaxed">
             {lang === "uz"
-              ? "Dr. Olimjon Tojibayev — stomatologiyadagi eng zamonaviy yo'nalish — 'Raqamli Stomatologiya' (Digital Dentistry) bo'yicha ixtisoslashgan mutaxassis. 7 yillik amaliy tajriba davomida yuzlab murakkab implantatsiya, shaffof elaynerlar orqali tish qatorini to'g'irlash, tsirkon va keramik vinirlar o'rnatish muolajalarini muvaffaqiyatli yakunlagan. Har bir bemorga xuddi o'z yaqinidek g'amxo'rlik va 100% og'riqsiz muhit ta'minlanadi."
+              ? "Stomatolog kreslosi ko'pchilik uchun bolalikdagi og'riq va noxush xotiralar bilan bog'liq. Men o'z amaliyotimda bu qarashni butunlay o'zgartirishni maqsad qilganman. 7 yillik amaliy tajribam davomida men shuni angladimki, eng yaxshi natija — faqat shifokor va bemor o'rtasidagi to'liq ishonch, xotirjamlik va shoshilmasdan qilingan zargarlik mehnati orqali yaratiladi. Bizda ortiqcha keraksiz xizmatlar taklif qilinmaydi: agar tishingizni asrab qolish imkoni bo'lsa, oxirigacha uni saqlaymiz. Agar implant yoki to'g'irlash kerak bo'lsa — eng xavfsiz va uzoq yillik yo'lni tanlaymiz."
               : lang === "ru"
-              ? "Д-р Олимжон Тожибаев — прогрессивный стоматолог, активно внедряющий цифровые методы диагностики и лечения. 7 лет практического опыта включают сотни успешных операций по имплантации, исправлению прикуса прозрачными элайнерами и эстетической реставрации коронками и винирами в клинике Smile Dental Group."
-              : "Dr. Olimjon Tojibayev specializes in modern Digital Dentistry. Backed by 7+ years of dedicated clinical practice, he has helped thousands of patients regain confidence through computer-guided implants, discreet aligners, zirconia restorations, and zero-pain therapy."}
+              ? "Стоматологическое кресло у многих ассоциируется с детским страхом и болью. В своей работе я поставил цель разрушить этот стереотип. За 7 лет практики я убедился: идеальный результат рождается только из искреннего доверия между врачом и пациентом, спокойной атмосферы и ювелирной точности. Я никогда не навязываю лишних процедур: если зуб можно спасти — мы боремся за него до конца. Если требуется имплантация или элайнеры — выбираем самое надёжное и щадящее решение на долгие годы."
+              : "For many, a dental visit brings back childhood memories of anxiety and discomfort. In my practice, my mission is to completely change that experience. Over 7+ years of clinical work, I have found that the finest dental outcomes come from mutual trust, unhurried care, and jeweler-like precision. I never recommend unnecessary treatments: if a natural tooth can be preserved, we fight for it. When implants or aligners are needed, we choose the safest, longest-lasting path built to serve you for decades."}
           </p>
 
           <div className="pt-2 flex flex-wrap gap-4">

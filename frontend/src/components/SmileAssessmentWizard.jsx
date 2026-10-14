@@ -59,9 +59,9 @@ export const SmileAssessmentWizard = () => {
 
   const stepsData = {
     uz: {
-      badge: "ONLINE TABASSUM TAHLILI",
-      title: "O'zingizga Mos Muolajani 1 Daqiqada Aniqlang",
-      subtitle: "3 ta oddiy savolga javob bering va Dr. Olimjon Tojibayev tavsiya etadigan optimal davolash yo'nalishini bilib oling.",
+      badge: "TABASSUM TAHLILI",
+      title: "Sizga Qaysi Muolaja To'g'ri Keladi?",
+      subtitle: "2 ta oddiy savolga javob bering va Dr. Olimjon Tojibayev tavsiya etadigan optimal davolash rejasini bilib oling.",
       step1Title: "1-qadam: Sizni nima bezovta qilmoqda?",
       complaints: [
         { id: "implant", label: "Tish yo'qotilgan yoki olingan", rec: "implant" },
@@ -85,9 +85,9 @@ export const SmileAssessmentWizard = () => {
       bookCta: "Shifokor bilan 3D ko'rikka yozilish →",
     },
     ru: {
-      badge: "ОНЛАЙН-ПОДБОР ЛЕЧЕНИЯ",
-      title: "Подберите идеальное лечение за 1 минуту",
-      subtitle: "Ответьте на 3 простых вопроса и узнайте подходящее направление лечения у Д-ра Олимжона Тожибаева.",
+      badge: "ЭКСПРЕСС-ПОДБОР ЛЕЧЕНИЯ",
+      title: "Какое лечение подойдёт именно вам?",
+      subtitle: "Ответьте на 2 простых вопроса, чтобы узнать предварительную рекомендацию Д-ра Олимжона Тожибаева.",
       step1Title: "Шаг 1: Что именно вас беспокоит?",
       complaints: [
         { id: "implant", label: "Отсутствует один или несколько зубов", rec: "implant" },

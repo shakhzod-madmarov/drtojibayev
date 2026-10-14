@@ -68,16 +68,16 @@ const Booking = () => {
 
           <p className="text-xs sm:text-sm text-slate-600 max-w-2xl leading-relaxed">
             {lang === "uz"
-              ? "Dr. Olimjon Tojibayevning shaxsiy qabuliga navbatsiz yozilish (Smile Dental Group bazasida, Andijon). 3D intraoral skanerlash, biotitan implantlar, shaffof elaynerlar va 100% og'riqsiz davolash."
+              ? "Dr. Olimjon Tojibayev qabuliga qulay vaqtni tanlang. 60 soniyali qolipsiz 3D skanerlash, xavfsiz biotitan implantlar va to'liq og'riqsiz, samimiy shaxsiy muolaja."
               : lang === "ru"
-              ? "Персональная запись на приём к Д-ру Олимжону Тожибаеву без очереди (на базе Smile Dental Group, Андижан). 3D сканирование, имплантация, элайнеры и лечение без боли."
-              : "Direct online booking for Dr. Olimjon Tojibayev's personal practice (hosted at Smile Dental Group, Andijan). 3D scans, implants, aligners, and gentle care."}
+              ? "Выберите удобное время для визита к доктору Олимжону Тожибаеву. Быстрое 3D сканирование без слепков, надёжные биотитановые импланты и деликатное лечение без боли."
+              : "Choose a convenient time for your consultation with Dr. Olimjon Tojibayev. Quick 3D digital scanning without putty, reliable implants, and gentle, stress-free care."}
           </p>
 
           <div className="flex flex-wrap items-center gap-4 text-xs font-semibold text-slate-700 pt-1">
             <span className="flex items-center gap-1.5">
               <DentalDigitalScannerIcon className="w-4 h-4 text-primary" />
-              <span>{lang === "uz" ? "Raqamli Stomatolog" : lang === "ru" ? "Цифровой Стоматолог" : "Digital Dentist"}</span>
+              <span>{DOCTOR_INFO.titles[lang] || DOCTOR_INFO.titles.uz}</span>
             </span>
             <span className="flex items-center gap-1.5">
               <IconShieldCheck className="w-4 h-4 text-emerald-600" />

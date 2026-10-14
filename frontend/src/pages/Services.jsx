@@ -70,17 +70,17 @@ const Services = ({ onOpenBooking }) => {
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
           {lang === "uz"
-            ? "Raqamli Stomatologik Xizmatlar Katalogi"
+            ? "Dr. Olimjon Tojibayevning Shaxsiy Muolajalari"
             : lang === "ru"
-            ? "Каталог Услуг Цифровой Стоматологии"
-            : "Digital Dental Services & Specialties"}
+            ? "Клинические Услуги Д-ра Олимжона Тожибаева"
+            : "Clinical Treatments & Care by Dr. Olimjon Tojibayev"}
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Dr. Olimjon Tojibayev tomonidan 3D raqamli texnologiyalar asosida 100% og'riqsiz, aniq va kafolatli shaxsiy muolajalar (Smile Dental Group bazasida, Andijon)."
+            ? "Har bir tabassum o'ziga xos. Tishlaringiz salomatligi va tabiiy go'zalligini 3D raqamli aniqlikda, to'liq og'riqsiz va samimiy shaxsiy e'tibor bilan tiklaymiz."
             : lang === "ru"
-            ? "Все виды современного безболезненного лечения, 3D сканирования, имплантации и ортодонтии лично у Д-ра Олимжона Тожибаева (Smile Dental Group, Андижан)."
-            : "All dental treatments performed with 3D digital precision, biocompatible materials, and gentle care by Dr. Olimjon Tojibayev (at Smile Dental Group, Andijan)."}
+            ? "Каждая улыбка уникальна. Восстановление здоровья и эстетики ваших зубов с ювелирной 3D точностью, без боли и с искренней заботой о вашем комфорте."
+            : "Every smile is unique. Restoring oral health and natural beauty through micron 3D accuracy, painless anesthesia, and dedicated one-on-one doctor care."}
         </p>
       </div>
 

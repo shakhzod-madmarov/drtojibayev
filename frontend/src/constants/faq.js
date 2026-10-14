@@ -7,9 +7,9 @@ export const FAQ_ITEMS = [
       en: "How does Digital Dentistry differ from traditional dental methods?",
     },
     a: {
-      uz: "Raqamli stomatologiyada noqulay gips qoliplar o'rniga 3D intraoral skaner ishlatiladi. Bu bir necha soniyada tish qatorining mikron aniqlikdagi 3D modelini yaratadi. Natijada implantlar, elaynerlar va tsirkon tojlar 100% aniqlikda tayyorlanadi, xatolar xavfi bartaraf etiladi va davolash muddati 2-3 barobar qisqaradi.",
-      ru: "В цифровой стоматологии вместо неудобных гипсовых слепков используется высокоточный 3D интраоральный сканер. Создаётся идеальная цифровая копия челюсти. Импланты, элайнеры и коронки моделируются на компьютере с микронной точностью, что исключает ошибки и сокращает срок лечения в 2-3 раза.",
-      en: "In digital dentistry, messy putty impressions are replaced by a high-precision 3D intraoral scanner. A flawless virtual model of your teeth is captured in seconds, allowing implants, aligners, and zirconia crowns to be planned with micron accuracy, eliminating fitting errors and halving treatment duration.",
+      uz: "An'anaviy usullardagi ko'ngilni aynituvchi quyuq gips qoliplar o'rniga, qabulimda yengil 3D intraoral skanerdan foydalanaman. Bor-yo'g'i 60 soniya ichida tish qatorining mikron aniqlikdagi virtual nusxasi olinadi. Siz bo'lajak tabassumingizni ekranda oldindan ko'rasiz, implant va tojlarni esa zargarlik aniqligida, ortiqcha egovlashlarsiz va 2-3 barobar tezroq o'rnatamiz.",
+      ru: "Вместо неприятных слепочных масс и гипсовых оттисков на моём приёме используется лёгкий 3D интраоральный сканер. Всего за 60 секунд создаётся цифровая копия зубного ряда. Вы заранее видите результат на экране, а коронки и импланты устанавливаются с ювелирной точностью без лишней обточки и в 2-3 раза быстрее.",
+      en: "Instead of uncomfortable putty impressions, I use a featherlight 3D intraoral scanner. In just 60 seconds, a high-definition virtual 3D replica of your teeth is captured. You see your future smile on screen before treatment begins, and crowns or implants fit with jeweler precision without unnecessary drilling.",
     },
   },
   {
@@ -41,14 +41,14 @@ export const FAQ_ITEMS = [
   {
     id: "clinic-location",
     q: {
-      uz: "Smile Dental Group klinikasi qayerda joylashgan va qanday borish mumkin?",
-      ru: "Где находится клиника Smile Dental Group и как добраться?",
-      en: "Where is Smile Dental Group located and how do I get there?",
+      uz: "Dr. Olimjon Tojibayev qabuli qayerda o'tkaziladi va qanday borish mumkin?",
+      ru: "Где ведёт приём доктор Олимжон Тожибаев и как добраться?",
+      en: "Where does Dr. Olimjon Tojibayev see patients and how do I get there?",
     },
     a: {
-      uz: "Klinikamiz Andijon shahri, 1-kichik daha (Kanechka), 8-A binoda joylashgan. Avtoturargoh va qulay yo'l infratuzilmasi mavjud. Saytimizdagi 'Manzil' bo'limida Yandex va Google Maps orqali to'g'ridan-to'g'ri marshrut chizishingiz mumkin.",
-      ru: "Клиника Smile Dental Group расположена в городе Андижан, 1-й микрорайон (ориентир: Канечка), дом 8-А. В разделе 'Контакты' на сайте доступны кнопки прямой навигации в Яндекс.Картах и Google Maps.",
-      en: "Smile Dental Group is located in Andijan, 1st Microdistrict (Kanechka landmark), Building 8-A. On our Contact page, you can open one-tap driving directions via Google Maps or Yandex Maps.",
+      uz: "Mening shaxsiy qabulim Andijon shahri, 1-kichik daha (mo'ljal: Kanechka), 8-A binoda, zamonaviy Smile Dental Group bazasida o'tkaziladi. Bemorlarimiz uchun qulay avtoturargoh mavjud. Saytimizdagi 'Aloqa va Manzil' bo'limida Yandex va Google Maps orqali to'g'ridan-to'g'ri bir bosishda marshrut ochishingiz mumkin.",
+      ru: "Мой персональный приём проходит в городе Андижан, 1-й микрорайон (ориентир: Канечка), дом 8-А, на базе клиники Smile Dental Group. Есть удобная парковка. В разделе 'Контакты' на сайте вы можете в один клик построить маршрут в Яндекс.Картах или Google Maps.",
+      en: "I welcome patients in Andijan, 1st Microdistrict (Kanechka landmark), Building 8-A, hosted at the modern Smile Dental Group facility. Convenient parking is available on-site. On our Contact page, you can open one-tap driving directions via Google Maps or Yandex Maps.",
     },
   },
   {

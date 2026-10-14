@@ -22,9 +22,9 @@ const Footer = () => {
       en: "All rights reserved.",
     },
     licenseNote: {
-      uz: "Sog'liqni saqlash vazirligi litsenziyasi va MedInson ekotizimi asosida faoliyat yuritiladi.",
-      ru: "Деятельность осуществляется на основании медицинской лицензии МЗ РУз и экосистемы MedInson.",
-      en: "Operating under licensed healthcare standards of the Ministry of Health and MedInson platform.",
+      uz: "O'zbekiston Respublikasi Sog'liqni saqlash vazirligi tibbiy litsenziyasi asosida faoliyat yuritiladi.",
+      ru: "Деятельность осуществляется на основании медицинской лицензии Министерства здравоохранения РУз.",
+      en: "Operating in full compliance with healthcare licensing standards of the Ministry of Health of Uzbekistan.",
     },
   };
 
@@ -45,10 +45,10 @@ const Footer = () => {
             <Logo className="h-10 w-auto" isWhite={true} />
             <p className="text-sm text-slate-400 leading-relaxed mt-2">
               {lang === "ru"
-                ? "Д-р Олимжон Тожибаев — Цифровой Стоматолог с 7-летним опытом. 3D цифровое планирование, имплантация, прозрачные элайнеры, брекеты и эстетическая реставрация в клинике Smile Dental Group."
+                ? "Д-р Олимжон Тожибаев — персональный стоматолог по бережному сохранению зубов, имплантации и исправлению прикуса. Искренняя забота, деликатная анестезия и клиническая ответственность (Андижан, Smile Dental Group)."
                 : lang === "en"
-                ? "Dr. Olimjon Tojibayev — Digital Dentist with 7+ years of experience. Guided implants, clear aligners, aesthetic zirconia crowns, and gentle care at Smile Dental Group."
-                : "Dr. Olimjon Tojibayev — 7 yillik tajribaga ega raqamli stomatolog. 3D raqamli modellashtirish, biotitan implantlar, shaffof elaynerlar va Smile Dental Group klinikasida og'riqsiz davolash."}
+                ? "Dr. Olimjon Tojibayev — your personal dental surgeon specializing in tooth preservation, painless implants, and clear aligners. Empathetic care with uncompromising clinical standards (Andijan, Smile Dental Group)."
+                : "Dr. Olimjon Tojibayev — tishlarni saqlab qolish, og'riqsiz biotitan implantlar va shaffof elaynerlar bo'yicha shaxsiy shifokoringiz. Har bir bemorga samimiy e'tibor va yuksak mas'uliyat (Andijon, Smile Dental Group bazasida)."}
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a

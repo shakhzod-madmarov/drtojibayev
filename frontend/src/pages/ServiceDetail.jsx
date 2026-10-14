@@ -89,9 +89,9 @@ const ServiceDetail = () => {
   }[lang] || steps.uz;
 
   const seoSuffix = {
-    uz: "Dr. Olimjon Tojibayev | Цифровой Стоматолог",
-    ru: "Д-р Олимжон Тожибаев | Цифровой Стоматолог",
-    en: "Dr. Olimjon Tojibayev | Digital Dentist",
+    uz: "Dr. Olimjon Tojibayev | Shifokor-Stomatolog",
+    ru: "Д-р Олимжон Тожибаев | Врач-Стоматолог",
+    en: "Dr. Olimjon Tojibayev | Dental Surgeon",
   }[lang];
 
   const title = `${service.title[lang]} — ${seoSuffix}`;

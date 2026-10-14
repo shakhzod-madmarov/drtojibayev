@@ -8,10 +8,10 @@ const Logo = ({ className = "h-10 sm:h-11 w-auto", showText = true, isWhite = fa
   const { lang } = useLanguage();
 
   const titleByLang = {
-    uz: "RAQAMLI STOMATOLOG",
-    ru: "ЦИФРОВОЙ СТОМАТОЛОГ",
-    en: "DIGITAL DENTIST",
-  }[lang] || "RAQAMLI STOMATOLOG";
+    uz: "SHIFOKOR-STOMATOLOG",
+    ru: "ВРАЧ-СТОМАТОЛОГ",
+    en: "DENTAL SURGEON",
+  }[lang] || "SHIFOKOR-STOMATOLOG";
 
   return (
     <Link
