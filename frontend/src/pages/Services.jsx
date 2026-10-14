@@ -77,10 +77,10 @@ const Services = ({ onOpenBooking }) => {
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Dr. Olimjon Tojibayev tomonidan 3D raqamli texnologiyalar asosida 100% og'riqsiz, aniq va kafolatli muolajalar. Smile Dental Group, Andijon."
+            ? "Dr. Olimjon Tojibayev tomonidan 3D raqamli texnologiyalar asosida 100% og'riqsiz, aniq va kafolatli shaxsiy muolajalar (Smile Dental Group bazasida, Andijon)."
             : lang === "ru"
-            ? "Все виды современного безболезненного лечения, 3D сканирования, имплантации и ортодонтии у Д-ра Олимжона Тожибаева."
-            : "All dental treatments performed with 3D digital precision, biocompatible materials, and gentle care by Dr. Olimjon Tojibayev."}
+            ? "Все виды современного безболезненного лечения, 3D сканирования, имплантации и ортодонтии лично у Д-ра Олимжона Тожибаева (Smile Dental Group, Андижан)."
+            : "All dental treatments performed with 3D digital precision, biocompatible materials, and gentle care by Dr. Olimjon Tojibayev (at Smile Dental Group, Andijan)."}
         </p>
       </div>
 
@@ -118,6 +118,10 @@ const Services = ({ onOpenBooking }) => {
                   <img
                     src={service.image}
                     alt={service.title[lang]}
+                    width="640"
+                    height="400"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3">

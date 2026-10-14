@@ -197,6 +197,11 @@ const ServiceDetail = () => {
             <img
               src={service.image}
               alt={service.title[lang]}
+              width="800"
+              height="600"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
               className="w-full h-full object-cover"
             />
           </div>

@@ -45,7 +45,7 @@ const Contact = () => {
       </nav>
 
       {/* Header */}
-      <div className="text-center max-w-2xl mx-auto space-y-3">
+      <header className="text-center max-w-2xl mx-auto space-y-3">
         <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-1 uppercase">
           {lang === "uz" ? "BEVOSITA BOG'LANISH" : lang === "ru" ? "ПРЯМАЯ СВЯЗЬ" : "DIRECT HOTLINE"}
         </span>
@@ -68,10 +68,10 @@ const Contact = () => {
             <span>→</span>
           </Link>
         </div>
-      </div>
+      </header>
 
       {/* 4 Contact Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
+      <section aria-label={lang === "uz" ? "Aloqa vositalari" : lang === "ru" ? "Способы связи" : "Contact Methods"} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
         {/* Phone 1 */}
         <div className="p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple transition-all space-y-4 flex flex-col justify-between">
           <div className="space-y-4">
@@ -167,7 +167,7 @@ const Contact = () => {
             {DOCTOR_INFO.instagramHandle}
           </a>
         </div>
-      </div>
+      </section>
 
       {/* Clinic Location Map */}
       <ClinicLocationMap />

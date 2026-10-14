@@ -47,13 +47,13 @@ export const ClinicLocationMap = () => {
   }[lang] || labels.uz;
 
   return (
-    <section className="w-full py-12 sm:py-16">
+    <section aria-labelledby="clinic-location-heading" className="w-full py-12 sm:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-2xl mx-auto mb-10">
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-3 uppercase">
             {labels.badge}
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 tracking-tight">
+          <h2 id="clinic-location-heading" className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 tracking-tight">
             {labels.title}
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-2">

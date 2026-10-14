@@ -80,7 +80,7 @@ const injectSchema = (html, json) => {
   const safe = (typeof json === "string" ? json : JSON.stringify(json)).split("<").join(String.raw`\u003c`);
   return html.replace(
     "</head>",
-    `  <script type="application/ld+json" data-prerendered="true">${safe}</script>\n  </head>`
+    `  <script id="seo-schema-json" type="application/ld+json" data-prerendered="true">${safe}</script>\n  </head>`
   );
 };
 

@@ -100,6 +100,10 @@ export const Doctor3DCard = () => {
                   <img
                     src={assets.businessCardFront}
                     alt="Dr. Olimjon Tojibayev Vizitka - Oldi"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1 shadow-xs">
@@ -113,11 +117,15 @@ export const Doctor3DCard = () => {
                   <img
                     src={assets.businessCardBack}
                     alt="Dr. Olimjon Tojibayev Vizitka - Xizmatlar"
+                    width="600"
+                    height="375"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute top-2.5 right-2.5 px-2 py-0.5 rounded-full bg-primary/80 backdrop-blur-xs text-[10px] text-white font-medium flex items-center gap-1 shadow-xs">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
-                    <span>Smile Dental Group</span>
+                    <span>Dr. Olimjon Tojibayev</span>
                   </div>
                 </div>
               </div>

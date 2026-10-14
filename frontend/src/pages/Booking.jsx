@@ -46,7 +46,7 @@ const Booking = () => {
       </nav>
 
       {/* Doctor Summary Banner */}
-      <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury flex flex-col md:flex-row items-center justify-between gap-6">
+      <header className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="space-y-3">
           <div className="flex flex-wrap items-center gap-2">
             <span className="px-3 py-1 rounded-full bg-primary-light text-primary text-xs font-black uppercase border border-brandLilac/40">
@@ -96,7 +96,7 @@ const Booking = () => {
             <span>{DOCTOR_INFO.phoneDisplay}</span>
           </a>
         </div>
-      </div>
+      </header>
 
       {/* Main Interactive Booking Section */}
       <InlineBookingSection />

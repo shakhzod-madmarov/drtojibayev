@@ -106,6 +106,8 @@ export const Interactive3DCostCalculator = () => {
       tech: "Qo'llaniladigan texnologiya:",
       bookBtn: "Ushbu muolajaga qabulga yozilish →",
       individualNote: "Har bir bemorning holati individual 3D diagnostika orqali aniqlanadi.",
+      decrease: "Miqdorni kamaytirish",
+      increase: "Miqdorni oshirish",
     },
     ru: {
       badge: "ИНТЕРАКТИВНЫЙ КАЛЬКУЛЯТОР",
@@ -120,6 +122,8 @@ export const Interactive3DCostCalculator = () => {
       tech: "Используемая технология:",
       bookBtn: "Записаться на эту процедуру →",
       individualNote: "Точный план и стоимость определяются на персональной 3D диагностике.",
+      decrease: "Уменьшить количество",
+      increase: "Увеличить количество",
     },
     en: {
       badge: "INTERACTIVE CALCULATOR",
@@ -134,6 +138,8 @@ export const Interactive3DCostCalculator = () => {
       tech: "Technology used:",
       bookBtn: "Book Appointment for this Treatment →",
       individualNote: "Exact timeline and customized plan are established during your 3D digital consultation.",
+      decrease: "Decrease quantity",
+      increase: "Increase quantity",
     },
   }[lang] || labels.uz;
 
@@ -197,7 +203,7 @@ export const Interactive3DCostCalculator = () => {
               <div className="flex items-center gap-4">
                 <button
                   type="button"
-                  aria-label="Kamaytirish"
+                  aria-label={labels.decrease}
                   onClick={() => setQuantity(Math.max(current.min, quantity - 1))}
                   className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
                 >
@@ -218,7 +224,7 @@ export const Interactive3DCostCalculator = () => {
                 />
                 <button
                   type="button"
-                  aria-label="Ko'paytirish"
+                  aria-label={labels.increase}
                   onClick={() => setQuantity(Math.min(current.max, quantity + 1))}
                   className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
                 >

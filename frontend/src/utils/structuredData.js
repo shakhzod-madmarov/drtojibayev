@@ -2,6 +2,7 @@ import { SITE_ORIGIN } from "../constants/seo";
 import { localizePath } from "./language";
 import { DOCTOR_INFO } from "../constants/doctor";
 import { PRIMARY_CLINIC } from "../constants/clinics";
+import { FAQ_ITEMS } from "../constants/faq";
 
 export const withTrailingSlash = (path) => (path.endsWith("/") ? path : `${path}/`);
 
@@ -158,7 +159,7 @@ export const buildDoctorProfileSchema = (lang = "uz", breadcrumbs = []) => {
         "@type": "Dentist",
         "@id": `${SITE_ORIGIN}/#dentist`,
         "name": PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz,
-        "hasMap": PRIMARY_CLINIC.yandexMapUrl,
+        "hasMap": PRIMARY_CLINIC.maps.yandex,
         "address": {
           "@type": "PostalAddress",
           "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
@@ -196,7 +197,7 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
       "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
       "telephone": DOCTOR_INFO.phoneRaw,
       "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
-      "hasMap": PRIMARY_CLINIC.yandexMapUrl,
+      "hasMap": PRIMARY_CLINIC.maps.yandex,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
@@ -275,86 +276,110 @@ export const buildBookingPageSchema = (lang = "uz", breadcrumbs = []) => {
   };
 };
 
-export const buildHomePageSchema = (lang = "uz") => ({
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Dentist",
-      "@id": `${SITE_ORIGIN}/#dentist`,
-      "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
-      "alternateName": "Dr. Olimjon Tojibayev — Цифровой Стоматолог",
-      "url": `${SITE_ORIGIN}/`,
-      "telephone": DOCTOR_INFO.phoneRaw,
-      "priceRange": "$$",
-      "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
-      "logo": `${SITE_ORIGIN}/logo_icon.png`,
-      "hasMap": PRIMARY_CLINIC.yandexMapUrl,
-      "currenciesAccepted": "UZS",
-      "paymentAccepted": "Cash, Credit Card, Humo, Uzcard",
-      "medicalSpecialty": [
-        "Dentistry",
-        "Prosthodontics",
-        "Orthodontics",
-        "OralSurgery",
-      ],
-      "areaServed": {
-        "@type": "AdministrativeArea",
-        "name": "Andijon viloyati",
-      },
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
-        "addressLocality": PRIMARY_CLINIC.city[lang] || PRIMARY_CLINIC.city.uz,
-        "addressCountry": "UZ",
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": PRIMARY_CLINIC.coordinates.lat,
-        "longitude": PRIMARY_CLINIC.coordinates.lng,
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": DOCTOR_INFO.phoneRaw,
-        "contactType": "reservations",
-        "availableLanguage": ["uz", "ru", "en"],
-      },
-      "openingHoursSpecification": [
-        {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-          "opens": "08:30",
-          "closes": "18:30",
-        },
-      ],
-      "sameAs": [
-        DOCTOR_INFO.telegramUrl,
-        DOCTOR_INFO.instagramUrl,
-      ],
+export const buildHomePageSchema = (lang = "uz") => {
+  const faqList = FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    "name": item.q[lang] || item.q.uz,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": item.a[lang] || item.a.uz,
     },
-    {
-      "@type": "Physician",
-      "@id": `${SITE_ORIGIN}/#doctor`,
-      "name": DOCTOR_INFO.name,
-      "jobTitle": lang === "ru" ? "Цифровой Стоматолог" : lang === "en" ? "Digital Dentist" : "Raqamli Stomatolog",
-      "medicalSpecialty": "Dentistry",
-      "telephone": DOCTOR_INFO.phoneRaw,
-      "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
-      "knowsAbout": [
-        "Digital Dentistry",
-        "Dental Implants",
-        "Clear Aligners",
-        "Orthodontic Braces",
-        "Zirconia Crowns",
-        "Ceramic Veneers",
-        "Painless Dentistry",
-      ],
-      "worksFor": {
+  }));
+
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Dentist",
         "@id": `${SITE_ORIGIN}/#dentist`,
+        "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
+        "alternateName": "Dr. Olimjon Tojibayev — Цифровой Стоматолог",
+        "url": `${SITE_ORIGIN}/`,
+        "telephone": DOCTOR_INFO.phoneRaw,
+        "priceRange": "$$",
+        "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
+        "logo": `${SITE_ORIGIN}/logo_icon.png`,
+        "hasMap": PRIMARY_CLINIC.maps.yandex,
+        "currenciesAccepted": "UZS",
+        "paymentAccepted": "Cash, Credit Card, Humo, Uzcard",
+        "medicalSpecialty": [
+          "Dentistry",
+          "Prosthodontics",
+          "Orthodontics",
+          "OralSurgery",
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "worstRating": "1",
+          "ratingCount": "128",
+          "reviewCount": "128",
+        },
+        "areaServed": {
+          "@type": "AdministrativeArea",
+          "name": "Andijon viloyati",
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
+          "addressLocality": PRIMARY_CLINIC.city[lang] || PRIMARY_CLINIC.city.uz,
+          "addressCountry": "UZ",
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": PRIMARY_CLINIC.coordinates.lat,
+          "longitude": PRIMARY_CLINIC.coordinates.lng,
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": DOCTOR_INFO.phoneRaw,
+          "contactType": "reservations",
+          "availableLanguage": ["uz", "ru", "en"],
+        },
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "08:30",
+            "closes": "18:30",
+          },
+        ],
+        "sameAs": [
+          DOCTOR_INFO.telegramUrl,
+          DOCTOR_INFO.instagramUrl,
+        ],
       },
-      "sameAs": [
-        DOCTOR_INFO.telegramUrl,
-        DOCTOR_INFO.instagramUrl,
-      ],
-    },
-  ],
-});
+      {
+        "@type": "Physician",
+        "@id": `${SITE_ORIGIN}/#doctor`,
+        "name": DOCTOR_INFO.name,
+        "jobTitle": lang === "ru" ? "Цифровой Стоматолог" : lang === "en" ? "Digital Dentist" : "Raqamli Stomatolog",
+        "medicalSpecialty": "Dentistry",
+        "telephone": DOCTOR_INFO.phoneRaw,
+        "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
+        "knowsAbout": [
+          "Digital Dentistry",
+          "Dental Implants",
+          "Clear Aligners",
+          "Orthodontic Braces",
+          "Zirconia Crowns",
+          "Ceramic Veneers",
+          "Painless Dentistry",
+        ],
+        "worksFor": {
+          "@id": `${SITE_ORIGIN}/#dentist`,
+        },
+        "sameAs": [
+          DOCTOR_INFO.telegramUrl,
+          DOCTOR_INFO.instagramUrl,
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${urlFor("/", lang)}#faq`,
+        "mainEntity": faqList,
+      },
+    ],
+  };
+};

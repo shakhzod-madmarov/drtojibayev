@@ -55,34 +55,34 @@ export const PAGE_SEO = {
   },
   contact: {
     uz: {
-      title: "Aloqa va Manzil — Dr. Olimjon Tojibayev | Smile Dental Group Andijon",
+      title: "Aloqa va Qabul — Dr. Olimjon Tojibayev | Raqamli Stomatolog (Andijon)",
       description:
         "Dr. Olimjon Tojibayev qabuli — Smile Dental Group (Andijon, 1-kichik daha 8-A Kanechka). Tel: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev, Instagram: @dr_tojibayev.",
     },
     ru: {
-      title: "Контакты и Запись — Д-р Олимжон Тожибаев | Smile Dental Group Андижан",
+      title: "Контакты и Запись — Д-р Олимжон Тожибаев | Цифровой Стоматолог Андижан",
       description:
         "Приём Д-ра Олимжона Тожибаева в Smile Dental Group (г. Андижан, 1-й микрорайон 8-А Канечка). Телефоны: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
     },
     en: {
-      title: "Contact & Appointments — Dr. Olimjon Tojibayev | Smile Dental Group",
+      title: "Contact & Appointments — Dr. Olimjon Tojibayev | Digital Dentist Andijan",
       description:
         "Visit Dr. Olimjon Tojibayev at Smile Dental Group (1st Microdistrict 8-A Kanechka, Andijan). Phones: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
     },
   },
   booking: {
     uz: {
-      title: "Onlayn Qabulga Yozilish — Dr. Olimjon Tojibayev | Smile Dental Group",
+      title: "Onlayn Qabulga Yozilish — Dr. Olimjon Tojibayev | Raqamli Stomatolog",
       description:
         "Dr. Olimjon Tojibayev qabuliga onlayn yozilish. Qulay sana va bo'sh soatni tanlang, navbatsiz qabulga yoziling. Tel: +998 90 541 97 57.",
     },
     ru: {
-      title: "Онлайн Запись на Приём — Д-р Олимжон Тожибаев | Андижан",
+      title: "Онлайн Запись на Приём — Д-р Олимжон Тожибаев | Цифровой Стоматолог",
       description:
         "Удобная онлайн-запись к цифровому стоматологу Д-ру Олимжону Тожибаеву без очередей. Телефоны: +998 90 541 97 57, +998 93 418 97 57.",
     },
     en: {
-      title: "Book Online Appointment — Dr. Olimjon Tojibayev | Andijan",
+      title: "Book Online Appointment — Dr. Olimjon Tojibayev | Digital Dentist",
       description:
         "Reserve your digital dental consultation with Dr. Olimjon Tojibayev. Fast, hassle-free booking. Phone: +998 90 541 97 57.",
     },

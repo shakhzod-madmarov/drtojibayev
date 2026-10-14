@@ -29,13 +29,13 @@ export const FaqAccordion = () => {
   }[lang] || labels.uz;
 
   return (
-    <section className="w-full py-12 sm:py-16">
+    <section aria-labelledby="faq-section-heading" className="w-full py-12 sm:py-16">
       <div className="max-w-4xl mx-auto px-4 sm:px-6">
         <div className="text-center max-w-xl mx-auto mb-10">
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-3 uppercase">
             {labels.badge}
           </span>
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
+          <h2 id="faq-section-heading" className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
             {labels.title}
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-2">
@@ -46,16 +46,20 @@ export const FaqAccordion = () => {
         <div className="space-y-3">
           {FAQ_ITEMS.map((item, idx) => {
             const isOpen = openIndex === idx;
+            const buttonId = `faq-btn-${item.id}`;
+            const panelId = `faq-panel-${item.id}`;
             return (
               <div
                 key={item.id}
                 className="rounded-2xl bg-white border border-brandLilac/30 shadow-xs overflow-hidden transition-all duration-200"
               >
                 <button
+                  id={buttonId}
                   type="button"
                   onClick={() => toggleItem(idx)}
-                  className="w-full px-5 sm:px-6 py-4 sm:py-4.5 text-left flex items-center justify-between gap-4 focus:outline-none"
+                  className="w-full px-5 sm:px-6 py-4 sm:py-4.5 text-left flex items-center justify-between gap-4 focus:outline-none focus-visible:ring-2 focus-visible:ring-primary"
                   aria-expanded={isOpen}
+                  aria-controls={panelId}
                 >
                   <span className="font-bold text-sm sm:text-base text-slate-900 pr-2">
                     {item.q[lang] || item.q.uz}
@@ -66,13 +70,19 @@ export const FaqAccordion = () => {
                         ? "bg-primary text-white rotate-180"
                         : "bg-primary-light text-primary"
                     }`}
+                    aria-hidden="true"
                   >
                     ↓
                   </span>
                 </button>
 
                 {isOpen && (
-                  <div className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-50 animate-in fade-in duration-200">
+                  <div
+                    id={panelId}
+                    role="region"
+                    aria-labelledby={buttonId}
+                    className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-50 animate-in fade-in duration-200"
+                  >
                     {item.a[lang] || item.a.uz}
                   </div>
                 )}

@@ -218,7 +218,7 @@ export const DigitalDentistryFeatures = () => {
   }[lang] || content.uz;
 
   return (
-    <section className="w-full py-14 sm:py-20 relative overflow-hidden">
+    <section aria-labelledby="features-heading" className="w-full py-14 sm:py-20 relative overflow-hidden">
       {/* Background glow and subtle cyber grid */}
       <div className="absolute inset-0 digital-grid-pattern opacity-30 pointer-events-none" />
 
@@ -228,7 +228,7 @@ export const DigitalDentistryFeatures = () => {
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-3 uppercase">
             {content.badge}
           </span>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 tracking-tight">
+          <h2 id="features-heading" className="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-slate-900 tracking-tight">
             {content.title}
           </h2>
           <p className="text-sm sm:text-base text-slate-600 mt-3 leading-relaxed">

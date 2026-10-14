@@ -207,6 +207,10 @@ const HeroSection = ({ onOpenBooking }) => {
                       <img
                         src={assets.logo}
                         alt="Dr. Olimjon Tojibayev"
+                        width="48"
+                        height="48"
+                        loading="eager"
+                        decoding="async"
                         className="w-12 h-12 object-contain"
                       />
                       <div>
@@ -230,6 +234,11 @@ const HeroSection = ({ onOpenBooking }) => {
                     <img
                       src={assets.businessCardFront}
                       alt="Dr. Olimjon Tojibayev Vizitka"
+                      width="600"
+                      height="375"
+                      loading="eager"
+                      fetchPriority="high"
+                      decoding="async"
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute bottom-2 right-2 px-2.5 py-1 rounded-lg bg-black/60 backdrop-blur-xs text-[10px] text-white font-mono z-10">
@@ -350,6 +359,10 @@ const Home = ({ onOpenBooking }) => {
                       <img
                         src={service.image}
                         alt={service.title[lang]}
+                        width="640"
+                        height="400"
+                        loading="lazy"
+                        decoding="async"
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute top-3 left-3">

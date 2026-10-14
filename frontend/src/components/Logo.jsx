@@ -33,6 +33,7 @@ const Logo = ({ className = "h-10 sm:h-11 w-auto", showText = true, isWhite = fa
           width="44"
           height="44"
           loading="eager"
+          decoding="async"
         />
       </div>
 

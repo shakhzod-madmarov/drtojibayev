@@ -79,6 +79,8 @@ export const SmileAssessmentWizard = () => {
         { id: "longevity", label: "Umrbod yoki uzoq yillik kafolat" },
       ],
       resultTitle: "Siz uchun tavsiya etilgan dastlabki reja:",
+      priorityLabel: "Ustuvorlik:",
+      doctorNote: "Dr. Olimjon Tojibayev ko'rigida 3D skanerlash o'tkaziladi va sizga eng xavfsiz hamda mukammal natija beruvchi individual reja tuziladi.",
       restart: "Qaytadan tahlil qilish",
       bookCta: "Shifokor bilan 3D ko'rikka yozilish →",
     },
@@ -103,6 +105,8 @@ export const SmileAssessmentWizard = () => {
         { id: "longevity", label: "Пожизненная надёжность и гарантия" },
       ],
       resultTitle: "Рекомендованное направление лечения:",
+      priorityLabel: "Приоритет:",
+      doctorNote: "На очной консультации Д-р Олимжон Тожибаев проведёт цифровое 3D-сканирование и составит безопасный персональный план лечения.",
       restart: "Пройти тест заново",
       bookCta: "Записаться на 3D диагностику →",
     },
@@ -127,6 +131,8 @@ export const SmileAssessmentWizard = () => {
         { id: "longevity", label: "Lifetime durability and warranty" },
       ],
       resultTitle: "Your Recommended Pathway:",
+      priorityLabel: "Priority:",
+      doctorNote: "During your in-person visit, Dr. Olimjon Tojibayev will conduct 3D digital intraoral scanning to build an optimal, gentle treatment plan.",
       restart: "Retake Assessment",
       bookCta: "Schedule 3D Digital Consultation →",
     },
@@ -149,13 +155,13 @@ export const SmileAssessmentWizard = () => {
   };
 
   return (
-    <section className="w-full py-12 sm:py-16">
+    <section className="w-full py-12 sm:py-16" aria-labelledby="assessment-heading">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-8">
           <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs mb-2 uppercase">
             {stepsData.badge}
           </span>
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
+          <h2 id="assessment-heading" className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 tracking-tight">
             {stepsData.title}
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 mt-2">
@@ -172,7 +178,7 @@ export const SmileAssessmentWizard = () => {
         >
           <div className="p-6 sm:p-8 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
           {/* Step Indicators */}
-          <div className="flex items-center justify-center gap-2 mb-8">
+          <div className="flex items-center justify-center gap-2 mb-8" role="progressbar" aria-valuenow={step} aria-valuemin={1} aria-valuemax={3} aria-label="Assessment Progress">
             {[1, 2, 3].map((s) => (
               <div
                 key={s}
@@ -189,11 +195,11 @@ export const SmileAssessmentWizard = () => {
 
           {/* Step 1: Complaint */}
           {step === 1 && (
-            <div>
-              <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-4 text-center">
+            <fieldset>
+              <legend className="text-base sm:text-lg font-bold text-slate-900 mb-4 text-center block w-full">
                 {stepsData.step1Title}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              </legend>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" role="group" aria-label={stepsData.step1Title}>
                 {stepsData.complaints.map((item) => (
                   <button
                     key={item.id}
@@ -208,16 +214,16 @@ export const SmileAssessmentWizard = () => {
                   </button>
                 ))}
               </div>
-            </div>
+            </fieldset>
           )}
 
           {/* Step 2: Priority */}
           {step === 2 && (
-            <div>
-              <h3 className="text-base sm:text-lg font-bold text-slate-900 mb-4 text-center">
+            <fieldset>
+              <legend className="text-base sm:text-lg font-bold text-slate-900 mb-4 text-center block w-full">
                 {stepsData.step2Title}
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              </legend>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3" role="group" aria-label={stepsData.step2Title}>
                 {stepsData.priorities.map((item) => (
                   <button
                     key={item.id}
@@ -232,7 +238,7 @@ export const SmileAssessmentWizard = () => {
                   </button>
                 ))}
               </div>
-            </div>
+            </fieldset>
           )}
 
           {/* Step 3: Result */}
@@ -249,12 +255,12 @@ export const SmileAssessmentWizard = () => {
               </h3>
               {priority && (
                 <p className="text-xs text-slate-500 mt-1">
-                  Afzallik: {priority.label}
+                  {stepsData.priorityLabel} {priority.label}
                 </p>
               )}
 
               <div className="p-4 rounded-2xl bg-purple-50/70 border border-brandLilac/30 max-w-md mx-auto my-6 text-xs text-slate-700 leading-relaxed text-left">
-                Dr. Olimjon Tojibayev ko'rigida 3D skanerlash o'tkaziladi va sizga eng xavfsiz hamda mukammal natija beruvchi reja tuziladi.
+                {stepsData.doctorNote}
               </div>
 
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">

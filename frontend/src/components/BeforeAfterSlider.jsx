@@ -180,6 +180,10 @@ export const BeforeAfterSlider = ({
           <img
             src={activeCase.afterImg}
             alt={defaultAfter}
+            width="960"
+            height="600"
+            loading="lazy"
+            decoding="async"
             className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300"
           />
 
@@ -191,6 +195,10 @@ export const BeforeAfterSlider = ({
             <img
               src={activeCase.beforeImg}
               alt={defaultBefore}
+              width="960"
+              height="600"
+              loading="lazy"
+              decoding="async"
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
