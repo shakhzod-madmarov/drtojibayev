@@ -108,6 +108,10 @@ const Seo = ({
       googlebotMeta.setAttribute("content", noindex ? ROBOTS_NOINDEX : GOOGLEBOT_INDEXABLE);
     }
 
+    const ogLocale = lang === "ru" ? "ru_RU" : lang === "en" ? "en_US" : "uz_UZ";
+    const localeMeta = document.querySelector('meta[property="og:locale"]');
+    if (localeMeta) localeMeta.setAttribute("content", ogLocale);
+
     let scriptTag = document.getElementById("seo-schema-json");
     if (schemaJson) {
       if (!scriptTag) {
@@ -134,12 +138,14 @@ const Seo = ({
   ]);
 
   if (isPrerender) {
+    const ogLocale = lang === "ru" ? "ru_RU" : lang === "en" ? "en_US" : "uz_UZ";
     const payload = {
       title: resolvedTitle,
       description: resolvedDescription,
       keywords: resolvedKeywords,
       canonical: resolvedCanonical,
       ogImage,
+      ogLocale,
       alternates,
       noindex,
       schemaJson,

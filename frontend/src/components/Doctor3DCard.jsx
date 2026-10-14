@@ -73,9 +73,19 @@ export const Doctor3DCard = () => {
             className="w-full max-w-sm sm:max-w-md aspect-[16/10] cursor-pointer select-none"
           >
             <div
-              className="w-full h-full relative"
+              className="w-full h-full relative focus:outline-none focus:ring-2 focus:ring-primary rounded-2xl"
               onClick={() => setIsFlipped(!isFlipped)}
-              title="Click to flip business card"
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  setIsFlipped(!isFlipped);
+                }
+              }}
+              role="button"
+              tabIndex={0}
+              aria-pressed={isFlipped}
+              aria-label={labels.flipPrompt}
+              title={labels.flipPrompt}
             >
               <div
                 className={`w-full h-full relative transition-transform duration-700 preserve-3d rounded-2xl shadow-luxury-lg border-2 border-brandLilac/50 overflow-hidden ${
@@ -118,6 +128,8 @@ export const Doctor3DCard = () => {
           <button
             type="button"
             onClick={() => setIsFlipped(!isFlipped)}
+            aria-pressed={isFlipped}
+            aria-label={labels.flipPrompt}
             className="mt-4 inline-flex items-center gap-2 text-xs font-bold text-primary bg-primary-light hover:bg-brandAmethyst-light px-4 py-2 rounded-full border border-brandLilac/40 shadow-xs transition-all hover:scale-102 active:scale-98"
           >
             <svg className="w-4 h-4 text-primary animate-spin-slow" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -102,7 +102,7 @@ const Services = ({ onOpenBooking }) => {
       </div>
 
       {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+      <section aria-label={lang === "ru" ? "Каталог услуг" : lang === "en" ? "Services catalog" : "Xizmatlar katalogi"} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {filteredServices.map((service) => (
           <Interactive3DTilt
             key={service.id}
@@ -112,7 +112,7 @@ const Services = ({ onOpenBooking }) => {
             glare={true}
             className="h-full"
           >
-            <div className="h-full p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between">
+            <article className="h-full p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between">
               <div>
                 <div className="rounded-2xl overflow-hidden aspect-[16/10] mb-5 relative">
                   <img
@@ -130,9 +130,9 @@ const Services = ({ onOpenBooking }) => {
                 <span className="text-[11px] font-bold text-brandAmethyst uppercase tracking-wider block mb-1">
                   {service.category[lang]}
                 </span>
-                <h2 className="text-lg font-bold text-slate-900 hover:text-primary transition-colors">
+                <h3 className="text-lg font-bold text-slate-900 hover:text-primary transition-colors">
                   {service.title[lang]}
-                </h2>
+                </h3>
                 <p className="text-xs sm:text-sm text-slate-600 mt-2 line-clamp-3 leading-relaxed">
                   {service.shortDesc[lang]}
                 </p>
@@ -163,10 +163,10 @@ const Services = ({ onOpenBooking }) => {
                   {lang === "ru" ? "Записаться" : lang === "en" ? "Book Visit" : "Qabulga yozilish"}
                 </button>
               </div>
-            </div>
+            </article>
           </Interactive3DTilt>
         ))}
-      </div>
+      </section>
 
       {/* Interactive Calculator */}
       <Interactive3DCostCalculator />

@@ -339,7 +339,7 @@ const Home = ({ onOpenBooking }) => {
                 glare={true}
                 className="h-full"
               >
-                <div className="h-full p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between">
+                <article className="h-full p-6 rounded-3xl bg-white border border-brandLilac/30 shadow-card hover:shadow-purple hover:border-brandAmethyst/40 transition-all duration-300 flex flex-col justify-between">
                   <div>
                     <div className="rounded-2xl overflow-hidden aspect-[16/10] mb-5 relative">
                       <img
@@ -377,7 +377,7 @@ const Home = ({ onOpenBooking }) => {
                       {labels.bookNow}
                     </button>
                   </div>
-                </div>
+                </article>
               </Interactive3DTilt>
             ))}
           </div>

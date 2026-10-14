@@ -186,7 +186,7 @@ export const Interactive3DCostCalculator = () => {
             {/* Step 2: Quantity Slider / Buttons */}
             <div className="mb-8 p-4 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30">
               <div className="flex items-center justify-between mb-2">
-                <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                <label htmlFor="calculator-quantity-slider" className="text-xs font-bold text-slate-700 uppercase tracking-wider">
                   {labels.step2}
                 </label>
                 <span className="text-sm font-bold text-primary">
@@ -197,21 +197,28 @@ export const Interactive3DCostCalculator = () => {
               <div className="flex items-center gap-4">
                 <button
                   type="button"
+                  aria-label="Kamaytirish"
                   onClick={() => setQuantity(Math.max(current.min, quantity - 1))}
                   className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
                 >
                   -
                 </button>
                 <input
+                  id="calculator-quantity-slider"
                   type="range"
                   min={current.min}
                   max={current.max}
                   value={quantity}
+                  aria-label={labels.step2}
+                  aria-valuemin={current.min}
+                  aria-valuemax={current.max}
+                  aria-valuenow={quantity}
                   onChange={(e) => setQuantity(Number(e.target.value))}
                   className="w-full accent-primary h-2 bg-purple-200 rounded-lg cursor-pointer"
                 />
                 <button
                   type="button"
+                  aria-label="Ko'paytirish"
                   onClick={() => setQuantity(Math.min(current.max, quantity + 1))}
                   className="w-10 h-10 rounded-xl bg-white text-primary font-bold border border-brandLilac/40 hover:bg-primary-light shadow-xs flex items-center justify-center transition-colors"
                 >

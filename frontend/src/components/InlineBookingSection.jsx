@@ -441,10 +441,12 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
 
             {/* Service Selection */}
             <div className="mb-8">
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
+              <label htmlFor="booking-service-select" className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2">
                 {t.serviceLabel}
               </label>
               <select
+                id="booking-service-select"
+                name="service"
                 value={selectedService}
                 onChange={(e) => setSelectedService(e.target.value)}
                 className="w-full px-4 py-3 rounded-2xl bg-[#FAF7FD] border border-brandLilac/40 text-sm font-semibold text-slate-800 focus:outline-none focus:ring-2 focus:ring-primary focus:bg-white transition-all"
@@ -458,17 +460,17 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
             </div>
 
             {/* Step 1: Date Chips */}
-            <div className="mb-8">
+            <fieldset className="mb-8 border-none p-0 m-0">
               <div className="flex items-center justify-between mb-3">
-                <label className="text-xs font-bold text-slate-700 uppercase tracking-wider">
+                <legend className="text-xs font-bold text-slate-700 uppercase tracking-wider">
                   {t.dayGroupLabel}
-                </label>
+                </legend>
                 <span className="text-[11px] text-slate-400">
                   {clinicHours.days}: {clinicHours.hours}
                 </span>
               </div>
 
-              <div className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar scroll-touch">
+              <div role="radiogroup" aria-label={t.dayGroupLabel} className="flex items-center gap-2 overflow-x-auto pb-2 no-scrollbar scroll-touch">
                 {days.map((day) => {
                   const isSelected = day.date === selectedDate;
                   const isClosed = day.isClosed;
@@ -477,6 +479,8 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
                     <button
                       key={day.date}
                       type="button"
+                      role="radio"
+                      aria-checked={isSelected}
                       disabled={isClosed}
                       onClick={() => {
                         setSelectedDate(day.date);
@@ -495,22 +499,24 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
                   );
                 })}
               </div>
-            </div>
+            </fieldset>
 
             {/* Step 2: Time Slots */}
-            <div className="mb-8">
-              <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
+            <fieldset className="mb-8 border-none p-0 m-0">
+              <legend className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-3">
                 {t.timeGroupLabel} {selectedDate && `(${formatDmy(selectedDate)})`}
-              </label>
+              </legend>
 
               {availableSlots.length > 0 ? (
-                <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
+                <div role="radiogroup" aria-label={t.timeGroupLabel} className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-2">
                   {availableSlots.map((timeStr) => {
                     const isSelected = selectedTime === timeStr;
                     return (
                       <button
                         key={timeStr}
                         type="button"
+                        role="radio"
+                        aria-checked={isSelected}
                         onClick={() => setSelectedTime(timeStr)}
                         className={`py-2 px-3 rounded-xl text-xs font-mono font-bold border transition-all ${
                           isSelected
@@ -528,17 +534,21 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
                   {t.leadNoticeBody}
                 </div>
               )}
-            </div>
+            </fieldset>
 
             {/* Step 3: Patient Inputs */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
               <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1.5">
+                <label htmlFor="booking-full-name" className="block text-xs font-bold text-slate-700 mb-1.5">
                   {t.nameLabel}
                 </label>
                 <input
+                  id="booking-full-name"
+                  name="fullName"
                   type="text"
                   required
+                  aria-required="true"
+                  autoComplete="name"
                   value={fullName}
                   onChange={(e) => setFullName(e.target.value)}
                   placeholder={t.namePlaceholder}
@@ -547,12 +557,16 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
               </div>
 
               <div>
-                <label className="block text-xs font-bold text-slate-700 mb-1.5">
+                <label htmlFor="booking-phone-input" className="block text-xs font-bold text-slate-700 mb-1.5">
                   {t.phoneLabel}
                 </label>
                 <input
+                  id="booking-phone-input"
+                  name="tel"
                   type="tel"
                   required
+                  aria-required="true"
+                  autoComplete="tel"
                   value={phone}
                   onChange={handlePhoneChange}
                   placeholder={t.phonePlaceholder}
@@ -563,10 +577,12 @@ export const InlineBookingSection = ({ initialServiceId = null }) => {
 
             {/* Note & Reason */}
             <div className="mb-6">
-              <label className="block text-xs font-bold text-slate-700 mb-1.5">
+              <label htmlFor="booking-note-textarea" className="block text-xs font-bold text-slate-700 mb-1.5">
                 {t.noteLabel}
               </label>
               <textarea
+                id="booking-note-textarea"
+                name="note"
                 rows="2"
                 value={note}
                 onChange={(e) => setNote(e.target.value)}

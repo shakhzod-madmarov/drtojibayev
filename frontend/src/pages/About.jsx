@@ -150,16 +150,37 @@ const About = ({ onOpenBooking }) => {
         </span>
       </nav>
 
+      {/* Header with Primary H1 for SEO & Semantics */}
+      <header className="text-center max-w-3xl mx-auto space-y-3">
+        <span className="inline-block px-3.5 py-1 rounded-full text-xs font-bold tracking-widest text-primary bg-primary-light border border-brandLilac/40 shadow-xs uppercase">
+          {lang === "uz" ? "SHIFOKOR HAQIDA" : lang === "ru" ? "О СПЕЦИАЛИСТЕ" : "ABOUT THE SPECIALIST"}
+        </span>
+        <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
+          {lang === "uz"
+            ? `Dr. Olimjon Tojibayev — ${years} Yillik Tajribaga Ega Raqamli Stomatolog`
+            : lang === "ru"
+            ? `Д-р Олимжон Тожибаев — Цифровой Стоматолог (${years} Лет Опыта)`
+            : `Dr. Olimjon Tojibayev — Digital Dentist (${years} Years Experience)`}
+        </h1>
+        <p className="text-sm sm:text-base text-slate-600">
+          {lang === "uz"
+            ? "Smile Dental Group (Andijon). 3D intraoral skanerlash, biotitan implantlar, shaffof elaynerlar, zamonaviy breketlar va 100% og'riqsiz davolash."
+            : lang === "ru"
+            ? "Smile Dental Group (Андижан). 3D сканирование, имплантация, прозрачные элайнеры, брекеты и лечение без боли."
+            : "Smile Dental Group (Andijan). Precision 3D scanning, guided implants, clear aligners, and gentle patient care."}
+        </p>
+      </header>
+
       {/* Doctor 3D Card Component */}
       <Doctor3DCard />
 
       {/* Professional Philosophy & Bio */}
-      <div className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+      <section aria-labelledby="philosophy-heading" className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
         <div className="lg:col-span-12 space-y-4">
           <span className="px-3.5 py-1 rounded-full text-xs font-bold bg-primary-light text-primary border border-brandLilac/40 uppercase tracking-wider inline-block">
             {lang === "ru" ? "ФИЛОСОФИЯ ЛЕЧЕНИЯ" : lang === "en" ? "CLINICAL PHILOSOPHY" : "DAVOLASH FALSAFASI"}
           </span>
-          <h2 className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
+          <h2 id="philosophy-heading" className="font-serif text-2xl sm:text-3xl lg:text-4xl font-bold text-slate-900 tracking-tight">
             {lang === "uz"
               ? "Zamonaviy raqamli texnologiyalar inson salomatligi va go'zalligi xizmatida"
               : lang === "ru"
@@ -190,11 +211,11 @@ const About = ({ onOpenBooking }) => {
             </a>
           </div>
         </div>
-      </div>
+      </section>
 
       {/* Clinical Values & Standards */}
-      <div className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
-        <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
+      <section aria-labelledby="standards-heading" className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+        <h2 id="standards-heading" className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
           {lang === "ru" ? "Принципы и стандарты работы" : lang === "en" ? "Core Principles & Patient Care" : "Ish Faoliyatimizdagi Asosiy Standartlar"}
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -207,7 +228,7 @@ const About = ({ onOpenBooking }) => {
               glare={true}
               className="h-full"
             >
-              <div className="h-full p-5 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 flex flex-col justify-between hover:border-brandAmethyst/40 hover:shadow-card transition-all duration-300">
+              <article className="h-full p-5 rounded-2xl bg-[#FAF7FD] border border-brandLilac/30 flex flex-col justify-between hover:border-brandAmethyst/40 hover:shadow-card transition-all duration-300">
                 <div>
                   <div className="w-12 h-12 rounded-xl bg-white border border-brandLilac/30 flex items-center justify-center mb-4 shadow-xs">
                     {val.icon}
@@ -219,15 +240,15 @@ const About = ({ onOpenBooking }) => {
                     {val.desc[lang]}
                   </p>
                 </div>
-              </div>
+              </article>
             </Interactive3DTilt>
           ))}
         </div>
-      </div>
+      </section>
 
       {/* Career Timeline */}
-      <div className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
-        <h2 className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
+      <section aria-labelledby="timeline-heading" className="p-6 sm:p-10 rounded-3xl bg-white border border-brandLilac/30 shadow-luxury">
+        <h2 id="timeline-heading" className="font-serif text-2xl sm:text-3xl font-bold text-slate-900 mb-8 text-center">
           {lang === "ru" ? "Профессиональный путь" : lang === "en" ? "Career & Experience Timeline" : "Shifokorning Professional Yo'li"}
         </h2>
         <div className="space-y-6 max-w-3xl mx-auto">
@@ -247,7 +268,7 @@ const About = ({ onOpenBooking }) => {
             </div>
           ))}
         </div>
-      </div>
+      </section>
 
       {/* Clinic Location Map */}
       <ClinicLocationMap />

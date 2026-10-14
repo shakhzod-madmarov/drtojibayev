@@ -60,6 +60,21 @@ const setNoindex = (html) =>
     .replace(/<meta\s+name="robots"[^>]*>/, '<meta name="robots" content="noindex, follow" />')
     .replace(/<meta\s+name="googlebot"[^>]*>/, '<meta name="googlebot" content="noindex, follow" />');
 
+const setOgLocales = (html, currentLocale) => {
+  const allLocales = ["uz_UZ", "ru_RU", "en_US"];
+  const alternates = allLocales.filter((l) => l !== currentLocale);
+  let cleaned = html
+    .replace(/<meta\s+property="og:locale"[^>]*>/, `<meta property="og:locale" content="${currentLocale}" />`)
+    .replace(/<meta\s+property="og:locale:alternate"[^>]*>\s*\n?/gi, "");
+  const altTags = alternates
+    .map((l) => `    <meta property="og:locale:alternate" content="${l}" />`)
+    .join("\n");
+  return cleaned.replace(
+    /(<meta\s+property="og:locale"[^>]*>)/,
+    `$1\n${altTags}`
+  );
+};
+
 const injectSchema = (html, json) => {
   if (!json) return html;
   const safe = (typeof json === "string" ? json : JSON.stringify(json)).split("<").join(String.raw`\u003c`);
@@ -105,6 +120,9 @@ for (const route of routes) {
   const langMatch = route.match(/^\/(ru|en)(\/|$)/);
   const routeLang = langMatch ? langMatch[1] : DEFAULT_LANG;
   pageHtml = setHtmlLang(pageHtml, routeLang);
+
+  const ogLocale = seo.ogLocale || (routeLang === "ru" ? "ru_RU" : routeLang === "en" ? "en_US" : "uz_UZ");
+  pageHtml = setOgLocales(pageHtml, ogLocale);
 
   if (seo.title) {
     pageHtml = setTitle(pageHtml, seo.title);
