@@ -348,16 +348,24 @@ export const buildHomePageSchema = (lang = "uz") => {
         "sameAs": [
           DOCTOR_INFO.telegramUrl,
           DOCTOR_INFO.instagramUrl,
+          PRIMARY_CLINIC.maps.yandex,
+          PRIMARY_CLINIC.maps.google,
         ],
       },
       {
         "@type": "Physician",
         "@id": `${SITE_ORIGIN}/#doctor`,
         "name": DOCTOR_INFO.name,
+        "alternateName": DOCTOR_INFO.fullName,
         "jobTitle": DOCTOR_INFO.titles[lang] || DOCTOR_INFO.titles.uz,
-        "medicalSpecialty": "Dentistry",
+        "medicalSpecialty": ["Dentistry", "Prosthodontics", "Orthodontics", "Implantology"],
         "telephone": DOCTOR_INFO.phoneRaw,
         "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
+        "knowsLanguage": ["uz", "ru", "en"],
+        "alumniOf": {
+          "@type": "EducationalOrganization",
+          "name": "Andijon Davlat Tibbiyot Instituti",
+        },
         "knowsAbout": [
           "Digital Dentistry",
           "Dental Implants",
