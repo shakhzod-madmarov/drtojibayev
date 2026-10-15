@@ -31,6 +31,7 @@ const Booking = () => {
       <Seo
         title={seo.title}
         description={seo.description}
+        keywords={seo.keywords}
         schemaJson={bookingSchema}
       />
 

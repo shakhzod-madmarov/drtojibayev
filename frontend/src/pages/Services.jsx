@@ -48,6 +48,7 @@ const Services = ({ onOpenBooking }) => {
       <Seo
         title={seo.title}
         description={seo.description}
+        keywords={seo.keywords}
         schemaJson={catalogSchema}
       />
 

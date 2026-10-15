@@ -141,6 +141,7 @@ const About = ({ onOpenBooking }) => {
       <Seo
         title={seo.title}
         description={seo.description}
+        keywords={seo.keywords}
         schemaJson={schema}
       />
 

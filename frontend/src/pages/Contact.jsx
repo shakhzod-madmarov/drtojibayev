@@ -30,6 +30,7 @@ const Contact = () => {
       <Seo
         title={seo.title}
         description={seo.description}
+        keywords={seo.keywords}
         schemaJson={contactSchema}
       />
 

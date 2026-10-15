@@ -37,6 +37,49 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
   const serviceUrl = urlFor(`/services/${service.id}`, lang);
   const breadcrumbObj = breadcrumbs.length > 0 ? buildBreadcrumbSchema(breadcrumbs, lang) : null;
 
+  const stepsData = {
+    uz: [
+      { name: "3D Skanerlash va Raqamli Diagnostika", text: "Dr. Olimjon Tojibayev intraoral 3D skaner orqali tish qatorini o'rganadi va ekranda virtual reja tuzadi." },
+      { name: "2 Bosqichli 100% Og'riqsiz Anesteziya", text: "Avval milk yuzasi anestetik gel bilan muzlatiladi, so'ngra zamonaviy og'riqsiz inyeksiya qilinadi." },
+      { name: "Raqamli Aniqlikdagi Asosiy Muolaja", text: "Biotitan implantlar, shaffof elaynerlar, tsirkon yoki kompozit materiallar yordamida mukammal tiklash." },
+      { name: "Mukammal Estetika va Rasmiy Kafolat", text: "Chaynash balansi tekshiriladi, sayqallanadi va Dr. Olimjon Tojibayev tomonidan shaxsiy rasmiy kafolat taqdim etiladi." },
+    ],
+    ru: [
+      { name: "3D Сканирование и Диагностика", text: "Д-р Олимжон Тожибаев проводит интраоральное 3D сканирование и составляет точный цифровой план лечения." },
+      { name: "Двухэтапная Анестезия Без Боли", text: "Десна обезболивается гелем, после чего аккуратно вводится современный европейский анестетик." },
+      { name: "Высокоточное Лечение и Реставрация", text: "Использование титановых имплантов, элайнеров, циркония и премиальных биоматериалов." },
+      { name: "Контроль Прикуса и Официальная Гарантия", text: "Финальная полировка, проверка окклюзии и выдача личной официальной гарантии Д-ра Олимжона Тожибаева." },
+    ],
+    en: [
+      { name: "3D Intraoral Scan & Diagnostics", text: "Dr. Olimjon Tojibayev creates a 3D digital model of your teeth and visualizes the procedure in advance." },
+      { name: "Two-Stage Gentle Anesthesia", text: "Topical numbing gel is applied prior to computer-controlled local anesthesia for zero pain." },
+      { name: "Precision Restorative Procedure", text: "Guided placement of implants, clear aligners, zirconia crowns, or nano-composite restorations." },
+      { name: "Bite Calibration & Clinical Warranty", text: "Final occlusion verification, high-gloss polish, and official personal warranty issued by Dr. Olimjon Tojibayev." },
+    ],
+  };
+
+  const stepsList = (stepsData[lang] || stepsData.uz).map((st, i) => ({
+    "@type": "HowToStep",
+    "position": i + 1,
+    "name": st.name,
+    "text": st.text,
+  }));
+
+  const serviceFaqMap = {
+    "digital-dentistry": ["digital-dentistry-benefits", "booking-process", "clinic-location"],
+    "dental-implant": ["implant-pain", "digital-dentistry-benefits", "booking-process"],
+    "elaynerlar": ["aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
+    "breketlar": ["aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
+    "tsirkon-keramika-koronka": ["crowns-longevity", "digital-dentistry-benefits", "booking-process"],
+    "vinirlar": ["crowns-longevity", "digital-dentistry-benefits", "booking-process"],
+    "protezlar": ["crowns-longevity", "digital-dentistry-benefits", "booking-process"],
+    "ogriqsiz-terapiya": ["implant-pain", "digital-dentistry-benefits", "booking-process"],
+    "tish-oqartirish": ["whitening-safety", "booking-process", "clinic-location"],
+  };
+
+  const relevantFaqIds = serviceFaqMap[service.id] || ["digital-dentistry-benefits", "booking-process"];
+  const procedureFaqs = FAQ_ITEMS.filter((item) => relevantFaqIds.includes(item.id));
+
   const procedure = {
     "@type": "MedicalProcedure",
     "@id": `${serviceUrl}#procedure`,
@@ -56,6 +99,7 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
     "performer": {
       "@id": `${SITE_ORIGIN}/#doctor`,
     },
+    "step": stepsList,
     "offers": {
       "@type": "Offer",
       "url": serviceUrl,
@@ -67,16 +111,38 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
     },
   };
 
-  if (breadcrumbObj) {
-    return {
-      "@context": "https://schema.org",
-      "@graph": [breadcrumbObj, procedure],
-    };
-  }
+  const webpage = {
+    "@type": "MedicalWebPage",
+    "@id": `${serviceUrl}#webpage`,
+    "url": serviceUrl,
+    "name": service.title[lang] || service.title.uz,
+    "description": service.shortDesc[lang] || service.shortDesc.uz,
+    "inLanguage": lang,
+    "about": { "@id": `${serviceUrl}#procedure` },
+    "author": { "@id": `${SITE_ORIGIN}/#doctor` },
+    "provider": { "@id": `${SITE_ORIGIN}/#dentist` },
+  };
+
+  const faqSchema = {
+    "@type": "FAQPage",
+    "@id": `${serviceUrl}#faq`,
+    "mainEntity": procedureFaqs.map((item) => ({
+      "@type": "Question",
+      "name": item.q[lang] || item.q.uz,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": item.a[lang] || item.a.uz,
+      },
+    })),
+  };
+
+  const graph = [];
+  if (breadcrumbObj) graph.push(breadcrumbObj);
+  graph.push(webpage, procedure, faqSchema);
 
   return {
     "@context": "https://schema.org",
-    ...procedure,
+    "@graph": graph,
   };
 };
 

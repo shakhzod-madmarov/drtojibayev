@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import { useLanguage, useLocalizedPath } from "../context/LanguageContext";
 import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 import { DOCTOR_INFO, getExperienceBadge } from "../constants/doctor";
+import { getServiceSeo } from "../constants/seo";
 import Seo from "../components/Seo";
 import { buildMedicalProcedureSchema } from "../utils/structuredData";
 import { IconPhone, IconLocationPin, IconShieldCheck } from "../components/MedicalIcons";
@@ -94,8 +95,10 @@ const ServiceDetail = () => {
     en: "Dr. Olimjon Tojibayev | Dental Surgeon",
   }[lang];
 
-  const title = `${service.title[lang]} — ${seoSuffix}`;
-  const description = `${service.shortDesc[lang]} Dr. Olimjon Tojibayev (Smile Dental Group, Andijon). Tel: ${DOCTOR_INFO.phoneDisplay}`;
+  const serviceSeo = getServiceSeo(service.id, lang);
+  const title = serviceSeo?.title || `${service.title[lang]} — ${seoSuffix}`;
+  const description = serviceSeo?.description || `${service.shortDesc[lang]} Dr. Olimjon Tojibayev (Smile Dental Group, Andijon). Tel: ${DOCTOR_INFO.phoneDisplay}`;
+  const keywords = serviceSeo?.keywords;
 
   const breadcrumbs = [
     { name: lang === "ru" ? "Главная" : lang === "en" ? "Home" : "Bosh sahifa", path: "/" },
@@ -109,6 +112,7 @@ const ServiceDetail = () => {
       <Seo
         title={title}
         description={description}
+        keywords={keywords}
         schemaJson={schema}
       />
 
