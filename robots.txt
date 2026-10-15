@@ -1,12 +1,51 @@
+# robots.txt for https://drtojibayev.uz
+# Optimized for Google, Yandex, Bing, and AI Search Engines (GEO)
+
 User-agent: *
 Allow: /
 Disallow: /__not-found__
+Disallow: /api/
 
+# Google Search & Google AI Overviews
 User-agent: Googlebot
 Allow: /
 
-User-agent: Yandex
+# Google Gemini & AI Grounding
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
 Allow: /
 
+# Yandex Search & Yandex Alice / Neuro
+User-agent: Yandex
+Allow: /
+Disallow: /__not-found__
+Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&fbclid /
+
+# OpenAI ChatGPT & SearchGPT
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Perplexity AI Search Engine
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic Claude Search & Grounding
+User-agent: ClaudeBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot
+Allow: /
+
+# Microsoft Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Sitemaps & Host
 Sitemap: https://drtojibayev.uz/sitemap.xml
-Host: https://drtojibayev.uz
+Host: drtojibayev.uz
