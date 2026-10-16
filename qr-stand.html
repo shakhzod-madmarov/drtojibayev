@@ -2,9 +2,10 @@
 <html lang="uz">
 <head>
   <meta charset="UTF-8">
-  <title>Dr. Olimjon Tojibayev — Google Review QR Stend (A5 Print)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Olimjon Tojibayev — Google & Yandex Review QR Stend (A5/A4 Print)</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
     * {
       box-sizing: border-box;
@@ -14,22 +15,23 @@
 
     body {
       font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #F3F4F6;
+      background: #F1F5F9;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       min-height: 100vh;
-      padding: 20px;
-      color: #1E1B4B;
+      padding: 30px 15px;
+      color: #0F172A;
     }
 
-    .stand-card {
+    .stand-container {
       width: 148mm;
       min-height: 210mm;
       background: #FFFFFF;
-      border-radius: 16px;
-      box-shadow: 0 20px 40px rgba(76, 35, 101, 0.12);
-      padding: 12mm 10mm 10mm 10mm;
+      border-radius: 20px;
+      box-shadow: 0 25px 50px -12px rgba(76, 35, 101, 0.18);
+      padding: 10mm 9mm 8mm 9mm;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -37,233 +39,361 @@
       text-align: center;
       position: relative;
       overflow: hidden;
-      border: 1px solid rgba(76, 35, 101, 0.1);
+      border: 1px solid #E2E8F0;
     }
 
-    /* Top decorative gradient */
-    .top-accent {
+    /* Top luxury decorative line */
+    .top-gradient-bar {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
-      height: 8px;
-      background: linear-gradient(90deg, #4C2365 0%, #7E22CE 50%, #D4AF37 100%);
+      height: 7px;
+      background: linear-gradient(90deg, #4C2365 0%, #9333EA 50%, #EAB308 100%);
     }
 
+    /* Header */
     .doctor-header {
-      margin-bottom: 4mm;
+      width: 100%;
+      margin-bottom: 2mm;
     }
 
     .doctor-logo {
-      width: 52px;
-      height: 52px;
-      margin: 0 auto 6px auto;
+      width: 48px;
+      height: 48px;
+      margin: 0 auto 5px auto;
       display: block;
+      object-fit: contain;
     }
 
     .doctor-name {
-      font-size: 20px;
+      font-size: 19px;
       font-weight: 800;
       color: #4C2365;
       letter-spacing: -0.3px;
       line-height: 1.2;
     }
 
-    .doctor-title {
-      font-size: 11px;
+    .doctor-subtitle {
+      font-size: 10.5px;
       font-weight: 600;
       color: #7E22CE;
       text-transform: uppercase;
-      letter-spacing: 0.8px;
-      margin-top: 3px;
+      letter-spacing: 0.6px;
+      margin-top: 2px;
     }
 
-    .stars-badge {
+    /* Hero Headline & Stars */
+    .headline-box {
+      margin: 1mm 0 3mm 0;
+    }
+
+    .stars-row {
       display: inline-flex;
-      align-items: center;
       gap: 3px;
-      color: #F59E0B;
-      font-size: 18px;
-      margin: 4mm 0 2mm 0;
-    }
-
-    .cta-title {
-      font-size: 17px;
-      font-weight: 800;
-      color: #111827;
-      line-height: 1.3;
-      margin-bottom: 2mm;
-    }
-
-    .cta-desc {
-      font-size: 11px;
-      color: #4B5563;
-      line-height: 1.45;
-      max-width: 115mm;
-      margin: 0 auto;
-    }
-
-    .qr-container {
-      margin: 5mm 0;
-      padding: 12px;
-      background: #FFFFFF;
-      border-radius: 20px;
-      border: 2px solid #E9D5FF;
-      box-shadow: 0 10px 25px rgba(126, 34, 206, 0.08);
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .qr-image {
-      width: 170px;
-      height: 170px;
-      display: block;
-    }
-
-    .qr-instruction {
-      font-size: 10px;
-      font-weight: 700;
-      color: #4C2365;
-      margin-top: 6px;
-      display: flex;
-      align-items: center;
-      gap: 4px;
-    }
-
-    .google-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      background: #F3F4F6;
-      padding: 4px 12px;
-      border-radius: 9999px;
-      font-size: 11px;
-      font-weight: 700;
-      color: #374151;
-      margin-bottom: 3mm;
-    }
-
-    .google-g {
-      width: 14px;
-      height: 14px;
-    }
-
-    .footer-info {
-      width: 100%;
-      border-top: 1px solid #F3F4F6;
-      padding-top: 3mm;
-      font-size: 9.5px;
-      color: #6B7280;
-      line-height: 1.4;
-    }
-
-    .footer-clinic {
-      font-weight: 700;
-      color: #4C2365;
-      font-size: 10px;
+      color: #EAB308;
+      font-size: 16px;
       margin-bottom: 2px;
     }
 
-    .print-button {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #4C2365;
-      color: white;
-      border: none;
-      padding: 12px 24px;
-      border-radius: 9999px;
-      font-size: 14px;
-      font-weight: 700;
-      cursor: pointer;
-      box-shadow: 0 10px 20px rgba(76, 35, 101, 0.3);
-      display: flex;
-      align-items: center;
-      gap: 8px;
+    .headline-title {
+      font-size: 15px;
+      font-weight: 800;
+      color: #0F172A;
+      line-height: 1.25;
+      margin-bottom: 2px;
     }
 
-    .print-button:hover {
+    .headline-desc {
+      font-size: 9.5px;
+      color: #475569;
+      line-height: 1.35;
+      max-width: 125mm;
+      margin: 0 auto;
+    }
+
+    /* Two QR Columns Grid */
+    .qr-grid {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6mm;
+      margin: 2mm 0;
+    }
+
+    .qr-card {
+      background: #FAFAFA;
+      border-radius: 14px;
+      padding: 3.5mm 3mm;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 1.5px solid #E2E8F0;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+      transition: all 0.2s ease;
+    }
+
+    .qr-card.google-card {
+      border-color: #DBEAFE;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+    }
+
+    .qr-card.yandex-card {
+      border-color: #FEE2E2;
+      background: linear-gradient(180deg, #FFFFFF 0%, #F8FAFC 100%);
+    }
+
+    .platform-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 10px;
+      border-radius: 9999px;
+      font-size: 10px;
+      font-weight: 700;
+      margin-bottom: 2mm;
+    }
+
+    .badge-google {
+      background: #EFF6FF;
+      color: #1D4ED8;
+      border: 1px solid #BFDBFE;
+    }
+
+    .badge-yandex {
+      background: #FEF2F2;
+      color: #DC2626;
+      border: 1px solid #FECACA;
+    }
+
+    .platform-icon {
+      width: 13px;
+      height: 13px;
+    }
+
+    .qr-box {
+      width: 116px;
+      height: 116px;
+      background: #FFFFFF;
+      padding: 6px;
+      border-radius: 10px;
+      border: 1px solid #E2E8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    }
+
+    .qr-box img {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .qr-stars {
+      color: #EAB308;
+      font-size: 11px;
+      margin-top: 5px;
+      letter-spacing: 1px;
+    }
+
+    .scan-hint {
+      font-size: 8.5px;
+      font-weight: 700;
+      color: #334155;
+      margin-top: 2px;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    /* Footer */
+    .stand-footer {
+      width: 100%;
+      border-top: 1px solid #E2E8F0;
+      padding-top: 2.5mm;
+      margin-top: 2mm;
+      font-size: 9px;
+      color: #64748B;
+      line-height: 1.35;
+    }
+
+    .clinic-title {
+      font-size: 10px;
+      font-weight: 700;
+      color: #4C2365;
+      margin-bottom: 1px;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-top: 2px;
+      font-weight: 600;
+      color: #4C2365;
+    }
+
+    /* Control Buttons for Screen */
+    .screen-controls {
+      display: flex;
+      gap: 12px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      transition: all 0.2s ease;
+    }
+
+    .btn-primary {
+      background: #4C2365;
+      color: white;
+      box-shadow: 0 10px 15px -3px rgba(76, 35, 101, 0.3);
+    }
+
+    .btn-primary:hover {
       background: #6B21A8;
     }
 
+    .btn-secondary {
+      background: #FFFFFF;
+      color: #334155;
+      border: 1px solid #CBD5E1;
+    }
+
+    .btn-secondary:hover {
+      background: #F8FAFC;
+    }
+
+    /* Print Styles */
     @media print {
       body {
-        background: transparent;
-        padding: 0;
-        margin: 0;
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
+        background: transparent !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        min-height: auto;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
       }
-      .stand-card {
-        box-shadow: none;
-        border: none;
+      .screen-controls {
+        display: none !important;
+      }
+      .stand-container {
         width: 148mm;
         height: 210mm;
-        border-radius: 0;
-        padding: 10mm;
-      }
-      .print-button {
-        display: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        padding: 8mm 8mm 6mm 8mm !important;
+        page-break-after: avoid;
+        page-break-inside: avoid;
       }
     }
   </style>
 </head>
 <body>
 
-  <div class="stand-card">
-    <div class="top-accent"></div>
+  <!-- The Stand Container (A5: 148mm x 210mm) -->
+  <div class="stand-container">
+    <div class="top-gradient-bar"></div>
 
-    <!-- Header -->
+    <!-- Doctor Header -->
     <div class="doctor-header">
       <img src="/logo_icon.png" alt="Dr. Olimjon Tojibayev" class="doctor-logo">
       <h1 class="doctor-name">Dr. Olimjon Tojibayev</h1>
-      <p class="doctor-title">Shifokor-Stomatolog · Implantolog & Ortodont</p>
+      <p class="doctor-subtitle">Shifokor-Stomatolog · Implantolog & Ortodont</p>
     </div>
 
-    <!-- Google Badge & Stars -->
-    <div>
-      <div class="google-badge">
-        <svg class="google-g" viewBox="0 0 24 24">
-          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-        </svg>
-        <span>Google Xaritalarda Baholang</span>
-      </div>
-
-      <div class="stars-badge">
+    <!-- Center Headline & Star Rating -->
+    <div class="headline-box">
+      <div class="stars-row">
         ★ ★ ★ ★ ★
       </div>
-
-      <h2 class="cta-title">Tabassumingiz biz uchun qadrli!</h2>
-      <p class="cta-desc">
-        Muolajamizdan mamnun bo'lsangiz, 1 daqiqa vaqt ajratib Google'da o'z fikringiz va 5★ bahongizni qoldiring. Bu boshqa bemorlarga to'g'ri shifokor topishda yordam beradi!
+      <h2 class="headline-title">Tabassumingiz biz uchun qadrli!</h2>
+      <p class="headline-desc">
+        Muolajadan mamnun bo'lsangiz, o'z fikringiz va 5★ bahongizni qoldiring. Bu boshqa bemorlarga ishonchli shifokor topishda katta yordam beradi!
       </p>
     </div>
 
-    <!-- QR Code Box -->
-    <div class="qr-container">
-      <img src="/qr-google-review.svg" alt="Google Review QR Code" class="qr-image">
-      <span class="qr-instruction">
-        📱 Telefon kamerangizni QR-kodga qarating
-      </span>
+    <!-- Two Side-by-Side QR Codes: Google & Yandex -->
+    <div class="qr-grid">
+      
+      <!-- 1. Google Maps Card -->
+      <div class="qr-card google-card">
+        <div class="platform-badge badge-google">
+          <svg class="platform-icon" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Google Maps</span>
+        </div>
+
+        <div class="qr-box">
+          <img src="/qr-google-review.svg" alt="Google Maps QR Code">
+        </div>
+
+        <div class="qr-stars">★ ★ ★ ★ ★</div>
+        <p class="scan-hint">📱 Kamerani qarating</p>
+      </div>
+
+      <!-- 2. Yandex Maps Card -->
+      <div class="qr-card yandex-card">
+        <div class="platform-badge badge-yandex">
+          <svg class="platform-icon" viewBox="0 0 24 24">
+            <path fill="#FC3F1D" d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm2.71 17.5h-2.14l-2.73-4.9-1.22 1.34v3.56H6.62V6.5h2.14v5.36l3.6-5.36h2.44l-3.8 5.48 3.71 5.52z"/>
+          </svg>
+          <span>Яндекс Карты</span>
+        </div>
+
+        <div class="qr-box">
+          <img src="/qr-yandex-review.svg" alt="Yandex Maps QR Code">
+        </div>
+
+        <div class="qr-stars">★ ★ ★ ★ ★</div>
+        <p class="scan-hint">📱 Наведите камеру</p>
+      </div>
+
     </div>
 
-    <!-- Footer -->
-    <div class="footer-info">
-      <p class="footer-clinic">Smile Dental Group bazasida shaxsiy qabul</p>
+    <!-- Footer Credentials -->
+    <div class="stand-footer">
+      <p class="clinic-title">Smile Dental Group bazasida shaxsiy qabul</p>
       <p>Andijon shahri, 1-kichik daha (Kanechka), 8-A bino</p>
-      <p style="margin-top: 2px; font-weight: 600; color: #4C2365;">
-        📞 +998 90 541 97 57 · 🌐 drtojibayev.uz
-      </p>
+      <div class="contact-row">
+        <span>📞 +998 90 541 97 57</span>
+        <span>🌐 drtojibayev.uz</span>
+      </div>
     </div>
+
   </div>
 
-  <button class="print-button" onclick="window.print()">
-    🖨️ Stendni Chop Etish (Ctrl + P)
-  </button>
+  <!-- Screen Buttons (Hidden on Print) -->
+  <div class="screen-controls">
+    <button class="btn btn-primary" onclick="window.print()">
+      🖨️ Stendni Chop Etish (Ctrl + P)
+    </button>
+    <a href="/qr-google-review.png" download="Google_Review_QR.png" class="btn btn-secondary">
+      📥 Google QR (PNG)
+    </a>
+    <a href="/qr-yandex-review.png" download="Yandex_Review_QR.png" class="btn btn-secondary">
+      📥 Yandex QR (PNG)
+    </a>
+  </div>
 
 </body>
 </html>
