@@ -42,6 +42,8 @@ export const DOCTOR_INFO = {
   telegramAltHandle: "@DR_TOJIBAYEV",
   instagramUrl: "https://www.instagram.com/dr_tojibayev/",
   instagramHandle: "@dr_tojibayev",
+  googleReviewUrl: "https://g.page/r/CT4WIpgczx7rECE/review",
+  googleMapsUrl: "https://g.page/r/CT4WIpgczx7rECE",
   email: "olimjon.tojibayev@mail.ru",
   siteUrl: "https://drtojibayev.uz",
   medinsonSiteId: "p2jrhduc5m",

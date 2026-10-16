@@ -414,6 +414,8 @@ export const buildHomePageSchema = (lang = "uz") => {
         "sameAs": [
           DOCTOR_INFO.telegramUrl,
           DOCTOR_INFO.instagramUrl,
+          DOCTOR_INFO.googleMapsUrl,
+          DOCTOR_INFO.googleReviewUrl,
           PRIMARY_CLINIC.maps.yandex,
           PRIMARY_CLINIC.maps.google,
         ],
@@ -447,6 +449,8 @@ export const buildHomePageSchema = (lang = "uz") => {
         "sameAs": [
           DOCTOR_INFO.telegramUrl,
           DOCTOR_INFO.instagramUrl,
+          DOCTOR_INFO.googleMapsUrl,
+          DOCTOR_INFO.googleReviewUrl,
         ],
       },
       {
