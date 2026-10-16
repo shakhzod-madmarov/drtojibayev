@@ -228,10 +228,10 @@ const Nav = ({ onOpenBooking, topOffset = 0 }) => {
 
           <p className="text-[11px] text-center text-slate-400">
             {lang === "ru"
-              ? "Д-р Олимжон Тожибаев · На базе Smile Dental Group"
+              ? "Д-р Олимжон Тожибаев · На базе Smiles Dental Group"
               : lang === "en"
-              ? "Dr. Olimjon Tojibayev · At Smile Dental Group"
-              : "Dr. Olimjon Tojibayev · Smile Dental Group bazasida"}
+              ? "Dr. Olimjon Tojibayev · At Smiles Dental Group"
+              : "Dr. Olimjon Tojibayev · Smiles Dental Group bazasida"}
           </p>
         </div>
       </div>

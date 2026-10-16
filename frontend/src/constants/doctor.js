@@ -23,11 +23,11 @@ export const DOCTOR_INFO = {
   },
   careerStartYear: 2019, // 7+ years of clinical experience in 2026
   experienceYears: 7,
-  clinicName: "Smile Dental Group",
+  clinicName: "Smiles Dental Group",
   clinicLocation: {
-    uz: "Smile Dental Group · Andijon shaxar, 1-kichik daxa 8-A Kanechka",
-    ru: "Smile Dental Group · г. Андижан, 1-й микрорайон 8-А Канечка",
-    en: "Smile Dental Group · 1st Microdistrict 8-A Kanechka, Andijan",
+    uz: "Smiles Dental Group · Andijon shaxar, 1-kichik daxa 8-A Kanechka",
+    ru: "Smiles Dental Group · г. Андижан, 1-й микрорайон 8-А Канечка",
+    en: "Smiles Dental Group · 1st Microdistrict 8-A Kanechka, Andijan",
   },
   phone: "+998 (90) 541-97-57",
   phoneDisplay: "+998 90 541 97 57",

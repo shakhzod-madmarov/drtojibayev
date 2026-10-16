@@ -1,7 +1,7 @@
 # Dr. Olimjon Tojibayev — Vrach Stomatolog & Цифровой Стоматолог
 
 > **Rasmiy veb-sayt**: [https://drtojibayev.uz](https://drtojibayev.uz)  
-> **Klinika**: Smile Dental Group, Andijon shahri, 1-kichik daha (Kanechka), 8-A bino  
+> **Klinika**: Smiles Dental Group, Andijon shahri, 1-kichik daha (Kanechka), 8-A bino  
 > **Telegram**: [@Dr_Tadjibayev](https://t.me/Dr_Tadjibayev)  
 > **Instagram**: [@dr_tojibayev](https://www.instagram.com/dr_tojibayev/)  
 > **Telefonlar**: +998 90 541 97 57 / +998 93 418 97 57  

@@ -116,7 +116,7 @@ const HeroSection = ({ onOpenBooking }) => {
               <span>·</span>
               <span>{t.specialtyTitle}</span>
               <span>·</span>
-              <span>{lang === "ru" ? "Андижан (Smile Dental Group)" : lang === "en" ? "Andijan (Smile Dental Group)" : "Andijon (Smile Dental Group)"}</span>
+              <span>{lang === "ru" ? "Андижан (Smiles Dental Group)" : lang === "en" ? "Andijan (Smiles Dental Group)" : "Andijon (Smiles Dental Group)"}</span>
             </div>
 
             {/* Paragraph Description */}

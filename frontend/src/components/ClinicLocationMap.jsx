@@ -11,7 +11,7 @@ export const ClinicLocationMap = () => {
     uz: {
       badge: "AMALIYOT VA QABUL MANZILI",
       title: "Dr. Olimjon Tojibayev Shaxsiy Qabuli",
-      subtitle: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, zamonaviy uskunalar bilan jihozlangan Smile Dental Group klinikasida shaxsan qabul qiladi.",
+      subtitle: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, zamonaviy uskunalar bilan jihozlangan Smiles Dental Group klinikasida shaxsan qabul qiladi.",
       addressTitle: "Manzil:",
       landmarkTitle: "Mo'ljal:",
       hoursTitle: "Qabul vaqti:",
@@ -23,7 +23,7 @@ export const ClinicLocationMap = () => {
     ru: {
       badge: "ЛОКАЦИЯ И ПРИЁМ",
       title: "Личный Приём Д-ра Олимжона Тожибаева",
-      subtitle: "Приём проходит в г. Андижан на базе клиники Smile Dental Group, оснащенной передовыми цифровыми 3D технологиями.",
+      subtitle: "Приём проходит в г. Андижан на базе клиники Smiles Dental Group, оснащенной передовыми цифровыми 3D технологиями.",
       addressTitle: "Адрес:",
       landmarkTitle: "Ориентир:",
       hoursTitle: "Часы приёма:",
@@ -35,7 +35,7 @@ export const ClinicLocationMap = () => {
     en: {
       badge: "PRACTICE LOCATION",
       title: "Dr. Olimjon Tojibayev's Practice",
-      subtitle: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at Smile Dental Group with state-of-the-art digital dentistry systems.",
+      subtitle: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at Smiles Dental Group with state-of-the-art digital dentistry systems.",
       addressTitle: "Address:",
       landmarkTitle: "Landmark:",
       hoursTitle: "Working Hours:",
@@ -67,7 +67,7 @@ export const ClinicLocationMap = () => {
             <div className="space-y-6">
               <div>
                 <span className="text-[11px] font-bold text-brandAmethyst tracking-wider uppercase block mb-1">
-                  Smile Dental Group
+                  Smiles Dental Group
                 </span>
                 <h3 className="text-xl font-bold text-slate-900">
                   {PRIMARY_CLINIC.dentistOffice[lang]}
@@ -143,7 +143,7 @@ export const ClinicLocationMap = () => {
           {/* Right Map View */}
           <div className="lg:col-span-7 rounded-2xl sm:rounded-3xl overflow-hidden shadow-luxury border border-brandLilac/30 min-h-[300px] sm:min-h-[440px] relative bg-slate-100">
             <iframe
-              title="Smile Dental Group Andijon Map"
+              title="Smiles Dental Group Andijon Map"
               src="https://yandex.uz/map-widget/v1/org/smiles_dental_group/10769129756/?ll=72.334718%2C40.744156&z=16"
               className="w-full h-full min-h-[300px] sm:min-h-[440px] border-0"
               loading="lazy"

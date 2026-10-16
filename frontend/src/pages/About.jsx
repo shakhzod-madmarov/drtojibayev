@@ -34,9 +34,9 @@ const About = ({ onOpenBooking }) => {
         en: `Dental Surgeon, Implantologist & Orthodontist (${years} Years Experience)`,
       },
       desc: {
-        uz: "5,000+ dan ortiq bemorlarning tishlarini og'riqsiz davolash, biotitan implantlar, shaffof elaynerlar, breketlar va tsirkon qoplamalar bilan estetik tiklash. Smile Dental Group, Andijon.",
-        ru: "Более 5 000 успешных клинических случаев: цифровая имплантация, прозрачные элайнеры, брекеты, циркониевые коронки и бережное лечение в Smile Dental Group.",
-        en: "Over 5,000 restored smiles across guided implantology, clear aligners, aesthetic zirconia crowns, and gentle dentistry at Smile Dental Group.",
+        uz: "5,000+ dan ortiq bemorlarning tishlarini og'riqsiz davolash, biotitan implantlar, shaffof elaynerlar, breketlar va tsirkon qoplamalar bilan estetik tiklash. Smiles Dental Group, Andijon.",
+        ru: "Более 5 000 успешных клинических случаев: цифровая имплантация, прозрачные элайнеры, брекеты, циркониевые коронки и бережное лечение в Smiles Dental Group.",
+        en: "Over 5,000 restored smiles across guided implantology, clear aligners, aesthetic zirconia crowns, and gentle dentistry at Smiles Dental Group.",
       },
     },
     {
@@ -63,14 +63,14 @@ const About = ({ onOpenBooking }) => {
         en: "Clinical Practice Base",
       },
       title: {
-        uz: "Smile Dental Group — Andijon",
-        ru: "Smile Dental Group — Андижан",
-        en: "Smile Dental Group — Andijan",
+        uz: "Smiles Dental Group — Andijon",
+        ru: "Smiles Dental Group — Андижан",
+        en: "Smiles Dental Group — Andijan",
       },
       desc: {
-        uz: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, eng ilg'or raqamli uskunalar bilan jihozlangan Smile Dental Group klinikasida shaxsan qabul qiladi.",
-        ru: "Д-р Олимжон Тожибаев ведёт личный приём пациентов в Андижане на базе передовой клиники Smile Dental Group с новейшим 3D оснащением.",
-        en: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at the high-tech Smile Dental Group clinical facility.",
+        uz: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, eng ilg'or raqamli uskunalar bilan jihozlangan Smiles Dental Group klinikasida shaxsan qabul qiladi.",
+        ru: "Д-р Олимжон Тожибаев ведёт личный приём пациентов в Андижане на базе передовой клиники Smiles Dental Group с новейшим 3D оснащением.",
+        en: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at the high-tech Smiles Dental Group clinical facility.",
       },
     },
   ];

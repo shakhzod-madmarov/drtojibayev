@@ -26,7 +26,7 @@ export const ROUTES = [
     image: {
       src: "public/dr_tojibayev_og.png",
       title: "Dr. Olimjon Tojibayev — Цифровой Стоматолог (7 Yillik Tajriba)",
-      caption: "Dr. Olimjon Tojibayev shaxsiy qabuli. 3D skanerlash, implantlar, elaynerlar va og'riqsiz davolash (Smile Dental Group bazasida, Andijon).",
+      caption: "Dr. Olimjon Tojibayev shaxsiy qabuli. 3D skanerlash, implantlar, elaynerlar va og'riqsiz davolash (Smiles Dental Group bazasida, Andijon).",
     },
   },
   {

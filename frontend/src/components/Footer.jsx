@@ -45,10 +45,10 @@ const Footer = () => {
             <Logo className="h-10 w-auto" isWhite={true} />
             <p className="text-sm text-slate-400 leading-relaxed mt-2">
               {lang === "ru"
-                ? "Д-р Олимжон Тожибаев — персональный стоматолог по бережному сохранению зубов, имплантации и исправлению прикуса. Искренняя забота, деликатная анестезия и клиническая ответственность (Андижан, Smile Dental Group)."
+                ? "Д-р Олимжон Тожибаев — персональный стоматолог по бережному сохранению зубов, имплантации и исправлению прикуса. Искренняя забота, деликатная анестезия и клиническая ответственность (Андижан, Smiles Dental Group)."
                 : lang === "en"
-                ? "Dr. Olimjon Tojibayev — your personal dental surgeon specializing in tooth preservation, painless implants, and clear aligners. Empathetic care with uncompromising clinical standards (Andijan, Smile Dental Group)."
-                : "Dr. Olimjon Tojibayev — tishlarni saqlab qolish, og'riqsiz biotitan implantlar va shaffof elaynerlar bo'yicha shaxsiy shifokoringiz. Har bir bemorga samimiy e'tibor va yuksak mas'uliyat (Andijon, Smile Dental Group bazasida)."}
+                ? "Dr. Olimjon Tojibayev — your personal dental surgeon specializing in tooth preservation, painless implants, and clear aligners. Empathetic care with uncompromising clinical standards (Andijan, Smiles Dental Group)."
+                : "Dr. Olimjon Tojibayev — tishlarni saqlab qolish, og'riqsiz biotitan implantlar va shaffof elaynerlar bo'yicha shaxsiy shifokoringiz. Har bir bemorga samimiy e'tibor va yuksak mas'uliyat (Andijon, Smiles Dental Group bazasida)."}
             </p>
             <div className="flex items-center gap-3 mt-1">
               <a

@@ -97,7 +97,7 @@ const ServiceDetail = () => {
 
   const serviceSeo = getServiceSeo(service.id, lang);
   const title = serviceSeo?.title || `${service.title[lang]} — ${seoSuffix}`;
-  const description = serviceSeo?.description || `${service.shortDesc[lang]} Dr. Olimjon Tojibayev (Smile Dental Group, Andijon). Tel: ${DOCTOR_INFO.phoneDisplay}`;
+  const description = serviceSeo?.description || `${service.shortDesc[lang]} Dr. Olimjon Tojibayev (Smiles Dental Group, Andijon). Tel: ${DOCTOR_INFO.phoneDisplay}`;
   const keywords = serviceSeo?.keywords;
 
   const breadcrumbs = [
@@ -178,7 +178,7 @@ const ServiceDetail = () => {
           <p className="text-[11px] text-slate-500 font-medium pt-1 flex items-center gap-1.5">
             <IconLocationPin className="w-3.5 h-3.5 text-primary shrink-0" />
             <span>
-              {lang === "ru" ? "Приём в г. Андижан, на базе Smile Dental Group" : lang === "en" ? "Practice location: Andijan, hosted at Smile Dental Group" : "Qabul manzili: Andijon sh., Smile Dental Group bazasida"}
+              {lang === "ru" ? "Приём в г. Андижан, на базе Smiles Dental Group" : lang === "en" ? "Practice location: Andijan, hosted at Smiles Dental Group" : "Qabul manzili: Andijon sh., Smiles Dental Group bazasida"}
             </span>
           </p>
 

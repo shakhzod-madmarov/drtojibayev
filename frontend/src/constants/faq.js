@@ -46,9 +46,9 @@ export const FAQ_ITEMS = [
       en: "Where does Dr. Olimjon Tojibayev see patients and how do I get there?",
     },
     a: {
-      uz: "Mening shaxsiy qabulim Andijon shahri, 1-kichik daha (mo'ljal: Kanechka), 8-A binoda, zamonaviy Smile Dental Group bazasida o'tkaziladi. Bemorlarimiz uchun qulay avtoturargoh mavjud. Saytimizdagi 'Aloqa va Manzil' bo'limida Yandex va Google Maps orqali to'g'ridan-to'g'ri bir bosishda marshrut ochishingiz mumkin.",
-      ru: "Мой персональный приём проходит в городе Андижан, 1-й микрорайон (ориентир: Канечка), дом 8-А, на базе клиники Smile Dental Group. Есть удобная парковка. В разделе 'Контакты' на сайте вы можете в один клик построить маршрут в Яндекс.Картах или Google Maps.",
-      en: "I welcome patients in Andijan, 1st Microdistrict (Kanechka landmark), Building 8-A, hosted at the modern Smile Dental Group facility. Convenient parking is available on-site. On our Contact page, you can open one-tap driving directions via Google Maps or Yandex Maps.",
+      uz: "Mening shaxsiy qabulim Andijon shahri, 1-kichik daha (mo'ljal: Kanechka), 8-A binoda, zamonaviy Smiles Dental Group bazasida o'tkaziladi. Bemorlarimiz uchun qulay avtoturargoh mavjud. Saytimizdagi 'Aloqa va Manzil' bo'limida Yandex va Google Maps orqali to'g'ridan-to'g'ri bir bosishda marshrut ochishingiz mumkin.",
+      ru: "Мой персональный приём проходит в городе Андижан, 1-й микрорайон (ориентир: Канечка), дом 8-А, на базе клиники Smiles Dental Group. Есть удобная парковка. В разделе 'Контакты' на сайте вы можете в один клик построить маршрут в Яндекс.Картах или Google Maps.",
+      en: "I welcome patients in Andijan, 1st Microdistrict (Kanechka landmark), Building 8-A, hosted at the modern Smiles Dental Group facility. Convenient parking is available on-site. On our Contact page, you can open one-tap driving directions via Google Maps or Yandex Maps.",
     },
   },
   {

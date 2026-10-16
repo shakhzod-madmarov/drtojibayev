@@ -2,7 +2,7 @@
  * MedInson Stomatolog Relay Server & Universal SDK Client
  * Compliant with MedInson Public Booking API Specification v1
  *
- * Doctor: Dr. Olimjon Tojibayev (Smile Dental Group, Andijon)
+ * Doctor: Dr. Olimjon Tojibayev (Smiles Dental Group, Andijon)
  * License / Site ID: p2jrhduc5m
  * Relay Server: https://dentist-medinson-license.uz
  */
