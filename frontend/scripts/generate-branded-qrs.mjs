@@ -8,12 +8,12 @@ const __dirname = path.dirname(__filename);
 const publicDir = path.join(__dirname, '..', 'public');
 
 const GOOGLE_URL = 'https://g.page/r/CT4WIpgczx7rECE/review';
-const YANDEX_URL = 'https://yandex.uz/maps/org/smiles_dental_group/10769129756/reviews/';
+const YANDEX_URL = 'https://yandex.uz/maps/-/CXBOUGOn';
 
 const BRAND_COLOR = '#7B113A'; // Rich deep crimson/wine matching the reference image
 
 async function generateBrandedQr(url, filenamePrefix, isGoogle = true) {
-  // Generate base SVG
+  // Generate base SVG with Level H error correction (tolerates up to 30% center overlay)
   const rawSvg = await QRCode.toString(url, {
     type: 'svg',
     errorCorrectionLevel: 'H',
@@ -24,22 +24,23 @@ async function generateBrandedQr(url, filenamePrefix, isGoogle = true) {
     },
   });
 
-  // Extract viewBox from rawSvg or default to 0 0 37 37
+  // Extract viewBox from rawSvg
   const viewBoxMatch = rawSvg.match(/viewBox="([^"]+)"/);
   const viewBox = viewBoxMatch ? viewBoxMatch[1] : '0 0 37 37';
   const parts = viewBox.split(' ').map(Number);
   const size = parts[2] || 37;
   const center = size / 2;
-  const radius = size * 0.125;
+  const radiusOuter = size * 0.11; // 11% radius leaves plenty of error correction margin
+  const iconSize = radiusOuter * 1.55;
+  const offset = center - iconSize / 2;
 
   let centerIcon = '';
   if (isGoogle) {
-    const iconSize = radius * 1.35;
-    const offset = center - iconSize / 2;
     centerIcon = `
     <g id="center-badge">
-      <circle cx="${center}" cy="${center}" r="${radius}" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.3" filter="drop-shadow(0px 0.5px 1px rgba(0,0,0,0.15))" />
+      <circle cx="${center}" cy="${center}" r="${radiusOuter}" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.25" />
       <svg x="${offset}" y="${offset}" width="${iconSize}" height="${iconSize}" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10.5" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.8"/>
         <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
         <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
         <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
@@ -47,12 +48,13 @@ async function generateBrandedQr(url, filenamePrefix, isGoogle = true) {
       </svg>
     </g>`;
   } else {
-    const iconRadius = radius * 0.9;
     centerIcon = `
     <g id="center-badge">
-      <circle cx="${center}" cy="${center}" r="${radius}" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.3" filter="drop-shadow(0px 0.5px 1px rgba(0,0,0,0.15))" />
-      <circle cx="${center}" cy="${center}" r="${iconRadius}" fill="#FC3F1D" />
-      <text x="${center}" y="${center + radius * 0.35}" font-family="-apple-system, BlinkMacSystemFont, Arial, sans-serif" font-size="${radius * 1.1}" font-weight="900" fill="#FFFFFF" text-anchor="middle">Я</text>
+      <circle cx="${center}" cy="${center}" r="${radiusOuter}" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="0.25" />
+      <svg x="${offset}" y="${offset}" width="${iconSize}" height="${iconSize}" viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10.5" fill="#FC3F1D" />
+        <path fill="#FFFFFF" d="M13.8 17h-1.8l-2.7-4.9-1.2 1.3v3.6H6.9V6.5h2.2v5.4l3.6-5.4h2.4l-3.8 5.5 3.7 5.5z"/>
+      </svg>
     </g>`;
   }
 

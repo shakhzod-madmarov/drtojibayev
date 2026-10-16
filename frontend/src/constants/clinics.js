@@ -63,8 +63,8 @@ export const CLINICS = [
     maps: {
       google: "https://maps.app.goo.gl/aT6fWiGdjZ8rYuBF9",
       googleFull: "https://www.google.com/maps/place/Smiles+dental+group/@40.7443725,72.3357288,16z/data=!4m7!3m6!1s0x38bced03e092471f:0xfeee78a797a177d2!8m2!3d40.7443721!4d72.3356134",
-      yandex: "https://yandex.uz/maps/-/CXu-iKzx",
-      yandexShort: "https://yandex.uz/maps/-/CXu-iKzx",
+      yandex: "https://yandex.uz/maps/-/CXBOUGOn",
+      yandexShort: "https://yandex.uz/maps/-/CXBOUGOn",
       yandexFull: "https://yandex.uz/maps/org/smiles_dental_group/10769129756/?ll=72.334718%2C40.744156&z=16",
       yandexOrgId: "10769129756",
       googlePlaceId: "ChIJH0eS4APtvDgR0nehl6d47v4",
