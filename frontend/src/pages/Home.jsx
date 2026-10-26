@@ -12,7 +12,7 @@ import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 import DigitalDentistryFeatures from "../components/DigitalDentistryFeatures";
 import Doctor3DCard from "../components/Doctor3DCard";
 import Interactive3DCostCalculator from "../components/Interactive3DCostCalculator";
-import BeforeAfterSlider from "../components/BeforeAfterSlider";
+// import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
 import Interactive3DTilt from "../components/Interactive3DTilt";
 import { IconScannerOptical3D, IconAligners, IconClock } from "../components/MedicalIcons";
@@ -410,8 +410,8 @@ const Home = ({ onOpenBooking }) => {
       {/* 5. Interactive Cost & Timeline Calculator */}
       <Interactive3DCostCalculator />
 
-      {/* 6. Before / After Smile Transformation */}
-      <BeforeAfterSlider />
+      {/* 6. Before / After Smile Transformation (Hidden until real clinical patient photos are ready) */}
+      {/* <BeforeAfterSlider /> */}
 
       {/* 7. Online Smile Assessment Wizard */}
       <SmileAssessmentWizard />
