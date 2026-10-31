@@ -170,30 +170,30 @@ const HeroSection = ({ onOpenBooking }) => {
             </div>
 
             {/* Key Facts / Stats Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 w-full pt-6 border-t border-brandLilac/20">
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-3.5 sm:gap-4 w-full pt-6 border-t border-brandLilac/20">
               <div>
                 <span className="text-xl sm:text-2xl font-bold font-serif text-primary block">
                   {t.stat1Num}
                 </span>
-                <span className="text-xs text-slate-500 font-medium">{t.stat1Label}</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 font-medium block leading-tight">{t.stat1Label}</span>
               </div>
               <div>
                 <span className="text-xl sm:text-2xl font-bold font-serif text-primary block">
                   {t.stat2Num}
                 </span>
-                <span className="text-xs text-slate-500 font-medium">{t.stat2Label}</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 font-medium block leading-tight">{t.stat2Label}</span>
               </div>
               <div>
                 <span className="text-xl sm:text-2xl font-bold font-serif text-emerald-600 block">
                   {t.stat3Num}
                 </span>
-                <span className="text-xs text-slate-500 font-medium">{t.stat3Label}</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 font-medium block leading-tight">{t.stat3Label}</span>
               </div>
               <div>
                 <span className="text-xl sm:text-2xl font-bold font-serif text-primary block">
                   {t.stat4Num}
                 </span>
-                <span className="text-xs text-slate-500 font-medium">{t.stat4Label}</span>
+                <span className="text-[11px] sm:text-xs text-slate-500 font-medium block leading-tight">{t.stat4Label}</span>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@ const HeroSection = ({ onOpenBooking }) => {
                 glare={true}
                 className="w-full"
               >
-                <div className="p-6 rounded-3xl bg-white/95 backdrop-blur-md border border-brandLilac/40 shadow-luxury flex flex-col gap-5 relative overflow-hidden">
+                <div className="p-4 sm:p-6 rounded-2xl sm:rounded-3xl bg-white/95 backdrop-blur-md border border-brandLilac/40 shadow-luxury flex flex-col gap-4 sm:gap-5 relative overflow-hidden">
                   <div className="flex items-center justify-between pb-3 border-b border-slate-100">
                     <div className="flex items-center gap-3">
                       <img

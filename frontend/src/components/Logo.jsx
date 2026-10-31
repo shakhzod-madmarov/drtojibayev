@@ -40,14 +40,14 @@ const Logo = ({ className = "h-10 sm:h-11 w-auto", showText = true, isWhite = fa
       {showText && (
         <div className="flex flex-col leading-tight">
           <span
-            className={`font-serif text-[13.5px] sm:text-[17px] font-bold tracking-tight transition-colors whitespace-nowrap ${
+            className={`font-serif text-[12.5px] min-[360px]:text-[14px] sm:text-[17px] font-bold tracking-tight transition-colors whitespace-nowrap ${
               isWhite ? "text-white" : "text-[#170E1E] group-hover:text-primary"
             }`}
           >
             Dr. Olimjon Tojibayev
           </span>
           <span
-            className={`text-[8.5px] sm:text-[10px] font-semibold tracking-wider uppercase whitespace-nowrap ${
+            className={`hidden min-[360px]:inline text-[8.5px] sm:text-[10px] font-semibold tracking-wider uppercase whitespace-nowrap ${
               isWhite ? "text-brandLilac" : "text-brandAmethyst"
             }`}
           >

@@ -237,21 +237,21 @@ export const Interactive3DCostCalculator = () => {
 
             {/* Summary Details Grid */}
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-3 p-3 sm:p-4 rounded-xl sm:rounded-2xl bg-purple-50/60 border border-brandLilac/30 text-xs mb-6">
-              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
-                <span className="text-slate-400 block text-[11px]">{labels.visits}</span>
-                <span className="font-bold text-slate-900 mt-0.5 block">{current.visits[lang]}</span>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow flex flex-col justify-between">
+                <span className="text-slate-400 block text-[10.5px] sm:text-[11px]">{labels.visits}</span>
+                <span className="font-bold text-slate-900 mt-0.5 block text-[11.5px] sm:text-xs leading-snug break-words">{current.visits[lang]}</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
-                <span className="text-slate-400 block text-[11px]">{labels.duration}</span>
-                <span className="font-bold text-slate-900 mt-0.5 block">{current.durationPerUnit[lang]}</span>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow flex flex-col justify-between">
+                <span className="text-slate-400 block text-[10.5px] sm:text-[11px]">{labels.duration}</span>
+                <span className="font-bold text-slate-900 mt-0.5 block text-[11.5px] sm:text-xs leading-snug break-words">{current.durationPerUnit[lang]}</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
-                <span className="text-slate-400 block text-[11px]">{labels.warranty}</span>
-                <span className="font-bold text-emerald-700 mt-0.5 block">{current.warranty[lang]}</span>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow flex flex-col justify-between">
+                <span className="text-slate-400 block text-[10.5px] sm:text-[11px]">{labels.warranty}</span>
+                <span className="font-bold text-emerald-700 mt-0.5 block text-[11.5px] sm:text-xs leading-snug break-words">{current.warranty[lang]}</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow">
-                <span className="text-slate-400 block text-[11px]">{labels.tech}</span>
-                <span className="font-bold text-primary mt-0.5 block">{current.tech[lang]}</span>
+              <div className="p-2.5 rounded-xl bg-white/80 border border-brandLilac/20 hover:shadow-xs transition-shadow flex flex-col justify-between">
+                <span className="text-slate-400 block text-[10.5px] sm:text-[11px]">{labels.tech}</span>
+                <span className="font-bold text-primary mt-0.5 block text-[11.5px] sm:text-xs leading-snug break-words">{current.tech[lang]}</span>
               </div>
             </div>
 
