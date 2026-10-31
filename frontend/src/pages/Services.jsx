@@ -90,6 +90,8 @@ const Services = ({ onOpenBooking }) => {
         {categories.map((c) => (
           <button
             key={c.id}
+            type="button"
+            aria-pressed={activeCategory === c.id}
             onClick={() => setActiveCategory(c.id)}
             className={`shrink-0 whitespace-nowrap px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
               activeCategory === c.id

@@ -25,7 +25,7 @@ export const DOCTOR_INFO = {
   experienceYears: 7,
   clinicName: "Smiles Dental Group",
   clinicLocation: {
-    uz: "Smiles Dental Group · Andijon shaxar, 1-kichik daxa 8-A Kanechka",
+    uz: "Smiles Dental Group · Andijon shahri, 1-kichik daha 8-A (Kanechka)",
     ru: "Smiles Dental Group · г. Андижан, 1-й микрорайон 8-А Канечка",
     en: "Smiles Dental Group · 1st Microdistrict 8-A Kanechka, Andijan",
   },

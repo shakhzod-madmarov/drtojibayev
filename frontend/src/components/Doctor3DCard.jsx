@@ -17,6 +17,8 @@ export const Doctor3DCard = () => {
       subheading: "Shifokor-Stomatolog · Implantolog & Ortodont (Shaxsiy Qabul, Andijon)",
       experience: "7+ Yillik Klinik Tajriba",
       flipPrompt: isFlipped ? "Old tomonini ko'rish (Front)" : "Tashrif qog'ozi orqa tomoni (Xizmatlar)",
+      cardFrontAlt: "Dr. Olimjon Tojibayev Vizitka - Old tomoni",
+      cardBackAlt: "Dr. Olimjon Tojibayev Vizitka - Xizmatlar ro'yxati",
       highlights: [
         "Har bir bemor bilan shaxsan ishlash — diagnostikadan to yakuniy tabassumgacha",
         "Noqulay gips qoliplarisiz 60 soniyada o'ta aniq 3D optik skanerlash",
@@ -32,6 +34,8 @@ export const Doctor3DCard = () => {
       subheading: "Врач-Стоматолог · Эксперт по имплантации и ортодонтии (Личный Приём, Андижан)",
       experience: "7+ Лет Клинической Практики",
       flipPrompt: isFlipped ? "Показать лицевую сторону" : "Оборотная сторона визитки (Услуги)",
+      cardFrontAlt: "Визитная карточка Д-ра Олимжона Тожибаева - Лицевая сторона",
+      cardBackAlt: "Визитная карточка Д-ра Олимжона Тожибаева - Список услуг",
       highlights: [
         "Личный приём и сопровождение доктора — от первого 3D снимка до результата",
         "Комфортное 3D сканирование челюсти за 60 секунд без слепков и тошноты",
@@ -47,6 +51,8 @@ export const Doctor3DCard = () => {
       subheading: "Dental Surgeon · Specialist in Implants & Orthodontics (Private Practice, Andijan)",
       experience: "7+ Years Clinical Excellence",
       flipPrompt: isFlipped ? "View Front Side" : "View Back Side (Services List)",
+      cardFrontAlt: "Dr. Olimjon Tojibayev Business Card - Front Side",
+      cardBackAlt: "Dr. Olimjon Tojibayev Business Card - Treatments List",
       highlights: [
         "Direct personal doctor care — from initial 3D scan to your final smile",
         "Gag-free, 60-second optical 3D scanning replacing messy putty impressions",
@@ -96,7 +102,7 @@ export const Doctor3DCard = () => {
                 <div className="absolute inset-0 backface-hidden bg-white flex items-center justify-center">
                   <img
                     src={assets.businessCardFront}
-                    alt="Dr. Olimjon Tojibayev Vizitka - Oldi"
+                    alt={labels.cardFrontAlt}
                     width="600"
                     height="375"
                     loading="lazy"
@@ -113,7 +119,7 @@ export const Doctor3DCard = () => {
                 <div className="absolute inset-0 backface-hidden [transform:rotateY(180deg)] bg-white flex items-center justify-center">
                   <img
                     src={assets.businessCardBack}
-                    alt="Dr. Olimjon Tojibayev Vizitka - Xizmatlar"
+                    alt={labels.cardBackAlt}
                     width="600"
                     height="375"
                     loading="lazy"

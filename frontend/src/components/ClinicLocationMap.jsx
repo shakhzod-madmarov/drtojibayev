@@ -143,7 +143,7 @@ export const ClinicLocationMap = () => {
           {/* Right Map View */}
           <div className="lg:col-span-7 rounded-2xl sm:rounded-3xl overflow-hidden shadow-luxury border border-brandLilac/30 min-h-[300px] sm:min-h-[440px] relative bg-slate-100">
             <iframe
-              title="Smiles Dental Group Andijon Map"
+              title={lang === "ru" ? "Карта Smiles Dental Group Андижан" : lang === "en" ? "Smiles Dental Group Andijan Map" : "Smiles Dental Group Andijon Xaritasi"}
               src="https://yandex.uz/map-widget/v1/org/smiles_dental_group/10769129756/?ll=72.334718%2C40.744156&z=16"
               className="w-full h-full min-h-[300px] sm:min-h-[440px] border-0"
               loading="lazy"

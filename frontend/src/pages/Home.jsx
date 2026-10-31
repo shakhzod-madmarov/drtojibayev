@@ -12,7 +12,6 @@ import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 import DigitalDentistryFeatures from "../components/DigitalDentistryFeatures";
 import Doctor3DCard from "../components/Doctor3DCard";
 import Interactive3DCostCalculator from "../components/Interactive3DCostCalculator";
-// import BeforeAfterSlider from "../components/BeforeAfterSlider";
 import SmileAssessmentWizard from "../components/SmileAssessmentWizard";
 import Interactive3DTilt from "../components/Interactive3DTilt";
 import { IconScannerOptical3D, IconAligners, IconClock } from "../components/MedicalIcons";
@@ -44,6 +43,15 @@ const HeroSection = ({ onOpenBooking }) => {
       stat4Label: "Shaxsiy E'tibor",
       floatBadge1: "60s Optik Skanerlash",
       floatBadge2: "Biotitan & Shaffof Elayner",
+      cardExpBadge: "7 Yillik Tajriba",
+      cardAlt: "Dr. Olimjon Tojibayev Vizitka",
+      cardKeyServices: "Asosiy xizmatlar:",
+      cardServicesVal: "Implant · Elayner · Breket",
+      cardAesthetics: "Estetika:",
+      cardAestheticsVal: "Tsirkon · Vinirlar · Oqartirish",
+      cardLocation: "Joylashuv:",
+      cardLocationVal: "Andijon, 1-kichik daha 8-A",
+      cardCta: "Onlayn Qabulga Yozilish →",
     },
     ru: {
       badge: "Личный Приём · 7 Лет Опыта · Андижан",
@@ -64,6 +72,15 @@ const HeroSection = ({ onOpenBooking }) => {
       stat4Label: "Личная Забота Врача",
       floatBadge1: "3D Сканер без слепков",
       floatBadge2: "Импланты и Элайнеры",
+      cardExpBadge: "7 Лет Опыта",
+      cardAlt: "Визитная карточка Д-ра Олимжона Тожибаева",
+      cardKeyServices: "Основные услуги:",
+      cardServicesVal: "Импланты · Элайнеры · Брекеты",
+      cardAesthetics: "Эстетика:",
+      cardAestheticsVal: "Циркон · Виниры · Отбеливание",
+      cardLocation: "Локация:",
+      cardLocationVal: "Андижан, 1-й микрорайон 8-А",
+      cardCta: "Онлайн-запись на приём →",
     },
     en: {
       badge: "Dedicated Practice · 7+ Years Experience · Andijan",
@@ -84,6 +101,15 @@ const HeroSection = ({ onOpenBooking }) => {
       stat4Label: "Personal Care",
       floatBadge1: "60s Optical 3D Scan",
       floatBadge2: "Implants & Clear Aligners",
+      cardExpBadge: "7+ Yrs Experience",
+      cardAlt: "Dr. Olimjon Tojibayev Business Card",
+      cardKeyServices: "Key Treatments:",
+      cardServicesVal: "Implants · Aligners · Braces",
+      cardAesthetics: "Aesthetics:",
+      cardAestheticsVal: "Zirconia · Veneers · Whitening",
+      cardLocation: "Location:",
+      cardLocationVal: "Andijan, 1st Microdistrict 8-A",
+      cardCta: "Book Online Appointment →",
     },
   };
   const t = T[lang] || T.uz;
@@ -223,14 +249,14 @@ const HeroSection = ({ onOpenBooking }) => {
                       </div>
                     </div>
                     <span className="px-2.5 py-1 rounded-full text-[10px] font-bold bg-primary-light text-primary border border-brandLilac/40">
-                      7 Yillik Tajriba
+                      {t.cardExpBadge}
                     </span>
                   </div>
 
                   <div className="rounded-2xl overflow-hidden aspect-[16/10] border border-brandLilac/30 shadow-xs relative group">
                     <img
                       src={assets.businessCardFront}
-                      alt="Dr. Olimjon Tojibayev Vizitka"
+                      alt={t.cardAlt}
                       width="600"
                       height="375"
                       loading="eager"
@@ -245,16 +271,16 @@ const HeroSection = ({ onOpenBooking }) => {
 
                   <div className="space-y-2 text-xs text-slate-600">
                     <div className="flex items-center justify-between py-1 border-b border-slate-50">
-                      <span className="text-slate-400">Asosiy xizmatlar:</span>
-                      <span className="font-bold text-slate-800">Implant · Elayner · Breket</span>
+                      <span className="text-slate-400">{t.cardKeyServices}</span>
+                      <span className="font-bold text-slate-800">{t.cardServicesVal}</span>
                     </div>
                     <div className="flex items-center justify-between py-1 border-b border-slate-50">
-                      <span className="text-slate-400">Estetika:</span>
-                      <span className="font-bold text-slate-800">Tsirkon · Vinirlar · Oqartirish</span>
+                      <span className="text-slate-400">{t.cardAesthetics}</span>
+                      <span className="font-bold text-slate-800">{t.cardAestheticsVal}</span>
                     </div>
                     <div className="flex items-center justify-between py-1">
-                      <span className="text-slate-400">Joylashuv:</span>
-                      <span className="font-bold text-primary">Andijon, 1-kichik daxa 8-A</span>
+                      <span className="text-slate-400">{t.cardLocation}</span>
+                      <span className="font-bold text-primary">{t.cardLocationVal}</span>
                     </div>
                   </div>
 
@@ -263,7 +289,7 @@ const HeroSection = ({ onOpenBooking }) => {
                     onClick={onOpenBooking}
                     className="w-full py-2.5 rounded-xl text-xs font-bold text-white bg-primary hover:bg-primary-hover shadow-purple transition-all text-center hover:scale-102 active:scale-98"
                   >
-                    Onlayn Qabulga Yozilish →
+                    {t.cardCta}
                   </button>
                 </div>
               </Interactive3DTilt>

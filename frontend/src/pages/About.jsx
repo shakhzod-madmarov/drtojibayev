@@ -259,11 +259,11 @@ const About = ({ onOpenBooking }) => {
         </h2>
         <div className="space-y-6 max-w-3xl mx-auto">
           {timeline.map((item, idx) => (
-            <div key={idx} className="flex gap-4 sm:gap-6 items-start">
-              <span className="w-24 sm:w-28 shrink-0 text-xs font-mono font-bold text-primary bg-primary-light px-2.5 py-1.5 rounded-lg text-center border border-brandLilac/40">
+            <div key={idx} className="flex flex-col sm:flex-row gap-2 sm:gap-6 items-start">
+              <span className="inline-block sm:w-36 shrink-0 text-xs font-mono font-bold text-primary bg-primary-light px-2.5 py-1.5 rounded-lg text-center border border-brandLilac/40 self-start">
                 {item.year[lang]}
               </span>
-              <div className="pb-6 border-b border-slate-100 flex-1">
+              <div className="pb-6 border-b border-slate-100 flex-1 w-full">
                 <h3 className="text-sm sm:text-base font-bold text-slate-900 mb-1">
                   {item.title[lang]}
                 </h3>

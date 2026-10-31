@@ -83,6 +83,7 @@ export const SmileAssessmentWizard = () => {
       doctorNote: "Dr. Olimjon Tojibayev ko'rigida 3D skanerlash o'tkaziladi va sizga eng xavfsiz hamda mukammal natija beruvchi individual reja tuziladi.",
       restart: "Qaytadan tahlil qilish",
       bookCta: "Shifokor bilan 3D ko'rikka yozilish →",
+      notePrefix: "Onlayn tahlil",
     },
     ru: {
       badge: "ЭКСПРЕСС-ПОДБОР ЛЕЧЕНИЯ",
@@ -109,6 +110,7 @@ export const SmileAssessmentWizard = () => {
       doctorNote: "На очной консультации Д-р Олимжон Тожибаев проведёт цифровое 3D-сканирование и составит безопасный персональный план лечения.",
       restart: "Пройти тест заново",
       bookCta: "Записаться на 3D диагностику →",
+      notePrefix: "Онлайн-подбор",
     },
     en: {
       badge: "ONLINE SMILE ASSESSMENT",
@@ -135,6 +137,7 @@ export const SmileAssessmentWizard = () => {
       doctorNote: "During your in-person visit, Dr. Olimjon Tojibayev will conduct 3D digital intraoral scanning to build an optimal, gentle treatment plan.",
       restart: "Retake Assessment",
       bookCta: "Schedule 3D Digital Consultation →",
+      notePrefix: "Online Assessment",
     },
   }[lang] || stepsData.uz;
 
@@ -266,7 +269,7 @@ export const SmileAssessmentWizard = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
                 <button
                   type="button"
-                  onClick={() => openBooking({ service: complaint.rec, note: `Online tahlil: ${complaint.label}` })}
+                  onClick={() => openBooking({ service: complaint.rec, note: `${stepsData.notePrefix}: ${complaint.label}` })}
                   className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-brandPurple to-brandAmethyst shadow-purple transition-all"
                 >
                   {stepsData.bookCta}

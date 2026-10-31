@@ -177,6 +177,7 @@ export const Interactive3DCostCalculator = () => {
                   <button
                     key={svc.id}
                     type="button"
+                    aria-pressed={selectedServiceId === svc.id}
                     onClick={() => handleServiceChange(svc.id)}
                     className={`px-2.5 sm:px-3.5 py-2 sm:py-2.5 rounded-xl text-[11px] sm:text-xs font-bold transition-all text-center leading-snug break-words ${
                       selectedServiceId === svc.id
@@ -262,7 +263,7 @@ export const Interactive3DCostCalculator = () => {
               </p>
               <button
                 type="button"
-                onClick={() => openBooking({ service: current.id, note: `${quantity} ${current.unitLabel.uz}` })}
+                onClick={() => openBooking({ service: current.id, note: `${quantity} ${current.unitLabel[lang] || current.unitLabel.uz}` })}
                 className="w-full sm:w-auto px-6 py-3 rounded-xl font-bold text-xs text-white bg-gradient-to-r from-brandPurple to-brandAmethyst hover:scale-102 active:scale-98 shadow-purple transition-all"
               >
                 {labels.bookBtn}
