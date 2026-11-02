@@ -22,6 +22,10 @@ Allow: /
 Disallow: /__not-found__
 Clean-param: utm_source&utm_medium&utm_campaign&utm_term&utm_content&yclid&gclid&fbclid /
 
+# Yandex Favicons Crawler
+User-agent: YandexFavicons
+Allow: /
+
 # OpenAI ChatGPT & SearchGPT
 User-agent: GPTBot
 Allow: /
@@ -48,4 +52,4 @@ Allow: /
 
 # Sitemaps & Host
 Sitemap: https://drtojibayev.uz/sitemap.xml
-Host: drtojibayev.uz
+Host: https://drtojibayev.uz

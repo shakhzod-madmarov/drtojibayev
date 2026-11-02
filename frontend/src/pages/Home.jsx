@@ -26,7 +26,7 @@ const HeroSection = ({ onOpenBooking }) => {
   const T = {
     uz: {
       badge: "Shaxsiy Qabul · 7 Yillik Tajriba · Andijon",
-      doctorName: DOCTOR_INFO.name,
+      doctorName: "Dr. Olimjon Tojibayev (Tojiboyev)",
       specialtyTitle: "Shifokor-Stomatolog · Implantolog & Ortodont",
       headline: "Qo'rquvsiz, og'riqsiz va tabiiy go'zal tabassum",
       subtitle:
@@ -55,7 +55,7 @@ const HeroSection = ({ onOpenBooking }) => {
     },
     ru: {
       badge: "Личный Приём · 7 Лет Опыта · Андижан",
-      doctorName: DOCTOR_INFO.name,
+      doctorName: "Д-р Олимжон Тожибаев (Тожибоев)",
       specialtyTitle: "Врач-Стоматолог · Эксперт по имплантации и ортодонтии",
       headline: "Здоровая и естественная улыбка — без боли, страха и компромиссов",
       subtitle:

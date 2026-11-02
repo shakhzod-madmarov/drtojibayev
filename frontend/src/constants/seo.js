@@ -13,19 +13,19 @@ export const getServiceSeo = (serviceId, lang = "uz") =>
 export const PAGE_SEO = {
   home: {
     uz: {
-      title: "Dr. Olimjon Tojibayev — Shifokor-Stomatolog | Implantolog & Ortodont | Andijon",
-      description: `Dr. Olimjon Tojibayev — ${years} yillik tajribaga ega shifokor-stomatolog, implantolog va ortodont. 3D skanerlash, og'riqsiz biotitan implantlar, shaffof elaynerlar, tsirkon tojlar va samimiy shaxsiy muolaja. Andijon (Smiles Dental Group bazasida). Tel: +998 90 541 97 57.`,
-      keywords: "Dr Olimjon Tojibayev, stomatolog Andijon, implantolog Andijon, ortodont Andijon, tish davolash, tish ekish narxi, shaffof elaynerlar, breketlar, tsirkon koronka, vinirlar, ogriqsiz stomatologiya, Smiles Dental Group Kanechka",
+      title: "Dr. Olimjon Tojibayev (Tojiboyev) — Shifokor-Stomatolog | Implantolog & Ortodont | Andijon",
+      description: `Dr. Olimjon Tojibayev (Tojiboyev Olimjon) — ${years} yillik tajribaga ega shifokor-stomatolog, implantolog va ortodont. 3D skanerlash, og'riqsiz biotitan implantlar, shaffof elaynerlar, tsirkon tojlar va samimiy shaxsiy muolaja. Andijon (Smiles Dental Group bazasida). Tel: +998 90 541 97 57.`,
+      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, Olimjon Tojiboyev stomatolog, stomatolog Tojiboyev, stomatolog Andijon, implantolog Andijon, ortodont Andijon, tish davolash, tish ekish narxi, shaffof elaynerlar, breketlar, tsirkon koronka, vinirlar, ogriqsiz stomatologiya, Smiles Dental Group Kanechka",
     },
     ru: {
-      title: "Д-р Олимжон Тожибаев — Врач-Стоматолог | Имплантолог & Ортодонт | Андижан",
-      description: `Врач-стоматолог Д-р Олимжон Тожибаев — ${years} лет успешной клинической практики. 3D сканирование без слепков, надёжные импланты, элайнеры, циркониевые коронки и лечение зубов без боли. Андижан (Smiles Dental Group). Тел: +998 90 541 97 57.`,
-      keywords: "доктор Олимжон Тожибаев, стоматолог Андижан, имплантолог Андижан, ортодонт Андижан, имплантация зубов цена, элайнеры, брекеты, циркониевые коронки, виниры Emax, лечение зубов без боли, клиника Smiles Dental Group",
+      title: "Д-р Олимжон Тожибаев (Тожибоев) — Врач-Стоматолог | Имплантолог & Ортодонт | Андижан",
+      description: `Врач-стоматолог Д-р Олимжон Тожибаев (Тожибоев / Таджибаев) — ${years} лет успешной клинической практики. 3D сканирование без слепков, надёжные импланты, элайнеры, циркониевые коронки и лечение зубов без боли. Андижан (Smiles Dental Group). Тел: +998 90 541 97 57.`,
+      keywords: "доктор Олимжон Тожибаев, Олимжон Тожибоев стоматолог, доктор Олимжон Тожибоев, стоматолог Тожибоев, Олим Таджибаев, стоматолог Андижан, имплантолог Андижан, ортодонт Андижан, имплантация зубов цена, элайнеры, брекеты, циркониевые коронки, виниры Emax, лечение зубов без боли, клиника Smiles Dental Group",
     },
     en: {
-      title: "Dr. Olimjon Tojibayev — Dental Surgeon | Implantologist & Orthodontist",
-      description: `Dr. Olimjon Tojibayev — Dental surgeon with ${years}+ years of clinical excellence. 3D digital scans, dental implants, clear aligners, zirconia crowns, and gentle, stress-free care. Andijan. Tel: +998 90 541 97 57.`,
-      keywords: "Dr Olimjon Tojibayev, dentist in Andijan, dental surgeon Uzbekistan, dental implants Andijan, clear aligners, orthodontic braces, zirconia crowns, veneers, painless dentistry, Smiles Dental Group",
+      title: "Dr. Olimjon Tojibayev (Tojiboyev) — Dental Surgeon | Implantologist & Orthodontist",
+      description: `Dr. Olimjon Tojibayev (Tojiboyev) — Dental surgeon with ${years}+ years of clinical excellence. 3D digital scans, dental implants, clear aligners, zirconia crowns, and gentle, stress-free care. Andijan (Smiles Dental Group). Tel: +998 90 541 97 57.`,
+      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, dentist in Andijan, dental surgeon Uzbekistan, dental implants Andijan, clear aligners, orthodontic braces, zirconia crowns, veneers, painless dentistry, Smiles Dental Group",
     },
   },
   services: {
@@ -50,56 +50,56 @@ export const PAGE_SEO = {
   },
   about: {
     uz: {
-      title: `Dr. Olimjon Tojibayev Haqida — Tajribali Shifokor-Stomatolog`,
-      description: `Dr. Olimjon Tojibayev haqida: shifokorlik falsafasi, ${years} yillik klinik tajriba, og'riqsiz 3D raqamli stomatologiya va har bir bemorga samimiy shaxsiy e'tibor.`,
-      keywords: "Dr Olimjon Tojibayev tarjimai holi, shifokor stomatolog tajribasi, Andijon tibbiyot instituti, Smiles Dental Group bosh vrachi",
+      title: `Dr. Olimjon Tojibayev (Tojiboyev) Haqida — Shifokor-Stomatolog`,
+      description: `Dr. Olimjon Tojibayev (Tojiboyev Olimjon) haqida: shifokorlik falsafasi, ${years} yillik klinik tajriba, og'riqsiz 3D raqamli stomatologiya va har bir bemorga samimiy shaxsiy e'tibor.`,
+      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, Olimjon Tojiboyev stomatolog, tarjimai holi, shifokor stomatolog tajribasi, Andijon tibbiyot instituti, Smiles Dental Group bosh vrachi",
     },
     ru: {
-      title: `О Докторе Олимжоне Тожибаеве — Врач-Стоматолог, Имплантолог`,
-      description: `О докторе Олимжоне Тожибаеве: врачебная философия, ${years} лет клинической практики, бережное лечение зубов и современные 3D технологии в Андижане.`,
-      keywords: "Олимжон Тожибаев стоматолог биография, отзывы о враче, опыт работы стоматологом Андижан, Smiles Dental Group",
+      title: `О Докторе Олимжоне Тожибаеве (Тожибоеве) — Врач-Стоматолог`,
+      description: `О докторе Олимжоне Тожибаеве (Тожибоеве / Таджибаеве): врачебная философия, ${years} лет клинической практики, бережное лечение зубов и современные 3D технологии в Андижане.`,
+      keywords: "Олимжон Тожибаев стоматолог, Олимжон Тожибоев стоматолог, доктор Олимжон Тожибоев, биография, отзывы о враче, опыт работы стоматологом Андижан, Smiles Dental Group",
     },
     en: {
-      title: `About Dr. Olimjon Tojibayev — Dental Surgeon & Implantologist`,
-      description: `Learn about Dr. Olimjon Tojibayev: clinical philosophy, ${years}+ years of dental excellence, tooth preservation, and compassionate care in Andijan.`,
-      keywords: "about Dr Olimjon Tojibayev, dental surgeon biography, clinical philosophy, education, Smiles Dental Group Andijan",
+      title: `About Dr. Olimjon Tojibayev (Tojiboyev) — Dental Surgeon`,
+      description: `Learn about Dr. Olimjon Tojibayev (Tojiboyev): clinical philosophy, ${years}+ years of dental excellence, tooth preservation, and compassionate care in Andijan.`,
+      keywords: "about Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, dental surgeon biography, clinical philosophy, education, Smiles Dental Group Andijan",
     },
   },
   contact: {
     uz: {
-      title: "Aloqa va Manzil — Dr. Olimjon Tojibayev (Andijon)",
+      title: "Aloqa va Manzil — Dr. Olimjon Tojibayev (Tojiboyev)",
       description:
-        "Dr. Olimjon Tojibayev shaxsiy qabuliga yozilish — Smiles Dental Group (Andijon, 1-kichik daha 8-A Kanechka). Tel: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
-      keywords: "Dr Olimjon Tojibayev manzili, stomatolog telefon raqami Andijon, Smiles Dental Group Kanechka qayerda, stomatologiya lokatsiyasi",
+        "Dr. Olimjon Tojibayev (Tojiboyev) shaxsiy qabuliga yozilish — Smiles Dental Group (Andijon, 1-kichik daha 8-A Kanechka). Tel: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
+      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev manzili, stomatolog Tojiboyev telefon, Smiles Dental Group Kanechka qayerda, stomatologiya lokatsiyasi",
     },
     ru: {
-      title: "Контакты и Локация — Д-р Олимжон Тожибаев (Андижан)",
+      title: "Контакты и Локация — Д-р Олимжон Тожибаев (Тожибоев)",
       description:
-        "Запись на личный приём к Д-ру Олимжону Тожибаеву — клиника Smiles Dental Group (Андижан, 1-й мкрн 8-А Канечка). Телефоны: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
-      keywords: "контакты стоматолога Андижан, адрес Smiles Dental Group Канечка, телефон Олимжона Тожибаева, схема проезда",
+        "Запись на личный приём к Д-ру Олимжону Тожибаеву (Тожибоеву) — клиника Smiles Dental Group (Андижан, 1-й мкрн 8-А Канечка). Телефоны: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
+      keywords: "контакты стоматолога Андижан, адрес Smiles Dental Group Канечка, телефон Олимжона Тожибаева, телефон Олимжона Тожибоева, схема проезда",
     },
     en: {
-      title: "Contact & Location — Dr. Olimjon Tojibayev (Andijan)",
+      title: "Contact & Location — Dr. Olimjon Tojibayev (Tojiboyev)",
       description:
-        "Book personal appointment with Dr. Olimjon Tojibayev — Smiles Dental Group (Andijan, 1st Microdistrict 8-A Kanechka). Phones: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
-      keywords: "contact Dr Olimjon Tojibayev, dental clinic address Andijan, phone number, clinic directions, Smiles Dental Group",
+        "Book personal appointment with Dr. Olimjon Tojibayev (Tojiboyev) — Smiles Dental Group (Andijan, 1st Microdistrict 8-A Kanechka). Phones: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
+      keywords: "contact Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, dental clinic address Andijan, phone number, clinic directions, Smiles Dental Group",
     },
   },
   booking: {
     uz: {
-      title: "Onlayn Qabulga Yozilish — Dr. Olimjon Tojibayev",
+      title: "Onlayn Qabulga Yozilish — Dr. Olimjon Tojibayev (Tojiboyev)",
       description:
-        "Dr. Olimjon Tojibayev qabuliga qulay vaqtni tanlang. 3D raqamli skanerlash, og'riqsiz muolaja va navbatsiz shaxsiy qabul. Tel: +998 90 541 97 57.",
-      keywords: "stomatolog qabuliga yozilish Andijon, onlayn navbat stomatolog, Dr Olimjon Tojibayev qabuli",
+        "Dr. Olimjon Tojibayev (Tojiboyev) qabuliga qulay vaqtni tanlang. 3D raqamli skanerlash, og'riqsiz muolaja va navbatsiz shaxsiy qabul. Tel: +998 90 541 97 57.",
+      keywords: "stomatolog qabuliga yozilish Andijon, onlayn navbat stomatolog, Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev qabuli",
     },
     ru: {
-      title: "Онлайн Запись на Приём — Д-р Олимжон Тожибаев",
+      title: "Онлайн Запись на Приём — Д-р Олимжон Тожибаев (Тожибоев)",
       description:
-        "Удобная онлайн-запись на персональный приём к Д-ру Олимжону Тожибаеву без очередей. 3D сканирование и лечение без боли. Телефоны: +998 90 541 97 57, +998 93 418 97 57.",
-      keywords: "онлайн запись к стоматологу Андижан, записаться на прием, прием доктора Олимжона Тожибаева",
+        "Удобная онлайн-запись на персональный приём к Д-ру Олимжону Тожибаеву (Тожибоеву) без очередей. 3D сканирование и лечение без боли. Телефоны: +998 90 541 97 57, +998 93 418 97 57.",
+      keywords: "онлайн запись к стоматологу Андижан, записаться на прием, прием доктора Олимжона Тожибаева, прием доктора Олимжона Тожибоева",
     },
     en: {
-      title: "Book Online Appointment — Dr. Olimjon Tojibayev",
+      title: "Book Online Appointment — Dr. Olimjon Tojibayev (Tojiboyev)",
       description:
         "Reserve your personal consultation with Dr. Olimjon Tojibayev. Fast online booking, 3D scan, and gentle care. Phone: +998 90 541 97 57.",
       keywords: "book dental appointment Andijan, online dentist booking Uzbekistan, schedule visit Dr Olimjon Tojibayev",

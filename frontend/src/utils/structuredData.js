@@ -352,14 +352,65 @@ export const buildHomePageSchema = (lang = "uz") => {
     },
   }));
 
+  const navItems = [
+    { name: lang === "ru" ? "Услуги и Направления" : lang === "en" ? "Treatments & Services" : "Xizmatlar va Yo'nalishlar", path: "/services" },
+    { name: lang === "ru" ? "Имплантация Зубов" : lang === "en" ? "Dental Implants" : "Dental Implantatsiya", path: "/services/dental-implant" },
+    { name: lang === "ru" ? "Прозрачные Элайнеры" : lang === "en" ? "Clear Aligners" : "Shaffof Elaynerlar", path: "/services/elaynerlar" },
+    { name: lang === "ru" ? "О Враче" : lang === "en" ? "About Doctor" : "Shifokor Haqida", path: "/about" },
+    { name: lang === "ru" ? "Онлайн Запись" : lang === "en" ? "Online Booking" : "Onlayn Qabul", path: "/booking" },
+    { name: lang === "ru" ? "Контакты и Карта" : lang === "en" ? "Contact & Map" : "Aloqa va Manzil", path: "/contact" },
+  ];
+
   return {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": `${SITE_ORIGIN}/#website`,
+        "url": `${SITE_ORIGIN}/`,
+        "name": DOCTOR_INFO.name,
+        "alternateName": [
+          "Dr. Olimjon Tojiboyev",
+          "drtojibayev.uz",
+          "Dr Tojibayev",
+          "Dr Tojiboyev",
+          "Tojiboyev Stomatolog",
+          "Tojibayev Stomatolog",
+          "Олимжон Тожибоев",
+          "Олимжон Тожибаев",
+          "Доктор Тожибоев",
+          "Smiles Dental Group",
+        ],
+        "inLanguage": ["uz", "ru", "en"],
+        "publisher": {
+          "@id": `${SITE_ORIGIN}/#doctor`,
+        },
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${SITE_ORIGIN}/#sitelinks`,
+        "name": lang === "ru" ? "Разделы Сайта" : lang === "en" ? "Site Navigation" : "Asosiy Bo'limlar",
+        "itemListElement": navItems.map((item, idx) => ({
+          "@type": "SiteNavigationElement",
+          "position": idx + 1,
+          "name": item.name,
+          "url": urlFor(item.path, lang),
+        })),
+      },
+      {
         "@type": "Dentist",
         "@id": `${SITE_ORIGIN}/#dentist`,
         "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
-        "alternateName": `${DOCTOR_INFO.name} — ${DOCTOR_INFO.titles[lang] || DOCTOR_INFO.titles.uz}`,
+        "alternateName": [
+          "Smiles Dental Group",
+          "Dr. Olimjon Tojiboyev Stomatologiyasi",
+          "Dr. Olimjon Tojibayev Stomatologiyasi",
+          "Stomatolog Tojiboyev Andijon",
+          "Stomatolog Tojibayev Andijon",
+          "Стоматология Д-р Олимжон Тожибоев",
+          "Стоматология Д-р Олимжон Тожибаев",
+          "Стоматологическая клиника Smiles Dental Group",
+        ],
         "url": `${SITE_ORIGIN}/`,
         "telephone": DOCTOR_INFO.phoneRaw,
         "priceRange": "$$",
@@ -390,6 +441,8 @@ export const buildHomePageSchema = (lang = "uz") => {
           "@type": "PostalAddress",
           "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
           "addressLocality": PRIMARY_CLINIC.city[lang] || PRIMARY_CLINIC.city.uz,
+          "addressRegion": "Andijon viloyati",
+          "postalCode": "170100",
           "addressCountry": "UZ",
         },
         "geo": {
@@ -417,14 +470,26 @@ export const buildHomePageSchema = (lang = "uz") => {
           DOCTOR_INFO.googleMapsUrl,
           DOCTOR_INFO.googleReviewUrl,
           PRIMARY_CLINIC.maps.yandex,
+          PRIMARY_CLINIC.maps.yandexFull,
           PRIMARY_CLINIC.maps.google,
+          PRIMARY_CLINIC.maps.googleFull,
         ],
       },
       {
         "@type": "Physician",
         "@id": `${SITE_ORIGIN}/#doctor`,
         "name": DOCTOR_INFO.name,
-        "alternateName": DOCTOR_INFO.fullName,
+        "alternateName": DOCTOR_INFO.nameVariants || [
+          "Tojibayev Olimjon",
+          "Tojiboyev Olimjon",
+          "Olimjon Tojiboyev",
+          "Olimjon Tojibayev",
+          "Тожибоев Олимжон",
+          "Олимжон Тожибоев",
+          "Тожибаев Олимжон",
+          "Олимжон Тожибаев",
+          "Таджибаев Олимжон",
+        ],
         "jobTitle": DOCTOR_INFO.titles[lang] || DOCTOR_INFO.titles.uz,
         "medicalSpecialty": ["Dentistry", "Prosthodontics", "Orthodontics", "Implantology"],
         "telephone": DOCTOR_INFO.phoneRaw,
@@ -451,6 +516,8 @@ export const buildHomePageSchema = (lang = "uz") => {
           DOCTOR_INFO.instagramUrl,
           DOCTOR_INFO.googleMapsUrl,
           DOCTOR_INFO.googleReviewUrl,
+          PRIMARY_CLINIC.maps.yandex,
+          PRIMARY_CLINIC.maps.yandexFull,
         ],
       },
       {

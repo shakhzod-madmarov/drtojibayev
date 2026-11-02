@@ -68,8 +68,8 @@ const About = ({ onOpenBooking }) => {
         en: "Smiles Dental Group — Andijan",
       },
       desc: {
-        uz: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, eng ilg'or raqamli uskunalar bilan jihozlangan Smiles Dental Group klinikasida shaxsan qabul qiladi.",
-        ru: "Д-р Олимжон Тожибаев ведёт личный приём пациентов в Андижане на базе передовой клиники Smiles Dental Group с новейшим 3D оснащением.",
+        uz: "Dr. Olimjon Tojibayev (Tojiboyev) bemorlarni Andijon shahrida, eng ilg'or raqamli uskunalar bilan jihozlangan Smiles Dental Group klinikasida shaxsan qabul qiladi.",
+        ru: "Д-р Олимжон Тожибаев (Тожибоев / Таджибаев) ведёт личный приём пациентов в Андижане на базе передовой клиники Smiles Dental Group с новейшим 3D оснащением.",
         en: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at the high-tech Smiles Dental Group clinical facility.",
       },
     },
@@ -163,9 +163,9 @@ const About = ({ onOpenBooking }) => {
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
           {lang === "uz"
-            ? `Dr. Olimjon Tojibayev — Shaxsiy Qabul va Yuksak Aniq Stomatologiya`
+            ? `Dr. Olimjon Tojibayev (Tojiboyev) — Shaxsiy Qabul va Yuksak Aniq Stomatologiya`
             : lang === "ru"
-            ? `Д-р Олимжон Тожибаев — Личная практика и бережная стоматология`
+            ? `Д-р Олимжон Тожибаев (Тожибоев) — Личная практика и бережная стоматология`
             : `Dr. Olimjon Tojibayev — Dedicated Personal Dental Practice`}
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
