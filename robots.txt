@@ -10,6 +10,10 @@ Disallow: /api/
 User-agent: Googlebot
 Allow: /
 
+# Googlebot Image & Favicon Crawler
+User-agent: Googlebot-Image
+Allow: /
+
 # Google Gemini & AI Grounding
 User-agent: Google-Extended
 Allow: /
