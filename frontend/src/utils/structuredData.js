@@ -415,7 +415,7 @@ export const buildHomePageSchema = (lang = "uz") => {
         "telephone": DOCTOR_INFO.phoneRaw,
         "priceRange": "$$",
         "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
-        "logo": `${SITE_ORIGIN}/logo_icon.png`,
+        "logo": `${SITE_ORIGIN}/favicon-192x192.png`,
         "hasMap": PRIMARY_CLINIC.maps.yandex,
         "currenciesAccepted": "UZS",
         "paymentAccepted": "Cash, Credit Card, Humo, Uzcard",

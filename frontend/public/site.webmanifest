@@ -1,20 +1,20 @@
 {
-  "name": "Dr. Olimjon Tojibayev — Цифровой Стоматолог",
+  "name": "Dr. Olimjon Tojibayev (Tojiboyev) — Stomatolog",
   "short_name": "Dr. Tojibayev",
-  "description": "Dr. Olimjon Tojibayev — Vrach Stomatolog, Smiles Dental Group, Andijon",
+  "description": "Dr. Olimjon Tojibayev — Shifokor-Stomatolog, Implantolog va Ortodont. Smiles Dental Group, Andijon",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#FAF7FD",
   "theme_color": "#4C2365",
   "icons": [
     {
-      "src": "/favicon-32x32.png",
-      "sizes": "32x32",
+      "src": "/favicon-48x48.png",
+      "sizes": "48x48",
       "type": "image/png"
     },
     {
-      "src": "/favicon-48x48.png",
-      "sizes": "48x48",
+      "src": "/favicon-96x96.png",
+      "sizes": "96x96",
       "type": "image/png"
     },
     {
@@ -23,14 +23,21 @@
       "type": "image/png"
     },
     {
-      "src": "/icon-192.png",
-      "sizes": "192x192",
+      "src": "/favicon-144x144.png",
+      "sizes": "144x144",
       "type": "image/png"
+    },
+    {
+      "src": "/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ]
 }
