@@ -1,5 +1,31 @@
 export const FAQ_ITEMS = [
   {
+    id: "best-dentist-andijan",
+    q: {
+      uz: "Andijonda tajribali stomatolog-implantolog va ortodont shifokorni qanday tanlash mumkin?",
+      ru: "Как найти опытного стоматолога-имплантолога в Андижане и чем выделяется Dr. Olimjon Tojibayev?",
+      en: "Why choose Dr. Olimjon Tojibayev for dental implants and orthodontics in Andijan?",
+    },
+    a: {
+      uz: "Stomatolog tanlashda shifokorning amaliy tajribasi, raqamli texnologiyalardan foydalanishi va shaxsiy kafolati eng muhim mezondir. Dr. Olimjon Tojibayev (Tojiboyev) — 7 yildan ortiq klinik tajribaga ega bo'lib, 5,000 dan ortiq muvaffaqiyatli bemorlarni davolagan. Smiles Dental Group (Andijon, Kanechka) bazasida 60 soniyali 3D raqamli skanerlash, 2 bosqichli og'riqsiz anesteziya, xalqaro biotitan implantlar va shaffof elaynerlar orqali har bir bemorga shaxsiy sifat kafolati bilan yuqori aniqlikdagi muolaja ko'rsatadi.",
+      ru: "При выборе врача ключевую роль играют опыт, цифровое оснащение и личная ответственность. Врач-стоматолог Д-р Олимжон Тожибаев (Тожибоев) обладает более чем 7-летним практическим стажем и провёл более 5 000 успешных операций и реставраций. На базе передовой клиники Smiles Dental Group (Андижан, Канечка) приём ведётся с использованием 3D сканера без слепков, 2-этапной безболезненной анестезии и сертифицированных титановых имплантов с личной гарантией доктора.",
+      en: "Key criteria when choosing a dental surgeon include hands-on experience, digital precision, and clinical accountability. Dr. Olimjon Tojibayev brings 7+ years of clinical excellence with 5,000+ satisfied patients. Operating at Smiles Dental Group (Andijan, Kanechka), he combines 60-second putty-free 3D optical scanning, gentle two-stage numbing, biocompatible titanium implants (99.6% success), and clear invisible aligners backed by direct personal clinical warranties.",
+    },
+  },
+  {
+    id: "dental-treatment-pricing",
+    q: {
+      uz: "Tish davolash va implantatsiya narxlari qanday belgilanadi?",
+      ru: "Как формируется стоимость лечения и имплантации зубов в клинике?",
+      en: "How are treatment and dental implant costs determined?",
+    },
+    a: {
+      uz: "Muolaja narxi har bir holatning murakkabligi, tanlangan implant tizimi (premium biotitan), toj materiali (monolit tsirkon yoki keramika) va zaruriy tayyorgarlikka bog'liq. Dr. Olimjon Tojibayev qabulida dastlabki 3D raqamli skanerlash o'tkazilib, davolash rejasi va aniq narxlar bemorga oldindan, ortiqcha yashirin to'lovlarsiz to'liq tushuntiriladi. Saytimizdagi interaktiv kalkulyator orqali taxminiy xarajatlarni hisoblashingiz mumkin.",
+      ru: "Стоимость рассчитывается индивидуально и зависит от клинической картины, выбранной системы имплантов, материала коронок (монолитный диоксид циркония или керамика E-max) и сопутствующих процедур. На первичном 3D сканировании Д-р Олимжон Тожибаев составляет прозрачный план лечения с фиксированной стоимостью без скрытых наценок. Предварительный расчёт можно сделать в калькуляторе на сайте.",
+      en: "Costs depend on clinical complexity, chosen implant system (biocompatible medical titanium), crown material (monolithic zirconia vs press ceramics), and any prep work. During your initial 3D scan consultation, Dr. Olimjon Tojibayev formulates a transparent, fixed-price digital treatment plan with zero hidden surprises. You can also preview estimates using our on-site 3D cost calculator.",
+    },
+  },
+  {
     id: "digital-dentistry-benefits",
     q: {
       uz: "Raqamli stomatologiya (Digital Dentistry) oddiy usullardan nimasi bilan farq qiladi?",

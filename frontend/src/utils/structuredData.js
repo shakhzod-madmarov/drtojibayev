@@ -3,6 +3,7 @@ import { localizePath } from "./language";
 import { DOCTOR_INFO } from "../constants/doctor";
 import { PRIMARY_CLINIC } from "../constants/clinics";
 import { FAQ_ITEMS } from "../constants/faq";
+import { SERVICES_CATALOG } from "../constants/servicesCatalog";
 
 export const withTrailingSlash = (path) => (path.endsWith("/") ? path : `${path}/`);
 
@@ -66,15 +67,15 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
   }));
 
   const serviceFaqMap = {
-    "digital-dentistry": ["digital-dentistry-benefits", "booking-process", "clinic-location"],
-    "dental-implant": ["implant-pain", "digital-dentistry-benefits", "booking-process"],
-    "elaynerlar": ["aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
-    "breketlar": ["aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
-    "tsirkon-keramika-koronka": ["crowns-longevity", "digital-dentistry-benefits", "booking-process"],
-    "vinirlar": ["crowns-longevity", "digital-dentistry-benefits", "booking-process"],
-    "protezlar": ["crowns-longevity", "digital-dentistry-benefits", "booking-process"],
-    "ogriqsiz-terapiya": ["implant-pain", "digital-dentistry-benefits", "booking-process"],
-    "tish-oqartirish": ["whitening-safety", "booking-process", "clinic-location"],
+    "digital-dentistry": ["best-dentist-andijan", "digital-dentistry-benefits", "booking-process", "clinic-location"],
+    "dental-implant": ["best-dentist-andijan", "implant-pain", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "elaynerlar": ["best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
+    "breketlar": ["best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
+    "tsirkon-keramika-koronka": ["crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "vinirlar": ["crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "protezlar": ["crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "ogriqsiz-terapiya": ["implant-pain", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "tish-oqartirish": ["whitening-safety", "dental-treatment-pricing", "booking-process", "clinic-location"],
   };
 
   const relevantFaqIds = serviceFaqMap[service.id] || ["digital-dentistry-benefits", "booking-process"];
@@ -464,6 +465,55 @@ export const buildHomePageSchema = (lang = "uz") => {
             "closes": "18:30",
           },
         ],
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": lang === "ru" ? "Услуги Стоматологии" : lang === "en" ? "Dental Services Catalog" : "Stomatologik Xizmatlar Katalogi",
+          "itemListElement": SERVICES_CATALOG.map((svc, i) => ({
+            "@type": "Offer",
+            "position": i + 1,
+            "itemOffered": {
+              "@type": "Service",
+              "name": svc.title[lang] || svc.title.uz,
+              "description": svc.shortDesc[lang] || svc.shortDesc.uz,
+              "url": urlFor(`/services/${svc.id}`, lang),
+              "provider": {
+                "@id": `${SITE_ORIGIN}/#dentist`,
+              },
+            },
+          })),
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Muzaffar Rahimov",
+            },
+            "reviewBody": lang === "ru"
+              ? "Огромная благодарность доктору Олимжону! Поставили 2 импланта, всё прошло абсолютно без боли и с 3D сканированием. Отличная клиника Smiles Dental Group."
+              : "Dr. Olimjon Tojibayevga katta rahmat! 2 ta implant qo'ydirdim, umuman og'riq bo'lmadi. 3D skanerdan so'ng hamma narsa aniq va tez bajarildi. Smiles Dental Group klinikasiga gap yo'q.",
+          },
+          {
+            "@type": "Review",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5",
+              "bestRating": "5",
+            },
+            "author": {
+              "@type": "Person",
+              "name": "Dilnoza Karimova",
+            },
+            "reviewBody": lang === "ru"
+              ? "Прозрачные элайнеры помогли выровнять зубы без брекетов. Очень комфортно, никто даже не замечал кап. Доктор настоящий профессионал!"
+              : "Shaffof elaynerlar orqali tishlarim tekislandi. Breketsiz, hech kim sezmagan holda tabassumim chiroyli bo'ldi. Dr. Olimjon Tojiboyev o'z ishining ustasi ekan.",
+          },
+        ],
         "sameAs": [
           DOCTOR_INFO.telegramUrl,
           DOCTOR_INFO.instagramUrl,
@@ -499,14 +549,33 @@ export const buildHomePageSchema = (lang = "uz") => {
           "@type": "EducationalOrganization",
           "name": "Andijon Davlat Tibbiyot Instituti",
         },
+        "award": [
+          "7+ Yillik Muvaffaqiyatli Klinik Amaliyot (5,000+ Bemorlar)",
+          "Sertifikatlangan Raqamli Stomatolog va Implantolog",
+        ],
         "knowsAbout": [
           "Digital Dentistry",
+          "3D Intraoral Scanning",
+          "3D Raqamli Skanerlash",
+          "Цифровая стоматология 3D",
           "Dental Implants",
+          "Biotitan Implantlar",
+          "Имплантация зубов в Андижане",
           "Clear Aligners",
+          "Shaffof Elaynerlar",
+          "Прозрачные элайнеры",
           "Orthodontic Braces",
+          "Breket tizimlari",
+          "Брекеты",
           "Zirconia Crowns",
+          "Tsirkon koronkalar",
+          "Циркониевые коронки",
           "Ceramic Veneers",
+          "Keramik vinirlar",
+          "Виниры E-max",
           "Painless Dentistry",
+          "Og'riqsiz tish davolash",
+          "Лечение зубов без боли",
         ],
         "worksFor": {
           "@id": `${SITE_ORIGIN}/#dentist`,

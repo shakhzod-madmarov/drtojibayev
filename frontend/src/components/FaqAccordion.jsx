@@ -76,16 +76,17 @@ export const FaqAccordion = () => {
                   </span>
                 </button>
 
-                {isOpen && (
-                  <div
-                    id={panelId}
-                    role="region"
-                    aria-labelledby={buttonId}
-                    className="px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-50 animate-in fade-in duration-200"
-                  >
-                    {item.a[lang] || item.a.uz}
-                  </div>
-                )}
+                <div
+                  id={panelId}
+                  role="region"
+                  aria-labelledby={buttonId}
+                  hidden={!isOpen}
+                  className={`px-5 sm:px-6 pb-5 pt-1 text-xs sm:text-sm text-slate-600 leading-relaxed border-t border-slate-50 ${
+                    isOpen ? "block animate-in fade-in duration-200" : "hidden"
+                  }`}
+                >
+                  {item.a[lang] || item.a.uz}
+                </div>
               </div>
             );
           })}
