@@ -30,6 +30,8 @@ const xmlEscape = (str) =>
     .replace(/"/g, "&quot;")
     .replace(/'/g, "&apos;");
 
+const withTrailingSlash = (url) => (url.endsWith("/") ? url : `${url}/`);
+
 function resolveImageUrl(src) {
   if (src.startsWith("public/")) {
     const rel = src.slice("public/".length);
@@ -68,16 +70,16 @@ for (const route of ROUTES) {
     ...LANGS.map(
       (l) =>
         `    <xhtml:link rel="alternate" hreflang="${l}" href="${xmlEscape(
-          `${SITE_ORIGIN}${localizePath(route.path, l)}`
+          withTrailingSlash(`${SITE_ORIGIN}${localizePath(route.path, l)}`)
         )}" />`
     ),
     `    <xhtml:link rel="alternate" hreflang="x-default" href="${xmlEscape(
-          `${SITE_ORIGIN}${localizePath(route.path, "uz")}`
+          withTrailingSlash(`${SITE_ORIGIN}${localizePath(route.path, "uz")}`)
         )}" />`,
   ].join("\n");
 
   for (const lang of LANGS) {
-    const loc = `${SITE_ORIGIN}${localizePath(route.path, lang)}`;
+    const loc = withTrailingSlash(`${SITE_ORIGIN}${localizePath(route.path, lang)}`);
     const lines = [
       "  <url>",
       `    <loc>${xmlEscape(loc)}</loc>`,
