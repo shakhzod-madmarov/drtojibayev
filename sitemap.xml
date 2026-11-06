@@ -4,12 +4,12 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://drtojibayev.uz/</loc>
-    <lastmod>2026-11-04</lastmod>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/dr_tojibayev_og.png</image:loc>
@@ -18,13 +18,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/dr_tojibayev_og.png</image:loc>
@@ -33,13 +33,13 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/dr_tojibayev_og.png</image:loc>
@@ -48,14 +48,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/clinic_room-DUwk5xIL.webp</image:loc>
       <image:title>Stomatologik Xizmatlar — Dr. Olimjon Tojibayev</image:title>
@@ -63,14 +63,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/clinic_room-DUwk5xIL.webp</image:loc>
       <image:title>Stomatologik Xizmatlar — Dr. Olimjon Tojibayev</image:title>
@@ -78,14 +78,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/clinic_room-DUwk5xIL.webp</image:loc>
       <image:title>Stomatologik Xizmatlar — Dr. Olimjon Tojibayev</image:title>
@@ -93,14 +93,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/about</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/about/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/about" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/about" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/about/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/business_card_front-RwlLUue3.jpg</image:loc>
       <image:title>Dr. Olimjon Tojibayev Haqida — 7 Yillik Klinik Tajriba</image:title>
@@ -108,14 +108,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/about</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/about/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/about" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/about" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/about/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/business_card_front-RwlLUue3.jpg</image:loc>
       <image:title>Dr. Olimjon Tojibayev Haqida — 7 Yillik Klinik Tajriba</image:title>
@@ -123,14 +123,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/about</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/about/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/about" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/about" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/about/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/about/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/about/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/about/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/business_card_front-RwlLUue3.jpg</image:loc>
       <image:title>Dr. Olimjon Tojibayev Haqida — 7 Yillik Klinik Tajriba</image:title>
@@ -138,104 +138,104 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/contact</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/contact/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/contact" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/contact" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/contact/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/contact</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/contact/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/contact" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/contact" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/contact/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/contact</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/contact/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/contact" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/contact" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/contact/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/contact/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/contact/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/contact/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/booking</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/booking/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/booking" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/booking" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/booking" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/booking" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/booking/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/booking/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/booking/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/booking</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/booking/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/booking" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/booking" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/booking" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/booking" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/booking/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/booking/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/booking/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/booking</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/booking/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/booking" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/booking" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/booking" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/booking" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/booking/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/booking/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/booking/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/booking/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/qabul</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/qabul/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/qabul" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/qabul" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/qabul" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/qabul" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/qabul/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/qabul/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/qabul/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/qabul/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/qabul</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/qabul/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/qabul" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/qabul" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/qabul" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/qabul" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/qabul/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/qabul/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/qabul/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/qabul/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/qabul</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/qabul/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/qabul" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/qabul" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/qabul" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/qabul" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/qabul/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/qabul/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/qabul/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/qabul/" />
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/digital-dentistry</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/digital-dentistry/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/digital-dentistry" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/digital-dentistry/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/clinic_room-DUwk5xIL.webp</image:loc>
       <image:title>Raqamli Stomatologiya &amp; 3D Diagnostika — Dr. Olimjon Tojibayev</image:title>
@@ -243,14 +243,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/digital-dentistry</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/digital-dentistry/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/digital-dentistry" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/digital-dentistry/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/clinic_room-DUwk5xIL.webp</image:loc>
       <image:title>Raqamli Stomatologiya &amp; 3D Diagnostika — Dr. Olimjon Tojibayev</image:title>
@@ -258,14 +258,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/digital-dentistry</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/digital-dentistry/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/digital-dentistry" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/digital-dentistry" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/digital-dentistry/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/digital-dentistry/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/clinic_room-DUwk5xIL.webp</image:loc>
       <image:title>Raqamli Stomatologiya &amp; 3D Diagnostika — Dr. Olimjon Tojibayev</image:title>
@@ -273,14 +273,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/dental-implant</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/dental-implant/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/dental-implant" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/dental-implant/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_implant-EUoIaf_F.webp</image:loc>
       <image:title>Dental Implantatsiya (Biotitan) — Dr. Olimjon Tojibayev</image:title>
@@ -288,14 +288,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/dental-implant</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/dental-implant/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/dental-implant" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/dental-implant/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_implant-EUoIaf_F.webp</image:loc>
       <image:title>Dental Implantatsiya (Biotitan) — Dr. Olimjon Tojibayev</image:title>
@@ -303,14 +303,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/dental-implant</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/dental-implant/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/dental-implant" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/dental-implant" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/dental-implant/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/dental-implant/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_implant-EUoIaf_F.webp</image:loc>
       <image:title>Dental Implantatsiya (Biotitan) — Dr. Olimjon Tojibayev</image:title>
@@ -318,14 +318,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/elaynerlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/elaynerlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/elaynerlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/elaynerlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_aligners-D393Kjtt.webp</image:loc>
       <image:title>Shaffof Elaynerlar (Ko&apos;rinmas Kapalar) — Dr. Olimjon Tojibayev</image:title>
@@ -333,14 +333,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/elaynerlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/elaynerlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/elaynerlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/elaynerlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_aligners-D393Kjtt.webp</image:loc>
       <image:title>Shaffof Elaynerlar (Ko&apos;rinmas Kapalar) — Dr. Olimjon Tojibayev</image:title>
@@ -348,14 +348,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/elaynerlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/elaynerlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/elaynerlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/elaynerlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/elaynerlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/elaynerlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_aligners-D393Kjtt.webp</image:loc>
       <image:title>Shaffof Elaynerlar (Ko&apos;rinmas Kapalar) — Dr. Olimjon Tojibayev</image:title>
@@ -363,14 +363,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/breketlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/breketlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/breketlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/breketlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_braces-OrWaRMeg.webp</image:loc>
       <image:title>Breket Tizimlari — Dr. Olimjon Tojibayev</image:title>
@@ -378,14 +378,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/breketlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/breketlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/breketlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/breketlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_braces-OrWaRMeg.webp</image:loc>
       <image:title>Breket Tizimlari — Dr. Olimjon Tojibayev</image:title>
@@ -393,14 +393,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/breketlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/breketlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/breketlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/breketlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/breketlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/breketlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_braces-OrWaRMeg.webp</image:loc>
       <image:title>Breket Tizimlari — Dr. Olimjon Tojibayev</image:title>
@@ -408,14 +408,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/tsirkon-keramika-koronka</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/tsirkon-keramika-koronka/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_crowns-BTAe3lTm.webp</image:loc>
       <image:title>Tsirkon va Keramika Koronkalar — Dr. Olimjon Tojibayev</image:title>
@@ -423,14 +423,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_crowns-BTAe3lTm.webp</image:loc>
       <image:title>Tsirkon va Keramika Koronkalar — Dr. Olimjon Tojibayev</image:title>
@@ -438,14 +438,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/tsirkon-keramika-koronka</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/tsirkon-keramika-koronka/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tsirkon-keramika-koronka" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tsirkon-keramika-koronka/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tsirkon-keramika-koronka/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_crowns-BTAe3lTm.webp</image:loc>
       <image:title>Tsirkon va Keramika Koronkalar — Dr. Olimjon Tojibayev</image:title>
@@ -453,14 +453,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/vinirlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/vinirlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/vinirlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/vinirlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_veneers-16IoRRNE.webp</image:loc>
       <image:title>Estetik Keramik Vinirlar — Dr. Olimjon Tojibayev</image:title>
@@ -468,14 +468,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/vinirlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/vinirlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/vinirlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/vinirlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_veneers-16IoRRNE.webp</image:loc>
       <image:title>Estetik Keramik Vinirlar — Dr. Olimjon Tojibayev</image:title>
@@ -483,14 +483,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/vinirlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/vinirlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/vinirlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/vinirlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/vinirlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/vinirlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_veneers-16IoRRNE.webp</image:loc>
       <image:title>Estetik Keramik Vinirlar — Dr. Olimjon Tojibayev</image:title>
@@ -498,14 +498,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/protezlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/protezlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/protezlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/protezlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_dentures-DSjHw4Gb.webp</image:loc>
       <image:title>Zamonaviy Tish Protezlari — Dr. Olimjon Tojibayev</image:title>
@@ -513,14 +513,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/protezlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/protezlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/protezlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/protezlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_dentures-DSjHw4Gb.webp</image:loc>
       <image:title>Zamonaviy Tish Protezlari — Dr. Olimjon Tojibayev</image:title>
@@ -528,14 +528,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/protezlar</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/protezlar/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/protezlar" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/protezlar" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/protezlar/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/protezlar/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_dentures-DSjHw4Gb.webp</image:loc>
       <image:title>Zamonaviy Tish Protezlari — Dr. Olimjon Tojibayev</image:title>
@@ -543,14 +543,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/ogriqsiz-terapiya</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/ogriqsiz-terapiya/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/ogriqsiz-terapiya" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/ogriqsiz-terapiya/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_therapy-3mkgVkfS.webp</image:loc>
       <image:title>Og&apos;riqsiz Terapiya va Plombalash — Dr. Olimjon Tojibayev</image:title>
@@ -558,14 +558,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/ogriqsiz-terapiya</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/ogriqsiz-terapiya/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/ogriqsiz-terapiya" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/ogriqsiz-terapiya/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_therapy-3mkgVkfS.webp</image:loc>
       <image:title>Og&apos;riqsiz Terapiya va Plombalash — Dr. Olimjon Tojibayev</image:title>
@@ -573,14 +573,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/ogriqsiz-terapiya</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/ogriqsiz-terapiya/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/ogriqsiz-terapiya" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/ogriqsiz-terapiya" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/ogriqsiz-terapiya/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/ogriqsiz-terapiya/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_therapy-3mkgVkfS.webp</image:loc>
       <image:title>Og&apos;riqsiz Terapiya va Plombalash — Dr. Olimjon Tojibayev</image:title>
@@ -588,14 +588,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/services/tish-oqartirish</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/services/tish-oqartirish/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tish-oqartirish" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tish-oqartirish/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_whitening-DAVxj-hD.webp</image:loc>
       <image:title>Professional Tish Oqartirish — Dr. Olimjon Tojibayev</image:title>
@@ -603,14 +603,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/ru/services/tish-oqartirish</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/ru/services/tish-oqartirish/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tish-oqartirish" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tish-oqartirish/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_whitening-DAVxj-hD.webp</image:loc>
       <image:title>Professional Tish Oqartirish — Dr. Olimjon Tojibayev</image:title>
@@ -618,14 +618,14 @@
     </image:image>
   </url>
   <url>
-    <loc>https://drtojibayev.uz/en/services/tish-oqartirish</loc>
-    <lastmod>2026-11-04</lastmod>
+    <loc>https://drtojibayev.uz/en/services/tish-oqartirish/</loc>
+    <lastmod>2026-11-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tish-oqartirish" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tish-oqartirish" />
+    <xhtml:link rel="alternate" hreflang="uz" href="https://drtojibayev.uz/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="ru" href="https://drtojibayev.uz/ru/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://drtojibayev.uz/en/services/tish-oqartirish/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://drtojibayev.uz/services/tish-oqartirish/" />
     <image:image>
       <image:loc>https://drtojibayev.uz/assets/treatment_whitening-DAVxj-hD.webp</image:loc>
       <image:title>Professional Tish Oqartirish — Dr. Olimjon Tojibayev</image:title>
