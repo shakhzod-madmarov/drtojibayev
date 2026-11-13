@@ -116,4 +116,43 @@ export const FAQ_ITEMS = [
       en: "In-office clinical whitening performed by a dentist is completely safe. We apply remineralizing desensitizing formulations that replenish enamel minerals while brightening your smile by up to 6-8 shades.",
     },
   },
+  {
+    id: "immediate-implant-after-extraction",
+    q: {
+      uz: "Tish sug'urilgan kuni darhol implant qo'yish mumkinmi (Bir bosqichli implantatsiya)?",
+      ru: "Можно ли поставить имплант сразу в день удаления зуба (одномоментная имплантация)?",
+      en: "Can a dental implant be placed immediately on the day of tooth extraction?",
+    },
+    a: {
+      uz: "Ha, ko'p hollarda tish olingan zahoti uning o'rniga darhol biotitan implant o'rnatish (bir bosqichli implantatsiya) mumkin. Bu bemorga bir necha oylik kutish vaqtini tejash, suyak to'qimasining tabiiy balandligini saqlab qolish va ikkilamchi jarrohlik amaliyotiga hojat qoldirmaslik imkonini beradi. 3D kompyuter tomografiyasi orqali suyak zichligi baholanib, Dr. Olimjon Tojibayev tomonidan aniq qaror qabul qilinadi.",
+      ru: "Да, во многих клинических случаях возможна одномоментная имплантация — установка титанового импланта в лунку сразу после бережного удаления зуба. Это сохраняет естественный объём кости и контур десны, избавляет от повторной операции и вдвое сокращает общее время восстановления зуба.",
+      en: "Yes, in many clinical cases, immediate implant placement is possible directly into the socket following gentle extraction. This preserves natural bone volume and gum architecture, eliminates the need for a second surgery, and significantly accelerates overall treatment time.",
+    },
+  },
+  {
+    id: "zirconia-vs-metal-ceramic",
+    q: {
+      uz: "Tsirkon qoplama bilan oddiy metallokeramikaning qanday farqi bor, qaysi biri yaxshiroq?",
+      ru: "В чём разница между циркониевыми коронками и металлокерамикой, что лучше выбрать?",
+      en: "What is the difference between zirconia crowns and traditional metal-ceramic crowns?",
+    },
+    a: {
+      uz: "Asosiy farq — estetika, biologik xavfsizlik va chidamlilikda. Metallokeramika vaqt o'tishi bilan tish milki chetida yoqimsiz qora yoki ko'kish chiziq hosil qilishi, emalni ko'proq charxlashni talab qilishi va yorug'likni to'sib xira ko'rinishi mumkin. Monolit tsirkoniy (ZrO2) esa 100% metallsiz, milk bilan to'liq bio-uyg'unlashadi, tabiiy tishdek nur o'tkazadi va 15-20 yildan ortiq asl holatini saqlaydi.",
+      ru: "Главные преимущества диоксида циркония — 100% биосовместимость, долговечность и безупречная эстетика. Металлокерамика со временем может окисляться и давать тёмную полосу у края десны. Цирконий не имеет металлического каркаса, пропускает свет как натуральная эмаль, не вызывает аллергии и служит свыше 15-20 лет.",
+      en: "The key advantages of monolithic zirconia are 100% metal-free biocompatibility, lifelike translucency, and longevity. Metal-ceramic crowns often cause an unsightly dark gray margin at the gumline and require heavier tooth reduction. Zirconia is hypoallergenic, resists chipping, matches natural enamel reflections, and lasts 15-20+ years.",
+    },
+  },
+  {
+    id: "emergency-toothache-care",
+    q: {
+      uz: "Tish qattiq og'riganda, singanda yoki shoshilinch holatlarda nima qilish kerak?",
+      ru: "Что делать при острой зубной боли, травме или сколе зуба?",
+      en: "What should I do in case of acute toothache, emergency pain, or a broken tooth?",
+    },
+    a: {
+      uz: "Tishda o'tkir og'riq, jarohat yoki to'satdan sinish kuzatilsa, o'zboshimchalik bilan issiq kompress qilmaslik va og'riq qoldiruvchi dorilarni to'g'ridan-to'g'ri milkka qo'ymaslik tavsiya etiladi. Zudlik bilan saytimizdagi onlayn qabul orqali navbatsiz yoziling yoki +998 90 541 97 57 / Telegram (@Dr_Tadjibayev) orqali bog'laning. Dr. Olimjon Tojibayev shoshilinch holatlarda bemorlarni zudlik bilan qabul qilib, og'riqni 2 bosqichli anesteziya bilan 5 daqiqada butunlay qoldiradi.",
+      ru: "При резкой зубной боли нельзя греть щёку или прикладывать таблетки к десне. Срочно свяжитесь с клиникой: запишитесь онлайн через сайт или позвоните по телефону +998 90 541 97 57 / Telegram (@Dr_Tadjibayev). Доктор Олимжон Тожибаев принимает пациентов с острой болью вне очереди, купируя болевой синдром за 5 минут мягкой двухэтапной анестезией.",
+      en: "Do not apply heat to the cheek or place aspirin directly on the gums. Contact Dr. Olimjon Tojibayev immediately via 24/7 online booking, phone +998 90 541 97 57, or Telegram (@Dr_Tadjibayev). Emergency patients are received promptly, relieving severe pain within 5 minutes under gentle two-stage numbing.",
+    },
+  },
 ];

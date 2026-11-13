@@ -71,17 +71,17 @@ const Services = ({ onOpenBooking }) => {
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
           {lang === "uz"
-            ? "Dr. Olimjon Tojibayevning Shaxsiy Muolajalari"
+            ? "Andijonda Stomatologiya Xizmatlari — Dr. Olimjon Tojibayev"
             : lang === "ru"
-            ? "Клинические Услуги Д-ра Олимжона Тожибаева"
-            : "Clinical Treatments & Care by Dr. Olimjon Tojibayev"}
+            ? "Стоматологические Услуги в Андижане — Д-р Олимжон Тожибаев"
+            : "Dental Services & Treatments in Andijan — Dr. Olimjon Tojibayev"}
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Har bir tabassum o'ziga xos. Tishlaringiz salomatligi va tabiiy go'zalligini 3D raqamli aniqlikda, to'liq og'riqsiz va samimiy shaxsiy e'tibor bilan tiklaymiz."
+            ? "Biotitan implantatsiya, shaffof elaynerlar, breket tizimlari, tsirkon koronkalar, estetik vinirlar va 100% og'riqsiz davolash: har bir muolaja 3D raqamli aniqlikda va shaxsiy sifat kafolati bilan amalga oshiriladi."
             : lang === "ru"
-            ? "Каждая улыбка уникальна. Восстановление здоровья и эстетики ваших зубов с ювелирной 3D точностью, без боли и с искренней заботой о вашем комфорте."
-            : "Every smile is unique. Restoring oral health and natural beauty through micron 3D accuracy, painless anesthesia, and dedicated one-on-one doctor care."}
+            ? "Дентальная имплантация, прозрачные элайнеры, брекеты, коронки из циркония, виниры и лечение зубов без боли: персональный приём Д-ра Олимжона Тожибаева в Андижане с 3D точностью."
+            : "Dental implants, clear aligners, braces, zirconia crowns, aesthetic veneers, and gentle tooth-preserving therapy: personal one-on-one care by Dr. Olimjon Tojibayev in Andijan."}
         </p>
       </div>
 
