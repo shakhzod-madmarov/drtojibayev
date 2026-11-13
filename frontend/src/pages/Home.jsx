@@ -25,12 +25,12 @@ const HeroSection = ({ onOpenBooking }) => {
 
   const T = {
     uz: {
-      badge: "Shaxsiy Qabul · 7 Yillik Tajriba · Andijon",
+      badge: "Andijonda Zamonaviy Stomatologiya · 7+ Yillik Tajriba",
       doctorName: "Dr. Olimjon Tojibayev (Tojiboyev)",
       specialtyTitle: "Shifokor-Stomatolog · Implantolog & Ortodont",
-      headline: "Qo'rquvsiz, og'riqsiz va tabiiy go'zal tabassum",
+      headline: "Andijonda Og'riqsiz Stomatologiya va Tabiiy Go'zal Tabassum",
       subtitle:
-        "Stomatolog qabulidan xavotir olmang. Men har bir bemorimni shaxsan qabul qilaman: noqulay gips qoliplarisiz 60 soniyali 3D skanerlash, 2 bosqichli yumshoq og'riqsizlantirish hamda tishlaringizning o'ziga xos tabiiy go'zalligini tiklovchi zamonaviy implant va elayner muolajalari.",
+        "Andijon shahrida ishonchli va yuqori sifatli stomatologiya qidiryapsizmi? Smiles Dental Group klinikasida Dr. Olimjon Tojibayev har bir bemorni shaxsan qabul qiladi: noqulay gips qoliplarisiz 60 soniyali 3D skanerlash, 2 bosqichli og'riqsiz anesteziya hamda tishlaringizning tabiiy go'zalligini asrab qoluvchi biotitan implant va shaffof elayner muolajalari.",
       ctaBook: "Qabulga Yozilish",
       ctaServices: "Xizmatlarni Ko'rish",
       stat1Num: "7+ Yil",
@@ -54,12 +54,12 @@ const HeroSection = ({ onOpenBooking }) => {
       cardCta: "Onlayn Qabulga Yozilish →",
     },
     ru: {
-      badge: "Личный Приём · 7 Лет Опыта · Андижан",
+      badge: "Современная Стоматология в Андижане · 7+ Лет Опыта",
       doctorName: "Д-р Олимжон Тожибаев (Тожибоев)",
       specialtyTitle: "Врач-Стоматолог · Эксперт по имплантации и ортодонтии",
-      headline: "Здоровая и естественная улыбка — без боли, страха и компромиссов",
+      headline: "Стоматология в Андижане Без Боли и Страха — Здоровая Улыбка",
       subtitle:
-        "Забудьте о страхе перед стоматологическим креслом. Я веду приём лично: бережно, безболезненно и с ювелирной точностью. Быстрое 3D сканирование за 60 секунд вместо слепков, надёжные импланты и прозрачные элайнеры для улыбки, которой вы будете искренне гордиться.",
+        "Ищете надёжную стоматологическую клинику в Андижане? На базе клиники Smiles Dental Group приём ведёт Д-р Олимжон Тожибаев лично: комфортное 3D сканирование челюсти за 60 секунд без слепков, бережная 2-этапная анестезия, надёжная имплантация и прозрачные элайнеры для улыбки, которой вы будете искренне гордиться.",
       ctaBook: "Записаться на Приём",
       ctaServices: "Все Направления",
       stat1Num: "7+ Лет",
@@ -83,12 +83,12 @@ const HeroSection = ({ onOpenBooking }) => {
       cardCta: "Онлайн-запись на приём →",
     },
     en: {
-      badge: "Dedicated Practice · 7+ Years Experience · Andijan",
+      badge: "Digital Dental Practice in Andijan · 7+ Years Experience",
       doctorName: DOCTOR_INFO.name,
       specialtyTitle: "Dental Surgeon · Implantologist & Orthodontist",
-      headline: "A Healthy, Natural Smile — Gentle, Painless, and Built to Last",
+      headline: "Modern Pain-Free Dentistry in Andijan — Natural, Confident Smiles",
       subtitle:
-        "No rush, no discomfort, no cold clinical distance. I personally oversee every stage of your care: fast 60-second 3D digital scanning, gentle two-phase numbing, and precision implants and invisible aligners tailored uniquely to your facial aesthetics.",
+        "Looking for high-precision dental care in Andijan, Uzbekistan? Dr. Olimjon Tojibayev personally receives patients at Smiles Dental Group: fast 60-second 3D optical scanning without putty impressions, gentle two-phase numbing, and precision biocompatible dental implants and clear aligners tailored uniquely to your facial aesthetics.",
       ctaBook: "Book Appointment",
       ctaServices: "Explore Treatments",
       stat1Num: "7+ Yrs",

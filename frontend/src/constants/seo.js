@@ -13,19 +13,19 @@ export const getServiceSeo = (serviceId, lang = "uz") =>
 export const PAGE_SEO = {
   home: {
     uz: {
-      title: "Dr. Olimjon Tojibayev (Tojiboyev) — Shifokor-Stomatolog | Implantolog & Ortodont | Andijon",
-      description: `Dr. Olimjon Tojibayev (Tojiboyev Olimjon) — ${years} yillik tajribaga ega shifokor-stomatolog, implantolog va ortodont. 3D skanerlash, og'riqsiz biotitan implantlar, shaffof elaynerlar, tsirkon tojlar va samimiy shaxsiy muolaja. Andijon (Smiles Dental Group bazasida). Tel: +998 90 541 97 57.`,
-      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, Olimjon Tojiboyev stomatolog, stomatolog Tojiboyev, stomatolog Andijon, implantolog Andijon, ortodont Andijon, tish davolash, tish ekish narxi, shaffof elaynerlar, breketlar, tsirkon koronka, vinirlar, ogriqsiz stomatologiya, Smiles Dental Group Kanechka",
+      title: "Dr. Olimjon Tojibayev — Andijonda Stomatologiya & Shifokor-Stomatolog | Smiles Dental Group",
+      description: `Andijonda zamonaviy stomatologiya va shifokor qabuli: Dr. Olimjon Tojibayev (Tojiboyev Olimjon). ${years} yillik tajriba, 3D raqamli skanerlash, og'riqsiz biotitan implantlar, shaffof elaynerlar, tsirkon tojlar. Smiles Dental Group (Kanechka 8-A). Tel: +998 90 541 97 57.`,
+      keywords: "andijonda stomatolog, andijonda stomatologiya, stomatologiya andijon, andijon stomatologiya klinikalari, andijon stomatologlari, tish klinikasi andijon, stomatologiya kanechka, Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, Olimjon Tojiboyev stomatolog, stomatolog Tojiboyev, implantolog Andijon, ortodont Andijon, tish davolash, tish ekish narxi, shaffof elaynerlar, breketlar, tsirkon koronka, vinirlar, ogriqsiz stomatologiya, Smiles Dental Group Andijon",
     },
     ru: {
-      title: "Д-р Олимжон Тожибаев (Тожибоев) — Врач-Стоматолог | Имплантолог & Ортодонт | Андижан",
-      description: `Врач-стоматолог Д-р Олимжон Тожибаев (Тожибоев / Таджибаев) — ${years} лет успешной клинической практики. 3D сканирование без слепков, надёжные импланты, элайнеры, циркониевые коронки и лечение зубов без боли. Андижан (Smiles Dental Group). Тел: +998 90 541 97 57.`,
-      keywords: "доктор Олимжон Тожибаев, Олимжон Тожибоев стоматолог, доктор Олимжон Тожибоев, стоматолог Тожибоев, Олим Таджибаев, стоматолог Андижан, имплантолог Андижан, ортодонт Андижан, имплантация зубов цена, элайнеры, брекеты, циркониевые коронки, виниры Emax, лечение зубов без боли, клиника Smiles Dental Group",
+      title: "Д-р Олимжон Тожибаев — Стоматология и Стоматолог в Андижане | Smiles Dental Group",
+      description: `Стоматология в Андижане и личный приём врача-стоматолога Д-ра Олимжона Тожибаева (Тожибоева / Таджибаева). ${years} лет опыта, 3D сканирование без слепков, безболезненная имплантация зубов, прозрачные элайнеры, циркониевые коронки. Smiles Dental Group (Канечка). Тел: +998 90 541 97 57.`,
+      keywords: "стоматология в андижане, стоматолог андижан, стоматологические клиники андижана, лучший стоматолог в андижане, стоматология канечка, доктор Олимжон Тожибаев, Олимжон Тожибоев стоматолог, доктор Олимжон Тожибоев, стоматолог Тожибоев, Олим Таджибаев, имплантолог Андижан, ортодонт Андижан, имплантация зубов цена, элайнеры, брекеты, циркониевые коронки, виниры Emax, лечение зубов без боли, клиника Smiles Dental Group",
     },
     en: {
-      title: "Dr. Olimjon Tojibayev (Tojiboyev) — Dental Surgeon | Implantologist & Orthodontist",
-      description: `Dr. Olimjon Tojibayev (Tojiboyev) — Dental surgeon with ${years}+ years of clinical excellence. 3D digital scans, dental implants, clear aligners, zirconia crowns, and gentle, stress-free care. Andijan (Smiles Dental Group). Tel: +998 90 541 97 57.`,
-      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, dentist in Andijan, dental surgeon Uzbekistan, dental implants Andijan, clear aligners, orthodontic braces, zirconia crowns, veneers, painless dentistry, Smiles Dental Group",
+      title: "Dr. Olimjon Tojibayev — Dental Clinic & Dentist in Andijan | Smiles Dental Group",
+      description: `Modern dental clinic and dental surgeon in Andijan, Uzbekistan: Dr. Olimjon Tojibayev. ${years}+ years of clinical excellence, 60-second 3D digital scans, pain-free dental implants, clear invisible aligners, and monolithic zirconia crowns at Smiles Dental Group (Kanechka). Tel: +998 90 541 97 57.`,
+      keywords: "dentist in andijan, dental clinic andijan, best dentist andijan, stomatology andijan, dental implants andijan, clear aligners andijan, Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, dental surgeon Uzbekistan, orthodontic braces, zirconia crowns, veneers, painless dentistry, Smiles Dental Group Andijan",
     },
   },
   services: {

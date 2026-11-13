@@ -399,19 +399,40 @@ export const buildHomePageSchema = (lang = "uz") => {
         })),
       },
       {
-        "@type": "Dentist",
+        "@type": ["Dentist", "DentalClinic", "MedicalClinic", "LocalBusiness"],
         "@id": `${SITE_ORIGIN}/#dentist`,
-        "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
+        "name": `${DOCTOR_INFO.name} — Smiles Dental Group (Andijonda Stomatologiya)`,
         "alternateName": [
           "Smiles Dental Group",
+          "Andijonda Stomatologiya Smiles Dental Group",
+          "Smiles Dental Group Stomatologiya Klinikasi Andijon",
+          "Stomatologiya Andijon Smiles Dental Group",
           "Dr. Olimjon Tojiboyev Stomatologiyasi",
           "Dr. Olimjon Tojibayev Stomatologiyasi",
           "Stomatolog Tojiboyev Andijon",
           "Stomatolog Tojibayev Andijon",
+          "Стоматология в Андижане Smiles Dental Group",
+          "Стоматологическая клиника Smiles Dental Group",
           "Стоматология Д-р Олимжон Тожибоев",
           "Стоматология Д-р Олимжон Тожибаев",
-          "Стоматологическая клиника Smiles Dental Group",
+          "Andijon stomatologiya klinikasi",
         ],
+        "potentialAction": {
+          "@type": "ReserveAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": `${SITE_ORIGIN}/booking/`,
+            "inLanguage": ["uz", "ru", "en"],
+            "actionPlatform": [
+              "http://schema.org/DesktopWebPlatform",
+              "http://schema.org/MobileWebPlatform"
+            ]
+          },
+          "result": {
+            "@type": "Reservation",
+            "name": "Onlayn Qabulga Yozilish (24/7)"
+          }
+        },
         "url": `${SITE_ORIGIN}/`,
         "telephone": DOCTOR_INFO.phoneRaw,
         "priceRange": "$$",
