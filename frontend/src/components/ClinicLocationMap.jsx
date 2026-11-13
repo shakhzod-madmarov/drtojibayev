@@ -10,8 +10,8 @@ export const ClinicLocationMap = () => {
   const labels = {
     uz: {
       badge: "AMALIYOT VA QABUL MANZILI",
-      title: "Dr. Olimjon Tojibayev Shaxsiy Qabuli",
-      subtitle: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, zamonaviy uskunalar bilan jihozlangan Smiles Dental Group klinikasida shaxsan qabul qiladi.",
+      title: "Andijonda Stomatologiya va Shifokor Qabuli Manzili",
+      subtitle: "Dr. Olimjon Tojibayev bemorlarni Andijon shahrida, zamonaviy 3D uskunalar bilan jihozlangan Smiles Dental Group stomatologiya klinikasida (1-kichik daha, Kanechka 8-A) shaxsan qabul qiladi.",
       addressTitle: "Manzil:",
       landmarkTitle: "Mo'ljal:",
       hoursTitle: "Qabul vaqti:",
@@ -22,8 +22,8 @@ export const ClinicLocationMap = () => {
     },
     ru: {
       badge: "ЛОКАЦИЯ И ПРИЁМ",
-      title: "Личный Приём Д-ра Олимжона Тожибаева",
-      subtitle: "Приём проходит в г. Андижан на базе клиники Smiles Dental Group, оснащенной передовыми цифровыми 3D технологиями.",
+      title: "Адрес Стоматологии и Приёма Врача в Андижане",
+      subtitle: "Личный приём Д-ра Олимжона Тожибаева проходит в г. Андижан на базе клиники Smiles Dental Group (1-й микрорайон, Канечка, дом 8-А), оснащенной передовыми цифровыми 3D технологиями.",
       addressTitle: "Адрес:",
       landmarkTitle: "Ориентир:",
       hoursTitle: "Часы приёма:",
@@ -34,8 +34,8 @@ export const ClinicLocationMap = () => {
     },
     en: {
       badge: "PRACTICE LOCATION",
-      title: "Dr. Olimjon Tojibayev's Practice",
-      subtitle: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at Smiles Dental Group with state-of-the-art digital dentistry systems.",
+      title: "Dental Clinic & Practice Location in Andijan",
+      subtitle: "Dr. Olimjon Tojibayev personally receives patients in Andijan, hosted at Smiles Dental Group (1st Microdistrict 8-A, Kanechka) with state-of-the-art digital dentistry systems.",
       addressTitle: "Address:",
       landmarkTitle: "Landmark:",
       hoursTitle: "Working Hours:",

@@ -67,22 +67,22 @@ export const PAGE_SEO = {
   },
   contact: {
     uz: {
-      title: "Aloqa va Manzil — Dr. Olimjon Tojibayev (Tojiboyev)",
+      title: "Andijonda Stomatologiya Manzili va Aloqa — Dr. Olimjon Tojibayev | Smiles Dental Group",
       description:
-        "Dr. Olimjon Tojibayev (Tojiboyev) shaxsiy qabuliga yozilish — Smiles Dental Group (Andijon, 1-kichik daha 8-A Kanechka). Tel: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
-      keywords: "Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev manzili, stomatolog Tojiboyev telefon, Smiles Dental Group Kanechka qayerda, stomatologiya lokatsiyasi",
+        "Dr. Olimjon Tojibayev qabuliga yozilish — Smiles Dental Group (Andijon shahri, 1-kichik daha 8-A Kanechka). Tel: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev. Google va Yandex xaritalarda qulay marshrut.",
+      keywords: "andijonda stomatologiya, andijonda stomatolog, stomatologiya andijon manzili, andijon stomatologlari telefon, Dr Olimjon Tojibayev manzili, Smiles Dental Group Kanechka qayerda, stomatologiya lokatsiyasi, tish klinikasi andijon telefon",
     },
     ru: {
-      title: "Контакты и Локация — Д-р Олимжон Тожибаев (Тожибоев)",
+      title: "Адрес Стоматологии в Андижане и Контакты — Д-р Олимжон Тожибаев | Smiles Dental Group",
       description:
-        "Запись на личный приём к Д-ру Олимжону Тожибаеву (Тожибоеву) — клиника Smiles Dental Group (Андижан, 1-й мкрн 8-А Канечка). Телефоны: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
-      keywords: "контакты стоматолога Андижан, адрес Smiles Dental Group Канечка, телефон Олимжона Тожибаева, телефон Олимжона Тожибоева, схема проезда",
+        "Запись на приём к Д-ру Олимжону Тожибаеву — клиника Smiles Dental Group (Андижан, 1-й мкрн 8-А Канечка). Телефоны: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev. Маршрут на Google и Яндекс Картах.",
+      keywords: "стоматология в андижане адрес, контакты стоматолога андижан, адрес smiles dental group канечка, телефон олимжона тожибаева, стоматологическая клиника андижан схема проезда, стоматология андижан номер телефона",
     },
     en: {
-      title: "Contact & Location — Dr. Olimjon Tojibayev (Tojiboyev)",
+      title: "Dental Clinic Location & Contact in Andijan — Dr. Olimjon Tojibayev | Smiles Dental Group",
       description:
-        "Book personal appointment with Dr. Olimjon Tojibayev (Tojiboyev) — Smiles Dental Group (Andijan, 1st Microdistrict 8-A Kanechka). Phones: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev.",
-      keywords: "contact Dr Olimjon Tojibayev, Dr Olimjon Tojiboyev, dental clinic address Andijan, phone number, clinic directions, Smiles Dental Group",
+        "Book personal appointment with Dr. Olimjon Tojibayev at Smiles Dental Group (Andijan, 1st Microdistrict 8-A Kanechka). Phones: +998 90 541 97 57, +998 93 418 97 57, Telegram: @Dr_Tadjibayev. Google & Yandex Maps directions.",
+      keywords: "dentist in andijan address, dental clinic andijan location, contact Dr Olimjon Tojibayev, Smiles Dental Group Andijan phone number, directions",
     },
   },
   booking: {

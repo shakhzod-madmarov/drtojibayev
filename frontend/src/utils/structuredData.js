@@ -259,12 +259,15 @@ export const buildContactPageSchema = (lang = "uz", breadcrumbs = []) => {
     "@id": `${contactUrl}#contact`,
     "url": contactUrl,
     "mainEntity": {
-      "@type": "Dentist",
+      "@type": ["Dentist", "DentalClinic", "MedicalClinic", "LocalBusiness"],
       "@id": `${SITE_ORIGIN}/#dentist`,
-      "name": `${DOCTOR_INFO.name} — ${PRIMARY_CLINIC.name[lang] || PRIMARY_CLINIC.name.uz}`,
+      "name": `${DOCTOR_INFO.name} — Smiles Dental Group (Andijonda Stomatologiya)`,
       "telephone": DOCTOR_INFO.phoneRaw,
       "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
-      "hasMap": PRIMARY_CLINIC.maps.yandex,
+      "hasMap": [
+        PRIMARY_CLINIC.maps.googleFull,
+        PRIMARY_CLINIC.maps.yandexFull,
+      ],
       "address": {
         "@type": "PostalAddress",
         "streetAddress": PRIMARY_CLINIC.address[lang] || PRIMARY_CLINIC.address.uz,
@@ -438,7 +441,10 @@ export const buildHomePageSchema = (lang = "uz") => {
         "priceRange": "$$",
         "image": `${SITE_ORIGIN}/dr_tojibayev_og.png`,
         "logo": `${SITE_ORIGIN}/favicon-192x192.png`,
-        "hasMap": PRIMARY_CLINIC.maps.yandex,
+        "hasMap": [
+          PRIMARY_CLINIC.maps.googleFull,
+          PRIMARY_CLINIC.maps.yandexFull,
+        ],
         "currenciesAccepted": "UZS",
         "paymentAccepted": "Cash, Credit Card, Humo, Uzcard",
         "medicalSpecialty": [

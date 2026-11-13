@@ -51,14 +51,14 @@ const Contact = () => {
           {lang === "uz" ? "BEVOSITA BOG'LANISH" : lang === "ru" ? "ПРЯМАЯ СВЯЗЬ" : "DIRECT HOTLINE"}
         </span>
         <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 tracking-tight">
-          {lang === "uz" ? "Aloqa va Qabulga Yozilish" : lang === "ru" ? "Контакты и Запись на Приём" : "Contact & Appointments"}
+          {lang === "uz" ? "Andijonda Stomatologiya Qabuli va Aloqa" : lang === "ru" ? "Контакты Стоматологии в Андижане и Запись" : "Dental Clinic Contact & Appointments in Andijan"}
         </h1>
         <p className="text-sm sm:text-base text-slate-600">
           {lang === "uz"
-            ? "Dr. Olimjon Tojibayev qabuliga telefon, Telegram (@Dr_Tadjibayev), Instagram yoki onlayn jadval orqali navbatsiz yozilishingiz mumkin."
+            ? "Dr. Olimjon Tojibayev qabuliga (Smiles Dental Group, Andijon Kanechka 8-A) telefon, Telegram (@Dr_Tadjibayev), Instagram yoki onlayn jadval orqali navbatsiz yozilishingiz mumkin."
             : lang === "ru"
-            ? "Свяжитесь с Д-ром Олимжоном Тожибаевым по телефону, через Telegram (@Dr_Tadjibayev) или запишитесь через онлайн-расписание."
-            : "Connect with Dr. Olimjon Tojibayev via phone, Telegram (@Dr_Tadjibayev), Instagram, or our online appointment scheduler."}
+            ? "Свяжитесь с Д-ром Олимжоном Тожибаевым (клиника Smiles Dental Group, Андижан) по телефону, через Telegram (@Dr_Tadjibayev) или запишитесь онлайн 24/7."
+            : "Connect with Dr. Olimjon Tojibayev at Smiles Dental Group (Andijan, Kanechka) via phone, Telegram (@Dr_Tadjibayev), Instagram, or our 24/7 online appointment scheduler."}
         </p>
         <div className="pt-2">
           <Link
