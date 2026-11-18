@@ -155,4 +155,69 @@ export const FAQ_ITEMS = [
       en: "Do not apply heat to the cheek or place aspirin directly on the gums. Contact Dr. Olimjon Tojibayev immediately via 24/7 online booking, phone +998 90 541 97 57, or Telegram (@Dr_Tadjibayev). Emergency patients are received promptly, relieving severe pain within 5 minutes under gentle two-stage numbing.",
     },
   },
+  {
+    id: "wisdom-tooth-pain-extraction",
+    q: {
+      uz: "Aql tishi (donolik tishi) og'riganda nima qilish kerak, uni oldirish (sug'urish) og'ritadimi?",
+      ru: "Что делать, если болит зуб мудрости (восьмёрка) и больно ли его удалять?",
+      en: "What should I do if my wisdom tooth hurts, and does painless extraction exist?",
+    },
+    a: {
+      uz: "Aql tishi (8-tish) noto'g'ri chiqsa yoki milki shishib og'risa, u qo'shni sog'lom tishlarni siqib, ularning yemirilishiga olib kelishi mumkin. Dr. Olimjon Tojibayev qabulida aql tishini olish 2 bosqichli og'riqsiz anesteziya va mikro-jarrohlik usulida amalga oshiriladi: inyeksiya og'rig'i sezilmaydi, tish atigi 10-15 daqiqada muloyim sug'urib olinadi va shish xavfi minimal bo'ladi.",
+      ru: "Зуб мудрости часто растёт криво, травмирует щёку или вызывает воспаление десны (перикоронит). Удаление восьмёрки у Д-ра Олимжона Тожибаева проходит полностью без боли благодаря двухэтапной анестезии: сначала место укола обезболивается приятным гелем, а сам зуб удаляется атравматично за 10-15 минут без давления и неприятных ощущений.",
+      en: "Impacted wisdom teeth can cause severe swelling, jaw stiffness, and crowd adjacent teeth. Dr. Olimjon Tojibayev performs gentle, completely pain-free wisdom tooth extractions using two-stage topical numbing and minimally invasive surgical techniques, typically taking only 10-15 minutes with swift recovery.",
+    },
+  },
+  {
+    id: "bleeding-gums-periodontitis",
+    q: {
+      uz: "Tish yuvganda milk qonashi, shishishi yoki og'izdan noxush hid kelishi sababi nima?",
+      ru: "Почему кровоточат десны при чистке зубов, появляется отёк и неприятный запах изо рта?",
+      en: "Why do gums bleed during brushing, swell up, or cause bad breath?",
+    },
+    a: {
+      uz: "Milk qonashi va shishishi (gingivit, parodontit) ko'pincha tish oralarida ko'rinmas tish toshlari va bakterial karashlar to'planishidan kelib chiqadi. O'z vaqtida davolanmasa, tishlar qimirlab, tushib qolishi mumkin. Shveysariya AirFlow va ultratovushli apparat yordamida tish toshlari muloyim tozalanib, milk dorilar bilan mustahkamlangach, qonash va og'izdagi noxush hid butunlay yo'qoladi.",
+      ru: "Кровоточивость и воспаление десен — первый признак гингивита или пародонтита из-за скопления твёрдого зубного камня под десной. Если не устранить причину, зубы со временем начинают шататься. В клинике Smiles Dental Group проводится бережная ультразвуковая чистка и полировка AirFlow, снимающая воспаление и неприятный запах за одну процедуру.",
+      en: "Bleeding and inflamed gums are primary symptoms of gingivitis or periodontitis, caused by subgingival tartar and plaque. If untreated, bone loss can loosen teeth. A single gentle ultrasonic scaling and Swiss AirFlow polishing session eliminates pathogenic bacteria, resolves bleeding, and restores fresh breath.",
+    },
+  },
+  {
+    id: "sensitive-teeth-hot-cold",
+    q: {
+      uz: "Tish issiqqa, sovuqqa yoki shiringa zirqirab og'risa nima qilish kerak (Tish sezuvchanligi)?",
+      ru: "Что делать, если зубы ноют и реагируют на горячее, холодное или сладкое?",
+      en: "Why do teeth ache or sting when eating hot, cold, or sweet foods (Dentin Hypersensitivity)?",
+    },
+    a: {
+      uz: "Tishning muzdek yoki issiq taomlarga keskin zirqirashi — emal qatlamining yemirilishi, tish bo'yinchasidagi ponasimon nuqson yoki boshlang'ich yashirin karies alomatidir. Buni e'tiborsiz qoldirish asab (nerv) yallig'lanishiga (pulpit) olib keladi. Qabulda 3D diagnostika orqali sabab aniqlanib, emal maxsus remineralizatsiyalovchi kalsiy-ftor lak bilan qoplanadi yoki shikastlangan soha nano-plomba bilan asrab qolinadi.",
+      ru: "Резкая реакция зубов на холодное или горячее свидетельствует об истончении эмали, клиновидном дефекте или скрытом кариесе. Доктор Олимжон Тожибаев на 3D сканере находит точную причину: при истончении эмали проводится глубокая реминерализация фтор-лаком, а при дефектах наносится незаметный микрокомпозит, мгновенно снимающий болезненную чувствительность.",
+      en: "Sharp sensitivity to cold or hot foods indicates worn enamel, receding gums, or an undetected interdental cavity. Dr. Olimjon Tojibayev diagnoses the exact trigger with 3D imaging, applying medical fluoride-calcium desensitizing varnish or placing microscopic composite seals to eliminate pain instantly.",
+    },
+  },
+  {
+    id: "pregnancy-dental-care",
+    q: {
+      uz: "Homiladorlikda yoki emizish davrida tish davolash va anesteziya (ukol) xavfsizmi?",
+      ru: "Можно ли лечить зубы и делать укол (анестезию) во время беременности и грудного вскармливания?",
+      en: "Is dental treatment and local anesthesia safe during pregnancy and breastfeeding?",
+    },
+    a: {
+      uz: "Albatta xavfsiz va zarur! Og'izdagi infeksiya yoki tish og'rig'i ona va homila salomatligi uchun davolashdan ko'ra ancha xavflidir. Dr. Olimjon Tojibayev homilador ayollar uchun yo'ldosh (platsenta) to'sig'idan o'tmaydigan, tarkibida adrenalin bo'lmagan xavfsiz zamonaviy anestetiklar bilan muolaja qiladi. Eng qulay davr — 2-trimestr (14–26 hafta), ammo o'tkir og'riqda har qanday muddatda zudlik bilan yordam ko'rsatiladi.",
+      ru: "Да, абсолютно безопасно и крайне необходимо! Очаг инфекции и боль приносят гораздо больше вреда, чем аккуратное лечение. Д-р Олимжон Тожибаев использует специальные гипоаллергенные анестетики без адреналина, которые не проникают через плаценту и не попадают в грудное молоко. Идеальный период — второй триместр, но при острой боли помощь оказывается незамедлительно на любом сроке.",
+      en: "Yes, absolutely safe and essential! Chronic oral infection and severe toothache pose a greater risk to maternal and fetal health than dental care. Dr. Olimjon Tojibayev uses epinephrine-free, hypoallergenic anesthetics that do not cross the placental barrier or enter breast milk, ensuring complete safety.",
+    },
+  },
+  {
+    id: "loose-or-broken-tooth-restoration",
+    q: {
+      uz: "Tish sinib qolsa, qimirlab qolsa yoki plomba tushib ketsa, uni qanday tiklash mumkin?",
+      ru: "Что делать, если сломался зуб, выпала пломба или зуб начал шататься?",
+      en: "What should I do if a tooth is fractured, loose, or a filling fell out?",
+    },
+    a: {
+      uz: "Singan tishni sug'urishga shoshilmang! Dr. Olimjon Tojibayevning asosiy falsafasi — o'z tishingizni maksimal asrab qolishdir. Agar tish ildizi butun bo'lsa, u tsirkon koronkalar, shisha tolali shtift yoki keramik vinirlar yordamida qayta mustahkam tiklanadi. Agar tish sinig'i bo'lsa, uni toza suv yoki sutga solib darhol qabulga keltiring, ko'p hollarda uni o'z joyiga mahkamlash mumkin.",
+      ru: "Не спешите удалять повреждённый зуб! Главное правило Д-ра Олимжона Тожибаева — сохранение родных зубов до последнего шанса. Даже при сильном разрушении зуб восстанавливается культевой вкладкой и циркониевой коронкой. Если откололся кусочек переднего зуба, положите его в чистую воду или молоко и срочно приезжайте в клинику — в большинстве случаев его удаётся вернуть на место.",
+      en: "Do not rush into an extraction! Preserving natural teeth is Dr. Olimjon Tojibayev's highest clinical priority. If the root is intact, broken teeth can be fully reconstructed with monolithic zirconia crowns, fiber posts, or aesthetic overlays. If a tooth fragment breaks off, store it in clean water or milk and visit our clinic immediately.",
+    },
+  },
 ];
