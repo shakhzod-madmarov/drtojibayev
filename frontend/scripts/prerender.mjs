@@ -57,8 +57,9 @@ const injectAlternates = (html, alternates) => {
 
 const setNoindex = (html) =>
   html
-    .replace(/<meta\s+name="robots"[^>]*>/, '<meta name="robots" content="noindex, follow" />')
-    .replace(/<meta\s+name="googlebot"[^>]*>/, '<meta name="googlebot" content="noindex, follow" />');
+    .replace(/<meta\s+name="robots"[^>]*>/, '<meta name="robots" content="noindex, nofollow, noarchive" />')
+    .replace(/<meta\s+name="googlebot"[^>]*>/, '<meta name="googlebot" content="noindex, nofollow, noarchive" />')
+    .replace(/<meta\s+name="yandex"[^>]*>/, '<meta name="yandex" content="none" />');
 
 const setOgLocales = (html, currentLocale) => {
   const allLocales = ["uz_UZ", "ru_RU", "en_US"];

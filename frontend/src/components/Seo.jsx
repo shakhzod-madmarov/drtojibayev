@@ -15,9 +15,17 @@ const withTrailingSlash = (path) => (path.endsWith("/") ? path : path + "/");
 const urlFor = (path, lang) =>
   SITE_ORIGIN + withTrailingSlash(localizePath(path, lang));
 
-const ROBOTS_INDEXABLE = "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
-const GOOGLEBOT_INDEXABLE = "index, follow, max-image-preview:large";
-const ROBOTS_NOINDEX = "noindex, follow";
+// Flag to pause visibility across Google, Yandex, Bing, and AI search engines
+export const PAUSE_PROJECT_VISIBILITY = true;
+
+const ROBOTS_INDEXABLE = PAUSE_PROJECT_VISIBILITY
+  ? "noindex, nofollow, noarchive"
+  : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
+const GOOGLEBOT_INDEXABLE = PAUSE_PROJECT_VISIBILITY
+  ? "noindex, nofollow, noarchive"
+  : "index, follow, max-image-preview:large";
+const YANDEX_INDEXABLE = PAUSE_PROJECT_VISIBILITY ? "none" : "index, follow";
+const ROBOTS_NOINDEX = "noindex, nofollow, noarchive";
 
 const Seo = ({
   page,
@@ -99,13 +107,18 @@ const Seo = ({
       if (twImg) twImg.setAttribute("content", ogImage);
     }
 
+    const isPaused = noindex || PAUSE_PROJECT_VISIBILITY;
     const robotsMeta = document.querySelector('meta[name="robots"]');
     if (robotsMeta) {
-      robotsMeta.setAttribute("content", noindex ? ROBOTS_NOINDEX : ROBOTS_INDEXABLE);
+      robotsMeta.setAttribute("content", isPaused ? ROBOTS_NOINDEX : ROBOTS_INDEXABLE);
     }
     const googlebotMeta = document.querySelector('meta[name="googlebot"]');
     if (googlebotMeta) {
-      googlebotMeta.setAttribute("content", noindex ? ROBOTS_NOINDEX : GOOGLEBOT_INDEXABLE);
+      googlebotMeta.setAttribute("content", isPaused ? ROBOTS_NOINDEX : GOOGLEBOT_INDEXABLE);
+    }
+    const yandexMeta = document.querySelector('meta[name="yandex"]');
+    if (yandexMeta) {
+      yandexMeta.setAttribute("content", isPaused ? "none" : YANDEX_INDEXABLE);
     }
 
     const ogLocale = lang === "ru" ? "ru_RU" : lang === "en" ? "en_US" : "uz_UZ";
@@ -147,7 +160,7 @@ const Seo = ({
       ogImage,
       ogLocale,
       alternates,
-      noindex,
+      noindex: noindex || PAUSE_PROJECT_VISIBILITY,
       schemaJson,
     };
     return (
