@@ -220,4 +220,69 @@ export const FAQ_ITEMS = [
       en: "Do not rush into an extraction! Preserving natural teeth is Dr. Olimjon Tojibayev's highest clinical priority. If the root is intact, broken teeth can be fully reconstructed with monolithic zirconia crowns, fiber posts, or aesthetic overlays. If a tooth fragment breaks off, store it in clean water or milk and visit our clinic immediately.",
     },
   },
+  {
+    id: "tish-qoyish-karonkalar",
+    q: {
+      uz: "Tish qo'yish (tish qoplamasi, karonka) narxlari 2026: sirkoniy yoki metallokeramika, qaysi biri yaxshi?",
+      ru: "Цены на коронки и вставку зубов в 2026 году: цирконий или металлокерамика, что лучше выбрать?",
+      en: "Tooth crown & prosthetic costs in 2026: Zirconia vs metal-ceramic, which is better?",
+    },
+    a: {
+      uz: "Tish qo'yishda material tanlash uning joylashuvi va estetik talabga bog'liq. Hozirda eng zamonaviy va xavfsiz yechim — monolit tsirkoniy (ZrO2) koronkalaridir. Ular 100% bio-uyg'un, milk chetida qora chiziq qoldirmaydi, tabiiy tishdek nur o'tkazadi va 15–20 yildan ortiq mustahkam xizmat qiladi. Metallokeramika esa arzonroq alternativa bo'lib, asosan orqa chaynash tishlariga qo'yiladi. Dr. Olimjon Tojibayev qabulida 3D skanerlash orqali tish charxlanmasdan yoki minimal tayyorlanib, yuqori zargarlik aniqligida qoplama tayyorlanadi.",
+      ru: "Выбор коронки зависит от зоны улыбки и нагрузок. Сегодня золотым стандартом является монолитный диоксид циркония (ZrO2): он гипоаллергенен, не темнеет у десны, полупрозрачен как живая эмаль и служит более 15–20 лет. Металлокерамика более бюджетна, но со временем может давать синюшный край десны. В клинике Smiles Dental Group Д-р Олимжон Тожибаев использует 3D сканирование, что позволяет изготовить коронку с точностью до 0.01 мм с минимальной бережной обточкой.",
+      en: "Material choice depends on aesthetic priorities and bite forces. Today, monolithic zirconia (ZrO2) is the premier standard: 100% metal-free, hypoallergenic, eliminates dark gumlines, matches natural enamel translucency, and lasts 15–20+ years. Metal-ceramic is a budget alternative best suited for posterior molars. Dr. Olimjon Tojibayev utilizes 60-second 3D optical scans to create crowns with 0.01 mm margins and minimal enamel prep.",
+    },
+  },
+  {
+    id: "tish-olish-sugurish-narxi",
+    q: {
+      uz: "Tish olish (sug'urish, aql tishi) narxi qancha, og'ritadimi va sug'urgandan keyin nima qilish kerak?",
+      ru: "Сколько стоит удаление зуба, больно ли это и что делать после удаления зуба мудрости?",
+      en: "How much does tooth extraction cost, does it hurt, and what aftercare is needed?",
+    },
+    a: {
+      uz: "Tish olish jarayoni Dr. Olimjon Tojibayev qabulida 100% og'riqsiz o'tadi! Avval milkka mevali muzlatuvchi anestetik gel surtiladi, so'ngra zamonaviy og'riqsiz mikro-inyeksiya qilinadi — bemor hatto ukol sanchilishini ham sezmaydi. Murakkab va egri chiqqan aql tishlari ham atigi 10–15 daqiqada mikro-jarrohlik usulida, suyak to'qimasini jarohatlamasdan muloyim olinadi. Tish olingach, 20 daqiqa doka tishlab turiladi, 2 soat issiq ovqat yemaslik, og'izni shiddatli chayqamaslik va chekmaslik tavsiya etiladi.",
+      ru: "Удаление зубов у Д-ра Олимжона Тожибаева проходит абсолютно без боли! Сначала десна обезболивается гелем с приятным вкусом, а затем вводится европейский анестетик — пациент не чувствует даже укола. Сложные ретенированные зубы мудрости удаляются атравматично за 10–15 минут с сохранением кости для будущей имплантации. После удаления важно держать марлевый тампон 20 минут, не греть щёку, не полоскать рот в первый день и избегать горячей пищи.",
+      en: "Tooth extraction with Dr. Olimjon Tojibayev is 100% pain-free. We apply a topical numbing gel before micro-administering local anesthesia, so you don't even feel the needle. Impacted wisdom teeth are removed atraumatically in 10–15 minutes, preserving bone volume for potential future implants. Post-op care: bite gently on gauze for 20 minutes, avoid hot food/drinks, do not vigorously rinse, and do not smoke for 24 hours.",
+    },
+  },
+  {
+    id: "kechki-payt-tish-ogrigi",
+    q: {
+      uz: "Kechki payt yoki tunda tishim qattiq og'riyapti: uy sharoitida qanday qoldirish mumkin va qachon shifokorga borish kerak?",
+      ru: "Вечером или ночью сильно болит зуб: как снять острую боль дома и когда срочно обращаться к врачу?",
+      en: "My tooth hurts severely in the evening or night: how to relieve acute toothache at home?",
+    },
+    a: {
+      uz: "Kechasi yoki kechki payt tish og'rig'ining kuchayishi — ko'pincha tish asabi (nerv) yallig'lanishi (o'tkir pulpit) belgisidir. Yotganda boshga qon quyilishi oshib, tish ichidagi bosim ko'tariladi. Uy sharoitida: aslo issiq kompress qilmang va dori tabletkasini milkka bosmang (kuyish paydo bo'ladi). Og'izni iliq tuzli/sodali suv bilan chayqang, paratsetamol yoki ibuprofen kabi og'riq qoldiruvchi dori qabul qiling va boshni baland yostiqqa qo'ying. Ertalab zudlik bilan Dr. Olimjon Tojibayev qabuliga yoziling — 2 bosqichli anesteziya bilan og'riq 5 daqiqada qoldiriladi.",
+      ru: "Усиление зубной боли вечером и ночью — типичный признак острого пульпита (воспаления зубного нерва). В горизонтальном положении приток крови к голове увеличивается, создавая пульсирующее давление внутри зуба. Первая помощь дома: ни в коем случае не грейте щёку и не прикладывайте анальгин к десне! Примите ибупрофен или парацетамол, прополощите рот теплым содово-солевым раствором. Утром сразу запишитесь к Д-ру Олимжону Тожибаеву: мягкая анестезия снимет боль за 5 минут.",
+      en: "Nocturnal toothache spikes are characteristic of acute pulpitis (nerve inflammation). Lying flat increases blood pressure in the dental pulp chamber. At-home relief: never apply heat or place pain tablets directly against the gum. Rinse with warm salt water, take ibuprofen or acetaminophen, and sleep with your head elevated. Schedule an immediate morning visit with Dr. Olimjon Tojibayev — gentle anesthesia stops the pain in 5 minutes.",
+    },
+  },
+  {
+    id: "breket-turlari-narxlari",
+    q: {
+      uz: "Tish breketlari turlari va narxlari 2026: metall, keramika yoki shaffof elaynerlar — tish tekislashda qaysi biri yaxshi?",
+      ru: "Виды и цены брекетов в 2026 году: металлические, керамические или прозрачные элайнеры — что лучше?",
+      en: "Types and prices of dental braces in 2026: Metal, ceramic, or clear aligners — which is best?",
+    },
+    a: {
+      uz: "2026 yilda ortodontiyada 3 xil asosiy tizim qo'llaniladi: 1) Metall breketlar — eng mustahkam, arzon va o'ta murakkab jag' nuqsonlarini tez to'g'irlaydi; 2) Keramika va sapfir breketlar — tish rangi bilan bir xil bo'lib, deyarli sezilmaydi; 3) Shaffof elaynerlar — umuman simsiz, ko'rinmas shaffof kapalar bo'lib, ovqatlanishda yechiladi. Narxlar holatning murakkabligi va tanlangan tizimga bog'liq bo'lib, Dr. Olimjon Tojibayev 3D raqamli skanerlash orqali davolash boshlanmasidanoq oxirgi to'g'ri tishlar holatini ekranda ko'rsatib beradi.",
+      ru: "В 2026 году для исправления прикуса применяются 3 решения: 1) Металлические брекеты — классика, максимальная надежность и доступная цена при любых аномалиях; 2) Керамические / сапфировые брекеты — эстетичные, сливаются с цветом зубов; 3) Прозрачные элайнеры — съемные невидимые капы, позволяющие чистить зубы и есть без ограничений. На консультации у Д-ра Олимжона Тожибаева проводится 3D моделирование, показывающее точный результат и сроки до установки.",
+      en: "In 2026, three primary orthodontic options exist: 1) Metal brackets — the most durable, cost-effective, and fastest for complex malocclusions; 2) Ceramic/sapphire brackets — tooth-colored and aesthetically discreet; 3) Clear aligners — invisible removable trays allowing normal eating and brushing. Total pricing reflects treatment duration; Dr. Olimjon Tojibayev uses 3D digital smile simulation so you see your corrected smile before starting.",
+    },
+  },
+  {
+    id: "tish-implanti-turlari-narxi",
+    q: {
+      uz: "Tish implanti turlari va narxlari 2026: qaysi implant yaxshi, tish ekish jarayoni qanday o'tadi va kafolati bormi?",
+      ru: "Виды и цены зубных имплантов в 2026 году: какой имплант лучше, как проходит установка и есть ли гарантия?",
+      en: "Dental implant types and pricing in 2026: Which implant is best, how does surgery work, and is there a warranty?",
+    },
+    a: {
+      uz: "Zamonaviy implantologiyada tibbiy 4-sinf biotitan implantlari (Osstem, Straumann, Megagen) eng xavfsiz va ishonchli hisoblanadi. Ular inson suyak to'qimasi bilan 99.6% hollarda to'liq birikib ketadi (osteointegratsiya). Dr. Olimjon Tojibayev qabulida implant o'rnatish kompyuter navigatsiyasi ostida atigi 15–20 daqiqada og'riqsiz bajariladi. Bemorga ishlab chiqaruvchining umrbod sertifikati va shifokorning shaxsiy klinik kafolati beriladi. Tish olingan kuni darhol implant qo'yish (bir bosqichli) ham mumkin.",
+      ru: "В современной имплантологии лидируют биосовместимые титановые системы 4-го класса (Osstem, Straumann, Megagen). Их приживаемость составляет 99.6%. Установка одного импланта у Д-ра Олимжона Тожибаева занимает всего 15–20 минут под 2-этапной анестезией без боли и отёков. Каждый пациент получает пожизненную паспортную гарантию на имплант и личную гарантию доктора. Возможна одномоментная установка сразу в день удаления зуба.",
+      en: "Grade 4 biocompatible titanium systems (Osstem, Straumann, Megagen) offer gold-standard 99.6% osseointegration. Dr. Olimjon Tojibayev places implants using computer-guided 3D templates in just 15–20 minutes under gentle two-stage anesthesia with zero discomfort. Patients receive official lifetime manufacturer passports plus personal clinical guarantees. Immediate single-stage placement on the day of extraction is also available.",
+    },
+  },
 ];

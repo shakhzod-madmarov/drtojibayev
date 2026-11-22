@@ -68,13 +68,13 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
 
   const serviceFaqMap = {
     "digital-dentistry": ["best-dentist-andijan", "digital-dentistry-benefits", "booking-process", "clinic-location"],
-    "dental-implant": ["best-dentist-andijan", "implant-pain", "immediate-implant-after-extraction", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
-    "elaynerlar": ["best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
-    "breketlar": ["best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
-    "tsirkon-keramika-koronka": ["crowns-longevity", "zirconia-vs-metal-ceramic", "loose-or-broken-tooth-restoration", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "dental-implant": ["tish-implanti-turlari-narxi", "best-dentist-andijan", "implant-pain", "immediate-implant-after-extraction", "tish-olish-sugurish-narxi", "dental-treatment-pricing", "booking-process"],
+    "elaynerlar": ["breket-turlari-narxlari", "best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
+    "breketlar": ["breket-turlari-narxlari", "best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
+    "tsirkon-keramika-koronka": ["tish-qoyish-karonkalar", "crowns-longevity", "zirconia-vs-metal-ceramic", "loose-or-broken-tooth-restoration", "dental-treatment-pricing", "booking-process"],
     "vinirlar": ["crowns-longevity", "loose-or-broken-tooth-restoration", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
-    "protezlar": ["crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
-    "ogriqsiz-terapiya": ["implant-pain", "emergency-toothache-care", "wisdom-tooth-pain-extraction", "sensitive-teeth-hot-cold", "pregnancy-dental-care", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "protezlar": ["tish-qoyish-karonkalar", "crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "ogriqsiz-terapiya": ["kechki-payt-tish-ogrigi", "tish-olish-sugurish-narxi", "implant-pain", "emergency-toothache-care", "wisdom-tooth-pain-extraction", "sensitive-teeth-hot-cold", "pregnancy-dental-care", "dental-treatment-pricing", "booking-process"],
     "tish-oqartirish": ["whitening-safety", "bleeding-gums-periodontitis", "dental-treatment-pricing", "booking-process", "clinic-location"],
   };
 
@@ -696,6 +696,12 @@ export const buildHomePageSchema = (lang = "uz") => {
           "Pregnancy Dental Care",
           "Homiladorlikda tish davolash",
           "Лечение зубов при беременности",
+          "Tish qo'yish (Вставка зубов)",
+          "Tish karonkalari va qoplamalar",
+          "Tish olish (Удаление зубов)",
+          "Kechki payt tish og'rig'i (Ночная зубная боль)",
+          "Tish breketlari turlari va narxlari",
+          "Tish implanti turlari va narxlari",
         ],
         "worksFor": {
           "@id": `${SITE_ORIGIN}/#dentist`,

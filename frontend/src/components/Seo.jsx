@@ -16,14 +16,14 @@ const urlFor = (path, lang) =>
   SITE_ORIGIN + withTrailingSlash(localizePath(path, lang));
 
 // Flag to pause visibility across Google, Yandex, Bing, and AI search engines
-export const PAUSE_PROJECT_VISIBILITY = true;
+export const PAUSE_PROJECT_VISIBILITY = false;
 
 const ROBOTS_INDEXABLE = PAUSE_PROJECT_VISIBILITY
   ? "noindex, nofollow, noarchive"
   : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 const GOOGLEBOT_INDEXABLE = PAUSE_PROJECT_VISIBILITY
   ? "noindex, nofollow, noarchive"
-  : "index, follow, max-image-preview:large";
+  : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 const YANDEX_INDEXABLE = PAUSE_PROJECT_VISIBILITY ? "none" : "index, follow";
 const ROBOTS_NOINDEX = "noindex, nofollow, noarchive";
 
