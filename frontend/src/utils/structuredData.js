@@ -67,13 +67,13 @@ export const buildMedicalProcedureSchema = (service, lang = "uz", breadcrumbs = 
   }));
 
   const serviceFaqMap = {
-    "digital-dentistry": ["best-dentist-andijan", "digital-dentistry-benefits", "booking-process", "clinic-location"],
-    "dental-implant": ["tish-implanti-turlari-narxi", "best-dentist-andijan", "implant-pain", "immediate-implant-after-extraction", "tish-olish-sugurish-narxi", "dental-treatment-pricing", "booking-process"],
+    "digital-dentistry": ["implant-diagnostics-3d-kt", "best-dentist-andijan", "digital-dentistry-benefits", "booking-process", "clinic-location"],
+    "dental-implant": ["tish-implanti-turlari-narxi", "implant-brands-korea-europe", "bone-graft-sinus-lift", "implant-vs-bridge-no-drilling", "all-on-4-all-on-6-full-arch", "implant-diagnostics-3d-kt", "best-dentist-andijan", "implant-pain", "immediate-implant-after-extraction", "tish-olish-sugurish-narxi", "dental-treatment-pricing", "booking-process"],
     "elaynerlar": ["breket-turlari-narxlari", "best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
     "breketlar": ["breket-turlari-narxlari", "best-dentist-andijan", "aligners-vs-braces", "digital-dentistry-benefits", "booking-process"],
-    "tsirkon-keramika-koronka": ["tish-qoyish-karonkalar", "crowns-longevity", "zirconia-vs-metal-ceramic", "loose-or-broken-tooth-restoration", "dental-treatment-pricing", "booking-process"],
+    "tsirkon-keramika-koronka": ["tish-qoyish-karonkalar", "implant-vs-bridge-no-drilling", "crowns-longevity", "zirconia-vs-metal-ceramic", "loose-or-broken-tooth-restoration", "dental-treatment-pricing", "booking-process"],
     "vinirlar": ["crowns-longevity", "loose-or-broken-tooth-restoration", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
-    "protezlar": ["tish-qoyish-karonkalar", "crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
+    "protezlar": ["all-on-4-all-on-6-full-arch", "tish-qoyish-karonkalar", "crowns-longevity", "dental-treatment-pricing", "digital-dentistry-benefits", "booking-process"],
     "ogriqsiz-terapiya": ["kechki-payt-tish-ogrigi", "tish-olish-sugurish-narxi", "implant-pain", "emergency-toothache-care", "wisdom-tooth-pain-extraction", "sensitive-teeth-hot-cold", "pregnancy-dental-care", "dental-treatment-pricing", "booking-process"],
     "tish-oqartirish": ["whitening-safety", "bleeding-gums-periodontitis", "dental-treatment-pricing", "booking-process", "clinic-location"],
   };
@@ -702,6 +702,12 @@ export const buildHomePageSchema = (lang = "uz") => {
           "Kechki payt tish og'rig'i (Ночная зубная боль)",
           "Tish breketlari turlari va narxlari",
           "Tish implanti turlari va narxlari",
+          "3D KT Diagnostika (3D КТ снимки челюсти)",
+          "Implant brendlari: Osstem, Straumann, Megagen, DIO, Nobel",
+          "Sinus-lifting va suyak plastikasi (Костная пластика)",
+          "All-on-4 va All-on-6 implantatsiya (Все на 4, Все на 6)",
+          "Tish ko'prigisiz charxlamasdan tish qo'yish",
+          "Tish implantatsiyasi Andijon",
         ],
         "worksFor": {
           "@id": `${SITE_ORIGIN}/#dentist`,

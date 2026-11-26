@@ -285,4 +285,69 @@ export const FAQ_ITEMS = [
       en: "Grade 4 biocompatible titanium systems (Osstem, Straumann, Megagen) offer gold-standard 99.6% osseointegration. Dr. Olimjon Tojibayev places implants using computer-guided 3D templates in just 15–20 minutes under gentle two-stage anesthesia with zero discomfort. Patients receive official lifetime manufacturer passports plus personal clinical guarantees. Immediate single-stage placement on the day of extraction is also available.",
     },
   },
+  {
+    id: "implant-diagnostics-3d-kt",
+    q: {
+      uz: "Implant o'rnatishdan oldin 3D KT va raqamli diagnostika nima uchun shart va qanday o'tkaziladi?",
+      ru: "Зачем нужна 3D КТ диагностика перед имплантацией зубов и как она проводится?",
+      en: "Why is 3D CBCT and digital imaging mandatory before dental implants?",
+    },
+    a: {
+      uz: "Implantatsiya muvaffaqiyati suyak qalinligi, balandligi va eng muhimi — pastki jag' nerv kanallari hamda yuqori jag' gaymor (sinus) bo'shlig'i joylashuvini mikron darajasida bilishga bog'liq. Dr. Olimjon Tojibayev qabulida 3D KT va intraoral skanerlash yordamida jag'ning 3 o'lchamli virtual modeli olinadi. Natijada implant suyakka zargarlik aniqligida, qo'shni sog'lom tishlarga va nerv to'qimalariga tegilmasdan, 100% xavfsiz o'rnatiladi.",
+      ru: "Успех имплантации зависит от точной оценки высоты и плотности костной ткани, а также расположения нижнечелюстного нерва и гайморовых пазух. На консультации Д-р Олимжон Тожибаев использует 3D КТ снимки и оптическое интраоральное сканирование, моделируя положение каждого импланта с точностью до 0.01 мм без риска задеть нервы или сосуды.",
+      en: "Implant longevity depends on exact bone height, density, and mapping the mandibular nerve canal and maxillary sinus. Dr. Olimjon Tojibayev evaluates 3D CBCT and intraoral optical scans to position titanium fixtures with sub-millimeter precision, avoiding critical anatomical structures completely.",
+    },
+  },
+  {
+    id: "implant-brands-korea-europe",
+    q: {
+      uz: "Koreya (Osstem, Megagen, DIO) va Yevropa (Straumann, Nobel) implantlarining farqi nimada, qaysi brendni tanlagan ma'qul?",
+      ru: "В чём разница между корейскими (Osstem, Megagen, DIO) и европейскими (Straumann, Nobel) имплантами, какой выбрать?",
+      en: "What is the difference between Korean (Osstem, Megagen, DIO) and European (Straumann, Nobel) dental implants?",
+    },
+    a: {
+      uz: "Koreya implantlari (Osstem, Megagen, DIO) a'lo darajadagi sifat va maqbul narx mutanosibligini ta'minlaydi — ular 98.8–99.4% suyakka birikadi va O'zbekistonda eng ommabop hisoblanadi. Shveysariya va Yevropa implantlari (Straumann, Nobel Biocare) esa maxsus faol gidrofil sirtga ega bo'lib, murakkab suyak yetishmovchiligi, qandli diabet yoki chekuvchi bemorlarda ham 3-4 haftada tez birikadi. Dr. Olimjon Tojibayev har bir bemorning suyak zichligi va byudjetiga mos eng maqbul implant brendini tanlab beradi va umrbod sertifikat taqdim etadi.",
+      ru: "Корейские импланты (Osstem, Megagen, DIO) предлагают идеальное соотношение цены и качества с приживаемостью 99.4% и отлично подходят для большинства клинических случаев. Швейцарские и европейские системы премиум-класса (Straumann, Nobel Biocare) обладают активной гидрофильной поверхностью, обеспечивая приживление за 3-4 недели даже при диабете или дефиците кости. Доктор Тожибаев подбирает оптимальную систему под ваш бюджет и клиническую картину с пожизненной гарантией.",
+      en: "Korean systems (Osstem, Megagen, DIO) deliver outstanding clinical reliability (99.4% success) at an accessible price point, representing Uzbekistan's most popular choice. Swiss & European premium brands (Straumann, Nobel Biocare) feature active hydrophilic surfaces accelerating osseointegration to just 3-4 weeks even in complex bone or diabetic conditions. Dr. Olimjon Tojibayev tailors the ideal implant system to your clinical needs and budget.",
+    },
+  },
+  {
+    id: "bone-graft-sinus-lift",
+    q: {
+      uz: "Suyak to'qimasi yetarli bo'lmasa implant qo'yish mumkinmi (Suyak plastikasi va Sinus-lifting)?",
+      ru: "Можно ли поставить имплант, если не хватает кости (Костная пластика и Синус-лифтинг)?",
+      en: "Can dental implants be placed if there is insufficient bone (Bone Grafting and Sinus Lift)?",
+    },
+    a: {
+      uz: "Albatta mumkin! Tish olinganidan so'ng uzoq vaqt o'tsa, o'sha sohada suyak to'qimasi ingichkalashib qoladi (atrofiya). Bunday hollarda Dr. Olimjon Tojibayev suyakni sun'iy yoki tabiiy biomateriallar bilan ko'paytirish (osteoplastika) yoki yuqori jag'da sinus-lifting (gaymor bo'shlig'i tubini ko'tarish) amaliyotini o'tkazadi. Ko'p holatlarda suyak ko'paytirish va implant o'rnatish bir vaqtning o'zida, bitta seansda 100% og'riqsiz bajariladi.",
+      ru: "Да, абсолютно! При длительном отсутствии зуба кость истончается (атрофируется). В таких случаях Д-р Олимжон Тожибаев проводит атравматичную костную пластику (наращивание кости) или синус-лифтинг на верхней челюсти. В большинстве случаев костная пластика и установка импланта проводятся одномоментно за одну процедуру без боли.",
+      en: "Yes, absolutely! Following tooth loss, bone naturally resorbs over time. Dr. Olimjon Tojibayev routinely performs minimally invasive bone grafting and closed/open sinus lifts. In most clinical cases, bone augmentation and implant placement are successfully performed simultaneously in a single gentle session.",
+    },
+  },
+  {
+    id: "implant-vs-bridge-no-drilling",
+    q: {
+      uz: "Qo'shni sog'lom tishlarni charxlamasdan tish qo'yish: tish ko'prigi (most) va implantning qanday farqi bor?",
+      ru: "Восстановление зуба без обточки соседних: в чём разница между мостом и имплантом?",
+      en: "Replacing teeth without grinding adjacent teeth: what is the difference between a dental bridge and an implant?",
+    },
+    a: {
+      uz: "Klassik tish ko'prigi (most) qo'yish uchun yo'qolgan tishning ikki yonidagi butunlay sog'lom tishlar charxlanadi (egovlanadi) va ko'pincha nervi o'ldiriladi. Dental implantatsiya esa qo'shni tishlarga mutlaqo tegmaydi! Faqat bo'sh turgan joyga alohida sun'iy biotitan ildiz o'rnatiladi. Natijada qo'shni sog'lom tishlaringiz o'z umrini saqlab qoladi, jag' suyagi esa tabiiy chaynash yuklamasi sababli erib ketmaydi.",
+      ru: "Для классического мостовидного протеза требуется спиливать эмаль и депульпировать два соседних здоровых зуба. Имплантация позволяет сохранить соседние зубы полностью нетронутыми! Титановый корень устанавливается только в зону отсутствующего зуба, предотвращает убыль кости и выдерживает полноценную жевательную нагрузку более 20 лет.",
+      en: "Traditional dental bridges require grinding down and often devitalizing two adjacent healthy teeth to serve as anchors. Dental implants leave adjacent healthy teeth 100% untouched. The biocompatible titanium root independently bears normal chewing forces and stops surrounding bone atrophy.",
+    },
+  },
+  {
+    id: "all-on-4-all-on-6-full-arch",
+    q: {
+      uz: "Butun jag'da bitta ham tish qolmagan bo'lsa qanday tiklanadi (All-on-4 va All-on-6 implantatsiya)?",
+      ru: "Как восстановить зубы при полном их отсутствии на всей челюсти (концепции All-on-4 и All-on-6)?",
+      en: "How to restore a completely toothless jaw (All-on-4 and All-on-6 full arch concepts)?",
+    },
+    a: {
+      uz: "Barcha tishlar yo'qolgan hollarda tushib ketuvchi noqulay olinadigan protezlar taqish shart emas! Zamonaviy All-on-4 yoki All-on-6 texnologiyasi orqali butun jag'ga bor-yo'g'i 4 ta yoki 6 ta biotitan implant o'rnatilib, ularning ustiga qimirlamaydigan, mustahkam tsirkoniy yoki metallokeramika tish qatori o'rnatiladi. Bemor atigi 1-3 kunda yana qattiq ovqatlarni bemalol chaynash va samimiy kulish imkoniyatiga ega bo'ladi.",
+      ru: "При полной адентии (отсутствии всех зубов) больше не нужно носить неудобные съемные челюсти! По протоколам All-on-4 и All-on-6 в челюсть устанавливаются 4 или 6 титановых имплантов, на которые жестко фиксируется несъемный циркониевый или металлокерамический мост. Пациент возвращается к привычной еде и уверенной улыбке уже через несколько дней.",
+      en: "Full edentulism (complete loss of teeth) no longer requires loose, slipping removable dentures. Under All-on-4 or All-on-6 digital protocols, 4 or 6 titanium implants support a full fixed bridge of monolithic zirconia or ceramic teeth, restoring powerful chewing ability and youthful facial aesthetics in just a few days.",
+    },
+  },
 ];
